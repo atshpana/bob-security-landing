@@ -68,6 +68,24 @@ p,li{text-shadow:0 1px 1px rgba(0,0,0,.65)}
 /* Keep inner-page titles and section headings clearly readable over the background image. */
 main h1, main h2, main h3, main h4, main .page-title, main [data-page-title] { color:#fff !important; opacity:1 !important; visibility:visible !important; filter:none !important; -webkit-text-fill-color:#fff !important; text-shadow:0 2px 7px rgba(0,0,0,.98), 0 0 3px rgba(0,0,0,.98) !important; }
 </style>
+
+<style id="bob-background-visibility-fix">
+/* Keep the shared cyber image visible behind page content without reducing text contrast. */
+html, body { background-color: transparent !important; }
+body::before { z-index: 0 !important; }
+body > * { position: relative; z-index: 1; }
+main, main > section, main section, main > div, main .page-shell {
+  background-color: transparent !important;
+}
+main article, main .bento-card, main [class~="bg-brand-card"],
+main [class*="rounded-"][class*="border"] {
+  background-color: rgba(7, 14, 31, .82);
+}
+header, footer, nav {
+  background-color: rgba(5, 12, 27, .92);
+}
+</style>
+
 </head><body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
 
     <!-- Development Notice Banner -->
