@@ -228,6 +228,40 @@ body main h1, body main h2, body main h3, body main h4 {
 }
 </style>
 
+
+<style id="bob-final-transparent-header-footer-v4">
+/* Explicit final override for every page header and footer. */
+html body header,
+html body > header,
+html body footer,
+html body > footer,
+html body main + footer,
+html body main ~ footer {
+  background: rgba(4, 14, 30, .18) !important;
+  background-color: rgba(4, 14, 30, .18) !important;
+  background-image: none !important;
+  border-top-color: rgba(65, 171, 231, .24) !important;
+  border-bottom-color: rgba(65, 171, 231, .24) !important;
+  box-shadow: none !important;
+  -webkit-backdrop-filter: blur(1.5px) !important;
+  backdrop-filter: blur(1.5px) !important;
+}
+/* Keep inner footer panels from painting opaque backgrounds. */
+html body footer > div,
+html body footer section,
+html body footer article,
+html body header > div {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+/* Preserve legibility on top of the background image. */
+html body header a, html body header span,
+html body footer p, html body footer a,
+html body footer strong, html body footer span {
+  text-shadow: 0 1px 4px rgba(0,0,0,.95) !important;
+}
+</style>
+
 </head><body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
 
     <!-- Development Notice Banner -->
