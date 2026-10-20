@@ -259,7 +259,15 @@ html body header nav a { text-shadow: 0 1px 4px rgba(0,0,0,.95) !important; }
 </style>
 
 <style id="bob-brand-white-v1">header a span.text-blue-500, header a span.text-blue-400, .brand-name, .bob-security-brand, footer strong, footer b { color:#fff!important; -webkit-text-fill-color:#fff!important; }</style>
-<style id="bob-all-lettering-white-v2">[aria-label="BOB"] span,.bob-hero-brand-row [aria-label="BOB"] span{color:#fff!important;-webkit-text-fill-color:#fff!important;background:#fff!important;background-image:none!important;background-clip:border-box!important;-webkit-background-clip:border-box!important;text-shadow:0 2px 10px rgba(0,0,0,.45)}</style>
+<style id="bob-all-lettering-white-v3">
+/* White BOB letters only; keep the logo and its surrounding background fully transparent. */
+[aria-label="BOB"][role="img"], .bob-hero-brand-row [aria-label="BOB"] {
+ background:transparent!important; background-color:transparent!important; background-image:none!important; border:0!important; box-shadow:none!important;
+}
+[aria-label="BOB"] span, .bob-hero-brand-row [aria-label="BOB"] span {
+ color:#fff!important; -webkit-text-fill-color:#fff!important; background:transparent!important; background-color:transparent!important; background-image:none!important; text-shadow:0 2px 10px rgba(0,0,0,.45);
+}
+</style>
 </head><body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
 
     <!-- Development Notice Banner -->
