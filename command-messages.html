@@ -284,16 +284,23 @@ footer strong, footer b {
 }
 </style>
 
-<style id="bob-all-lettering-white-v2">
-/* Force every character in the large inline BOB mark to render white on mobile and desktop. */
+<style id="bob-all-lettering-white-v3">
+/* White BOB letters only; keep the logo and its surrounding background fully transparent. */
+[aria-label="BOB"][role="img"],
+.bob-hero-brand-row [aria-label="BOB"] {
+ background:transparent!important;
+ background-color:transparent!important;
+ background-image:none!important;
+ border:0!important;
+ box-shadow:none!important;
+}
 [aria-label="BOB"] span,
 .bob-hero-brand-row [aria-label="BOB"] span {
  color:#fff!important;
  -webkit-text-fill-color:#fff!important;
- background:#fff!important;
+ background:transparent!important;
+ background-color:transparent!important;
  background-image:none!important;
- background-clip:border-box!important;
- -webkit-background-clip:border-box!important;
  text-shadow:0 2px 10px rgba(0,0,0,.45);
 }
 </style>
