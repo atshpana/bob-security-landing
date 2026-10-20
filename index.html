@@ -334,6 +334,19 @@ footer strong, footer b {
 }
 </style>
 
+<style id="bob-all-lettering-white-v2">
+/* Force every character in the large inline BOB mark to render white on mobile and desktop. */
+[aria-label="BOB"] span,
+.bob-hero-brand-row [aria-label="BOB"] span {
+ color:#fff!important;
+ -webkit-text-fill-color:#fff!important;
+ background:#fff!important;
+ background-image:none!important;
+ background-clip:border-box!important;
+ -webkit-background-clip:border-box!important;
+ text-shadow:0 2px 10px rgba(0,0,0,.45);
+}
+</style>
 </head><body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
 
     <!-- Development Notice Banner -->
@@ -410,7 +423,7 @@ footer strong, footer b {
   <path d="M50 40 L61 46 L59 62 Q56 69 50 73 Q44 69 41 62 L39 46 Z" fill="#00bfff" opacity=".55"/>
 </svg></div>
                 <div aria-label="BOB" role="img" class="select-none font-black leading-none tracking-tight text-[6.5rem] sm:text-[9rem] lg:text-[11rem] drop-shadow-[0_8px_35px_rgba(37,99,235,0.25)]">
-                    <span class="text-transparent bg-clip-text bg-gradient-to-br from-cyan-300 via-blue-500 to-indigo-500">B</span><span class="text-white">O</span><span class="text-transparent bg-clip-text bg-gradient-to-br from-cyan-300 via-blue-500 to-indigo-500">B</span>
+                    <span class="text-white">B</span><span class="text-white">O</span><span class="text-white">B</span>
                 </div>
                 <div class="bob-shield-wrap" aria-hidden="true"><svg viewBox="0 0 100 120" aria-hidden="true" focusable="false" class="bob-hero-shield w-10 h-12 sm:w-16 sm:h-20 lg:w-28 lg:h-32 shrink-0">
   <defs>
