@@ -32,37 +32,26 @@
     </script>
 
 <style id="bob-anubis-watermark">
-  body { position: relative; isolation: isolate; }
-  body::before {
-    content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
-    background-image:linear-gradient(180deg, rgba(3,8,20,.36), rgba(3,8,20,.48)),url("bob-cyber-background.png");
-    background-position:center center;
-    background-size:cover;
-    background-repeat:no-repeat;
-    opacity:1;
-  }
-  body > * { position: relative; z-index: 1; }
-  body > header { position: sticky; }
-  main, footer, header { position: relative; }
-  @media (max-width: 640px) {
-    body::before { background-position:center center; background-size:cover; }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    body::before { background-attachment: scroll; }
-  }
+/* Internal page: solid, calm background. Keep the Anubis/cyber image on the homepage only. */
+html,body{background:#081426!important;background-image:none!important}
+body{position:relative;isolation:isolate}
+body::before{content:none!important;background-image:none!important}
+body>*{position:relative;z-index:1}
+body>header{position:sticky}
+main,footer,header{position:relative}
 </style>
 
 
 
 
 <style id="bob-transparent-cyber-background">
-html,body{background:transparent!important}
+html,body{background:#081426!important;background-image:none!important}
 main,main>section,main section{background-color:transparent}
-.bento-card,[class*="bg-brand-card"],[class*="bg-slate-"],[class*="bg-gray-"]{background-color:rgba(7,14,31,.92)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
-header,footer,nav{background-color:rgba(5,12,27,.96)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
-input,textarea,select{background-color:rgba(5,12,27,.96)!important}
-h1,h2,h3,h4{color:#fff!important;text-shadow:0 1px 2px rgba(0,0,0,.9)}
-p,li{text-shadow:0 1px 1px rgba(0,0,0,.65)}
+.bento-card,[class*="bg-brand-card"],[class*="bg-slate-"],[class*="bg-gray-"]{background-color:#0d1b30!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+header,footer,nav{background-color:#07101f!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+input,textarea,select{background-color:#07101f!important}
+h1,h2,h3,h4{color:#fff!important;text-shadow:none}
+p,li{text-shadow:none}
 </style>
 <style id="bob-heading-contrast-fix">
 /* Keep inner-page titles and section headings clearly readable over the background image. */
