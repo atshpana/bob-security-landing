@@ -39,6 +39,11 @@
       .bento-card:hover {transform:translateY(-4px)}
       @media(prefers-reduced-motion:reduce){.bento-card{transition:none}.bento-card:hover{transform:none}}
     </style>
+
+<style id="bob-hero-shields">
+.bob-hero-brand-row{width:100%;max-width:900px}.bob-shield-wrap{display:flex;align-items:center;justify-content:center;flex:0 0 auto;filter:drop-shadow(0 0 12px rgba(0,153,255,.55))}.bob-hero-shield{display:block;overflow:visible}
+@media(max-width:420px){.bob-hero-brand-row{gap:.25rem}.bob-hero-brand-row [aria-label="BOB"]{font-size:5.25rem;letter-spacing:-.04em}.bob-hero-shield{width:2.6rem;height:3.2rem}}
+</style>
 </head><body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
 
     <!-- Development Notice Banner -->
@@ -91,8 +96,36 @@
         <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/15 via-brand-dark to-brand-dark pointer-events-none"></div>
         
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <div aria-label="BOB" role="img" class="mx-auto mb-2 select-none font-black leading-none tracking-tight text-[6.5rem] sm:text-[9rem] lg:text-[11rem] drop-shadow-[0_8px_35px_rgba(37,99,235,0.25)]">
-                <span class="text-transparent bg-clip-text bg-gradient-to-br from-cyan-300 via-blue-500 to-indigo-500">B</span><span class="text-transparent bg-clip-text bg-gradient-to-b from-white via-slate-200 to-blue-300">O</span><span class="text-transparent bg-clip-text bg-gradient-to-bl from-emerald-300 via-teal-400 to-cyan-500">B</span>
+            <div class="bob-hero-brand-row mx-auto mb-2 flex items-center justify-center gap-2 sm:gap-5 lg:gap-8">
+                <div class="bob-shield-wrap" aria-hidden="true"><svg viewBox="0 0 100 120" aria-hidden="true" focusable="false" class="bob-hero-shield w-10 h-12 sm:w-16 sm:h-20 lg:w-28 lg:h-32 shrink-0">
+  <defs>
+    <linearGradient id="bobShieldMetal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fdff"/><stop offset=".22" stop-color="#60c9ff"/><stop offset=".48" stop-color="#0875d1"/><stop offset=".72" stop-color="#06234d"/><stop offset="1" stop-color="#dff8ff"/></linearGradient>
+    <linearGradient id="bobShieldCore" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071b38"/><stop offset=".55" stop-color="#0b6ac6"/><stop offset="1" stop-color="#031226"/></linearGradient>
+    <linearGradient id="bobShieldInner" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#62f4ff"/><stop offset="1" stop-color="#0877ff"/></linearGradient>
+    <filter id="bobShieldGlow" x="-70%" y="-60%" width="240%" height="230%"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <path d="M50 5 L91 23 L86 68 Q79 96 50 113 Q21 96 14 68 L9 23 Z" fill="#007bff" opacity=".24" filter="url(#bobShieldGlow)"/>
+  <path d="M50 4 L91 23 L85 67 Q78 95 50 113 Q22 95 15 67 L9 23 Z" fill="url(#bobShieldMetal)" stroke="#e6f8ff" stroke-width="2.5"/>
+  <path d="M50 12 L82 27 L77 66 Q71 87 50 101 Q29 87 23 66 L18 27 Z" fill="url(#bobShieldCore)" stroke="#168ce8" stroke-width="2"/>
+  <path d="M50 34 L68 43 L65 64 Q61 76 50 83 Q39 76 35 64 L32 43 Z" fill="url(#bobShieldInner)" stroke="#b9fbff" stroke-width="2" filter="url(#bobShieldGlow)"/>
+  <path d="M50 40 L61 46 L59 62 Q56 69 50 73 Q44 69 41 62 L39 46 Z" fill="#00bfff" opacity=".55"/>
+</svg></div>
+                <div aria-label="BOB" role="img" class="select-none font-black leading-none tracking-tight text-[6.5rem] sm:text-[9rem] lg:text-[11rem] drop-shadow-[0_8px_35px_rgba(37,99,235,0.25)]">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-br from-cyan-300 via-blue-500 to-indigo-500">B</span><span class="text-transparent bg-clip-text bg-gradient-to-b from-white via-slate-200 to-blue-300">O</span><span class="text-transparent bg-clip-text bg-gradient-to-bl from-emerald-300 via-teal-400 to-cyan-500">B</span>
+                </div>
+                <div class="bob-shield-wrap" aria-hidden="true"><svg viewBox="0 0 100 120" aria-hidden="true" focusable="false" class="bob-hero-shield w-10 h-12 sm:w-16 sm:h-20 lg:w-28 lg:h-32 shrink-0">
+  <defs>
+    <linearGradient id="bobShieldMetal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fdff"/><stop offset=".22" stop-color="#60c9ff"/><stop offset=".48" stop-color="#0875d1"/><stop offset=".72" stop-color="#06234d"/><stop offset="1" stop-color="#dff8ff"/></linearGradient>
+    <linearGradient id="bobShieldCore" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071b38"/><stop offset=".55" stop-color="#0b6ac6"/><stop offset="1" stop-color="#031226"/></linearGradient>
+    <linearGradient id="bobShieldInner" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#62f4ff"/><stop offset="1" stop-color="#0877ff"/></linearGradient>
+    <filter id="bobShieldGlow" x="-70%" y="-60%" width="240%" height="230%"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <path d="M50 5 L91 23 L86 68 Q79 96 50 113 Q21 96 14 68 L9 23 Z" fill="#007bff" opacity=".24" filter="url(#bobShieldGlow)"/>
+  <path d="M50 4 L91 23 L85 67 Q78 95 50 113 Q22 95 15 67 L9 23 Z" fill="url(#bobShieldMetal)" stroke="#e6f8ff" stroke-width="2.5"/>
+  <path d="M50 12 L82 27 L77 66 Q71 87 50 101 Q29 87 23 66 L18 27 Z" fill="url(#bobShieldCore)" stroke="#168ce8" stroke-width="2"/>
+  <path d="M50 34 L68 43 L65 64 Q61 76 50 83 Q39 76 35 64 L32 43 Z" fill="url(#bobShieldInner)" stroke="#b9fbff" stroke-width="2" filter="url(#bobShieldGlow)"/>
+  <path d="M50 40 L61 46 L59 62 Q56 69 50 73 Q44 69 41 62 L39 46 Z" fill="#00bfff" opacity=".55"/>
+</svg></div>
             </div>
 
             <div class="inline-flex items-center justify-center gap-2 bg-blue-500/10 border border-blue-500/20 px-4 py-2 rounded-xl text-blue-300 text-sm sm:text-base font-bold mb-3">
