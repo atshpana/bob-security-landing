@@ -406,9 +406,9 @@ body main .bento-card[href$="packages.html"],body main .cards>.card[href="packag
 <style id="bob-stable-mobile-repair">
 /* Stable layout repair: keep the header structure intact and prevent mobile overflow. */
 .bob-brand{display:inline-flex!important;align-items:center!important;gap:10px!important;min-width:0!important}
-.bob-wordmark{display:inline-flex!important;flex-direction:row!important;align-items:baseline!important;justify-content:flex-start!important;gap:.35em!important;white-space:nowrap!important;line-height:1!important}
+.bob-wordmark{display:inline-flex!important;flex-direction:row!important;direction:ltr!important;align-items:baseline!important;justify-content:flex-start!important;gap:.35em!important;white-space:nowrap!important;line-height:1!important}
 .bob-wordmark-main{display:inline!important;color:#fff!important;-webkit-text-fill-color:#fff!important;font-weight:900!important;line-height:1!important}
-.bob-wordmark-sub{display:inline!important;align-self:auto!important;text-align:left!important;text-align-last:auto!important;white-space:nowrap!important;color:#d86bff!important;-webkit-text-fill-color:#d86bff!important;letter-spacing:0!important;line-height:1!important;transform:none!important}
+.bob-wordmark-sub{display:inline!important;align-self:auto!important;text-align:left!important;text-align-last:auto!important;white-space:nowrap!important;color:#fff!important;-webkit-text-fill-color:#fff!important;letter-spacing:0!important;line-height:1!important;transform:none!important}
 @media(max-width:700px){
   body{overflow-x:hidden}
   body main{min-width:0!important;width:100%!important}
@@ -515,7 +515,7 @@ body > header, html body header {
 }
 .bob-hero-security{
   display:block!important;width:100%!important;max-width:100%!important;box-sizing:border-box!important;
-  text-align:center!important;transform:scaleX(1.42)!important;transform-origin:center center!important;
+  text-align:center!important;transform:scaleX(1.58)!important;transform-origin:center center!important;
   color:#d86bff!important;-webkit-text-fill-color:#d86bff!important;
   font-family:Arial,sans-serif!important;font-size:clamp(.9rem,3.8vw,1.65rem)!important;
   font-weight:500!important;letter-spacing:.015em!important;line-height:1.15!important;
@@ -524,7 +524,7 @@ body > header, html body header {
 @media(max-width:640px){
  .bob-hero-brand-row>.bob-hero-wordmark{max-width:68%!important}
  .bob-hero-brand-row>.bob-hero-wordmark>[aria-label="BOB"]{font-size:clamp(4.1rem,19vw,5.25rem)!important;letter-spacing:-.04em!important}
- .bob-hero-security{font-size:clamp(.82rem,4vw,1.15rem)!important;letter-spacing:0!important;transform:scaleX(1.42)!important}
+ .bob-hero-security{font-size:clamp(.82rem,4vw,1.15rem)!important;letter-spacing:0!important;transform:scaleX(1.58)!important}
 }
 </style>
 
