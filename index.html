@@ -403,45 +403,20 @@ body main .bento-card[href$="packages.html"],body main .cards>.card[href="packag
 </style>
 
 
-<style id="bob-wordmark-neon-v2">
-/* Compact, aligned BOB / Security wordmark. */
-.bob-wordmark{display:inline-flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:0!important;line-height:1!important;min-width:0!important;white-space:nowrap!important}
-.bob-wordmark-main{display:block!important;color:#fff!important;-webkit-text-fill-color:#fff!important;font-size:1.22rem!important;font-weight:900!important;letter-spacing:.075em!important;line-height:1.03!important}
-.bob-wordmark-sub{display:block!important;align-self:stretch!important;text-align:justify!important;text-align-last:justify!important;color:#d86bff!important;-webkit-text-fill-color:#d86bff!important;font-size:.66rem!important;font-weight:800!important;letter-spacing:.025em!important;line-height:1.18!important;text-shadow:0 0 5px rgba(216,107,255,.85),0 0 12px rgba(216,107,255,.55)!important}
-.bob-brand{display:inline-flex!important;align-items:center!important;gap:10px!important}
-@media(max-width:480px){.bob-wordmark-main{font-size:1.08rem!important}.bob-wordmark-sub{font-size:.61rem!important}}
-</style>
-
-<style id="bob-isolated-mobile-layout-fix-v1">
-/* Isolated preview fixes: do not ship to the live site until reviewed. */
+<style id="bob-stable-mobile-repair">
+/* Stable layout repair: keep the header structure intact and prevent mobile overflow. */
+.bob-brand{display:inline-flex!important;align-items:center!important;gap:10px!important;min-width:0!important}
+.bob-wordmark{display:inline-flex!important;flex-direction:row!important;align-items:baseline!important;justify-content:flex-start!important;gap:.35em!important;white-space:nowrap!important;line-height:1!important}
+.bob-wordmark-main{display:inline!important;color:#fff!important;-webkit-text-fill-color:#fff!important;font-weight:900!important;line-height:1!important}
+.bob-wordmark-sub{display:inline!important;align-self:auto!important;text-align:left!important;text-align-last:auto!important;white-space:nowrap!important;color:#d86bff!important;-webkit-text-fill-color:#d86bff!important;letter-spacing:0!important;line-height:1!important;transform:none!important}
 @media(max-width:700px){
- html body>header,html body header{position:relative!important;top:auto!important;z-index:20!important}
- html body header nav{position:relative!important;display:flex!important;flex-wrap:wrap!important;justify-content:center!important;gap:.35rem .6rem!important;padding:12px 10px!important}
- html body header nav a{font-size:clamp(12px,3.3vw,15px)!important;line-height:1.55!important;white-space:normal!important}
- body main .grid.grid-cols-1.md\\:grid-cols-2.lg\\:grid-cols-3{grid-template-columns:minmax(0,1fr)!important}
- body main #page-index .bento-card{min-width:0!important;overflow-wrap:anywhere!important;padding:18px!important;min-height:170px!important}
- body main #page-index .bento-card h3{background:transparent!important;border:0!important;padding:0!important;margin:0!important;width:auto!important}
- body main #page-index .bento-card p{line-height:1.8!important}
+  body{overflow-x:hidden}
+  body main{min-width:0!important;width:100%!important}
+  body main .bento-card{min-width:0!important;max-width:100%!important;overflow-wrap:anywhere!important}
+  body main .grid{grid-template-columns:minmax(0,1fr)!important}
+  body header nav{min-width:0!important}
 }
-body main #page-index .bento-card{--bob-glow:#ffe45c!important;border-color:color-mix(in srgb,var(--bob-glow) 75%,transparent)!important}
-body main #page-index .bento-card[href="about.html"]{--bob-glow:#ffe45c!important}
-body main #page-index .bento-card[href="dashboard-levels.html"]{--bob-glow:#39ff88!important}
-body main #page-index .bento-card[href="features.html"]{--bob-glow:#d86bff!important}
-body main #page-index .bento-card[href="protection-modes.html"]{--bob-glow:#ff263f!important;box-shadow:0 0 12px rgba(255,38,63,.32),0 0 30px rgba(255,38,63,.13)!important}
-body main #page-index .bento-card[href="physical-protection.html"]{--bob-glow:#e5edf7!important}
-body main #page-index .bento-card[href="command-messages.html"]{--bob-glow:#35ffe1!important}
-body main #page-index .bento-card[href="digital-evidence.html"]{--bob-glow:#36a7ff!important}
-body main #page-index .bento-card[href="privacy-encryption.html"]{--bob-glow:#ff9b38!important}
-body main #page-index .bento-card[href="getting-started.html"]{--bob-glow:#ffc84a!important}
-body main #page-index .bento-card[href="plans.html"],body main #page-index .bento-card[href="packages.html"]{--bob-glow:#d88959!important}
-body main #page-index .bento-card .flex.items-center>span{background:color-mix(in srgb,var(--bob-glow) 16%,transparent)!important;color:var(--bob-glow)!important;box-shadow:0 0 14px color-mix(in srgb,var(--bob-glow) 35%,transparent)!important}
-body main #page-index .bento-card h3,body main #page-index .bento-card .mt-5{color:var(--bob-glow)!important;-webkit-text-fill-color:var(--bob-glow)!important;text-shadow:0 0 8px color-mix(in srgb,var(--bob-glow) 26%,transparent)!important}
-body main #page-index .bento-card:active{box-shadow:0 0 0 2px var(--bob-glow),0 0 22px var(--bob-glow)!important}
-body footer p:has(.fa-brain),body footer p:has(.fa-brain) *{color:#e7edf7!important;-webkit-text-fill-color:#e7edf7!important;text-shadow:none!important}
-body footer p:has(.fa-brain) i{color:#ff6b78!important;-webkit-text-fill-color:#ff6b78!important}
-.bob-wordmark{display:inline-flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:0!important;line-height:.9!important;white-space:nowrap!important}
-.bob-wordmark-main{display:block!important;line-height:.9!important}
-.bob-wordmark-sub{display:block!important;align-self:flex-start!important;white-space:nowrap!important;letter-spacing:-.02em!important;line-height:1!important;transform:none!important}
+@media(prefers-reduced-motion:reduce){body main .bento-card{transition:none!important}}
 </style>
 </head><body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
 
