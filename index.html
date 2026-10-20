@@ -41,8 +41,8 @@
     </style>
 
 <style id="bob-hero-shields">
-.bob-hero-brand-row{width:100%;max-width:900px}.bob-shield-wrap{display:flex;align-items:center;justify-content:center;flex:0 0 auto;filter:drop-shadow(0 0 12px rgba(0,153,255,.55))}.bob-hero-shield{display:block;overflow:visible}
-@media(max-width:420px){.bob-hero-brand-row{gap:.25rem}.bob-hero-brand-row [aria-label="BOB"]{font-size:5.25rem;letter-spacing:-.04em}.bob-hero-shield{width:2.6rem;height:3.2rem}}
+.bob-hero-brand-row{display:grid!important;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;width:calc(100vw - 2rem);max-width:1200px;position:relative;left:50%;transform:translateX(-50%);gap:0!important}.bob-hero-brand-row>[aria-label="BOB"]{grid-column:2;justify-self:center}.bob-hero-brand-row>.bob-shield-wrap:first-child{grid-column:1;grid-row:1;justify-self:center}.bob-hero-brand-row>.bob-shield-wrap:last-child{grid-column:3;grid-row:1;justify-self:center}.bob-shield-wrap{display:flex;align-items:center;justify-content:center;flex:0 0 auto;filter:drop-shadow(0 0 16px rgba(0,153,255,.75)) drop-shadow(0 0 30px rgba(0,90,255,.42))}.bob-hero-shield{display:block;overflow:visible}
+@media(max-width:420px){.bob-hero-brand-row{width:calc(100vw - 1rem)}.bob-hero-brand-row [aria-label="BOB"]{font-size:5.25rem;letter-spacing:-.04em}.bob-hero-shield{width:2.6rem;height:3.2rem}}
 </style>
 </head><body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
 
@@ -104,6 +104,9 @@
     <linearGradient id="bobShieldInner" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#62f4ff"/><stop offset="1" stop-color="#0877ff"/></linearGradient>
     <filter id="bobShieldGlow" x="-70%" y="-60%" width="240%" height="230%"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
+  <ellipse cx="50" cy="106" rx="44" ry="7" fill="none" stroke="#00bfff" stroke-width="5" opacity=".55" filter="url(#bobShieldGlow)"/>
+  <ellipse cx="50" cy="106" rx="44" ry="7" fill="none" stroke="#55eaff" stroke-width="1.8" opacity=".98"/>
+  <ellipse cx="50" cy="106" rx="30" ry="4" fill="none" stroke="#0877ff" stroke-width="3" opacity=".75" filter="url(#bobShieldGlow)"/>
   <path d="M50 5 L91 23 L86 68 Q79 96 50 113 Q21 96 14 68 L9 23 Z" fill="#007bff" opacity=".24" filter="url(#bobShieldGlow)"/>
   <path d="M50 4 L91 23 L85 67 Q78 95 50 113 Q22 95 15 67 L9 23 Z" fill="url(#bobShieldMetal)" stroke="#e6f8ff" stroke-width="2.5"/>
   <path d="M50 12 L82 27 L77 66 Q71 87 50 101 Q29 87 23 66 L18 27 Z" fill="url(#bobShieldCore)" stroke="#168ce8" stroke-width="2"/>
@@ -120,6 +123,9 @@
     <linearGradient id="bobShieldInner" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#62f4ff"/><stop offset="1" stop-color="#0877ff"/></linearGradient>
     <filter id="bobShieldGlow" x="-70%" y="-60%" width="240%" height="230%"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
+  <ellipse cx="50" cy="106" rx="44" ry="7" fill="none" stroke="#00bfff" stroke-width="5" opacity=".55" filter="url(#bobShieldGlow)"/>
+  <ellipse cx="50" cy="106" rx="44" ry="7" fill="none" stroke="#55eaff" stroke-width="1.8" opacity=".98"/>
+  <ellipse cx="50" cy="106" rx="30" ry="4" fill="none" stroke="#0877ff" stroke-width="3" opacity=".75" filter="url(#bobShieldGlow)"/>
   <path d="M50 5 L91 23 L86 68 Q79 96 50 113 Q21 96 14 68 L9 23 Z" fill="#007bff" opacity=".24" filter="url(#bobShieldGlow)"/>
   <path d="M50 4 L91 23 L85 67 Q78 95 50 113 Q22 95 15 67 L9 23 Z" fill="url(#bobShieldMetal)" stroke="#e6f8ff" stroke-width="2.5"/>
   <path d="M50 12 L82 27 L77 66 Q71 87 50 101 Q29 87 23 66 L18 27 Z" fill="url(#bobShieldCore)" stroke="#168ce8" stroke-width="2"/>
