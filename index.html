@@ -528,6 +528,28 @@ body > header, html body header {
 }
 </style>
 
+
+<style id="bob-unified-card-accent-colors">
+/* Each card uses one accent color for its border, icon, title, and action label. */
+body main .bento-card[href$="about.html"]{--bob-glow:#ffe45c}
+body main .bento-card[href$="dashboard-levels.html"]{--bob-glow:#39ff88}
+body main .bento-card[href$="features.html"]{--bob-glow:#d86bff}
+body main .bento-card[href$="protection-modes.html"]{--bob-glow:#ff263f}
+body main .bento-card[href$="physical-protection.html"]{--bob-glow:#e5edf7}
+body main .bento-card[href$="command-messages.html"]{--bob-glow:#35ffe1}
+body main .bento-card[href$="digital-evidence.html"]{--bob-glow:#36a7ff}
+body main .bento-card[href$="privacy-encryption.html"]{--bob-glow:#ff9b38}
+body main .bento-card[target="_blank"]{--bob-glow:#36a7ff}
+body main #page-index .bento-card.card-cyan:not([href]){--bob-glow:#35ffe1}
+body main #page-index .bento-card .flex.items-center h3,
+body main #page-index .bento-card .flex.items-center > span i,
+body main #page-index .bento-card > span.mt-5,
+body main #page-index .bento-card > div.mt-5 a {
+ color:var(--bob-glow)!important;
+ -webkit-text-fill-color:var(--bob-glow)!important;
+}
+body main #page-index .bento-card .flex.items-center > span{color:var(--bob-glow)!important}
+</style>
 </head><body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
 
     <!-- Development Notice Banner -->
