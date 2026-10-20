@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أوضاع الحماية | BOB Security</title>
+    <meta name="description" content="تعرف على أوضاع التشغيل المقترحة وكيفية تنظيم الاستجابة.">
+    <meta name="theme-color" content="#070A13">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#070A13',
+                            card: '#0E1626',
+                            border: '#1E293B',
+                            primary: '#2563EB',
+                            accent: '#10B981'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
+<div class="bg-amber-500/15 border-b border-amber-500/30 py-2.5 px-4 text-center text-amber-200 text-xs sm:text-sm font-bold"><i class="fa-solid fa-circle-info ml-1"></i> BOB Security مشروع قيد التطوير؛ المحتوى يوضح أهدافًا مقترحة ولا يؤكد توافر جميع الوظائف.</div>
+<!-- Header / Navbar -->
+    <header class="sticky top-[37px] sm:top-[41px] z-50 backdrop-blur-xl bg-brand-dark/90 border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo in Navbar -->
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <a href="#" class="flex items-center space-x-3 space-x-reverse">
+                    <img src="logo.png.jpeg" alt="BOB Security Logo" class="w-10 h-10 rounded-xl object-contain bg-brand-card p-1 border border-brand-border shadow-md" onerror="this.onerror=null; this.src='https://drive.google.com/thumbnail?id=1DUtBE_KMavf10SLuU-UR9oKFeMB_LDBX&sz=w200';">
+                    <span class="text-xl font-black tracking-wider text-white">BOB <span class="text-blue-500">Security</span></span>
+                </a>
+            </div>
+            
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-8 space-x-reverse text-sm font-semibold text-slate-300">
+                <a href="about.html" class="hover:text-blue-400 transition-colors">عن المنظومة</a>
+                <a href="getting-started.html" class="hover:text-blue-400 transition-colors">إنشاء الحساب والتثبيت</a>
+                <a href="features.html" class="hover:text-blue-400 transition-colors">المزايا والخدمات</a>
+                <a href="digital-evidence.html" class="hover:text-blue-400 transition-colors">تقرير الأدلة الرقمية</a>
+                <a href="protection-modes.html" class="hover:text-blue-400 transition-colors">أوضاع الحماية</a>
+                <a href="plans.html" class="hover:text-blue-400 transition-colors">الأنظمة المتاحة</a>
+                <a href="packages.html" class="hover:text-blue-400 transition-colors">الباقات والأسعار</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="hover:text-blue-400 transition-colors">إبداء الاهتمام</a>
+            </nav>
+
+            <!-- CTA Action -->
+            <div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs sm:text-sm px-5 py-2.5 rounded-xl shadow-lg shadow-blue-600/25 transition-all flex items-center">
+                    <i class="fa-solid fa-file-pen ml-2"></i> <span>سجّل اهتمامك</span>
+                </a>
+            </div>
+            
+        <button id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl border border-brand-border text-slate-200" aria-label="فتح قائمة التنقل">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-brand-border bg-brand-dark px-4 py-4">
+            <nav class="grid grid-cols-2 gap-3 text-sm font-semibold text-slate-300">
+                <a href="index.html" class="rounded-lg p-2 hover:bg-brand-card">الرئيسية</a>
+                <a href="about.html" class="rounded-lg p-2 hover:bg-brand-card">عن المنظومة</a>
+                <a href="getting-started.html" class="rounded-lg p-2 hover:bg-brand-card">رحلة الاستخدام</a>
+                <a href="features.html" class="rounded-lg p-2 hover:bg-brand-card">المزايا المستهدفة</a>
+                <a href="digital-evidence.html" class="rounded-lg p-2 hover:bg-brand-card">الأدلة الرقمية</a>
+                <a href="protection-modes.html" class="rounded-lg p-2 hover:bg-brand-card">أوضاع الحماية</a>
+                <a href="plans.html" class="rounded-lg p-2 hover:bg-brand-card">مسارات المنتج</a>
+                <a href="packages.html" class="rounded-lg p-2 hover:bg-brand-card">الباقات المقترحة</a>
+            </nav>
+        </div>
+        </div>
+    </header>
+
+    
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8"><a href="index.html" class="inline-flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300"><i class="fa-solid fa-arrow-right"></i> العودة إلى الرئيسية</a></div>
+<section id="modes" class="py-20 bg-brand-card/40 border-t border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <h2 class="text-2xl sm:text-4xl font-black text-white mb-3">أوضاع الحماية التشغيلية</h2>
+                <p class="text-slate-400 text-sm sm:text-base">يتكيف النظام ذكيّاً مع حالتك الأمنية عبر أنماط تشغيل متقدمة مصممة لأعلى درجات الموثوقية.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Mode 1: Security Mode -->
+                <div class="bg-brand-dark p-6 rounded-2xl border border-brand-border hover:border-blue-500/50 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-shield-virus"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">وضع الأمان</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
+                            خط الأساس الدائم للحماية في المنظومة. يراقب حالة التطبيق، سلامة الحساب والاتصال، صلاحيات التطبيق، حالة البطارية، وسلامة نسخة التطبيق (Play Integrity)، مع توجيه المستخدم لـ eSIM وتطبيق الإعدادات المدعومة.
+                        </p>
+                    </div>
+                    <span class="text-[11px] font-mono text-blue-400 bg-blue-500/10 px-2.5 py-1 rounded-md w-fit">SECURITY MODE</span>
+                </div>
+
+                <!-- Mode 2: Alert Mode -->
+                <div class="bg-brand-dark p-6 rounded-2xl border border-brand-border hover:border-amber-500/50 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">وضع التأهب</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
+                            تصعيد أمني بعد حدث يرفع مستوى الاستجابة. يطلب أحدث موقع مسموح، يزيد معدل التحقق من الاتصال ضمن حدود الطاقة، ويشغل المصيدة البصرية والتوثيق الحسي عند توفر محفز رسمي دون مراقبة مستمرة.
+                        </p>
+                    </div>
+                    <span class="text-[11px] font-mono text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-md w-fit">ALERT MODE</span>
+                </div>
+
+                <!-- Mode 3: Recovery Mode -->
+                <div class="bg-brand-dark p-6 rounded-2xl border border-brand-border hover:border-emerald-500/50 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-rotate"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">وضع الاسترداد</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
+                            غرفة العمليات بعد الفقد أو السرقة. يختار الأوامر حسب مستوى الجهاز (شخصي أو مؤسسي)، ويشمل تحديد الموقع، الإنذار الصوتي، حزمة التوثيق الحسي المعلمة، وأوامر Android Enterprise الرسمية (Lost Mode والمسح).
+                        </p>
+                    </div>
+                    <span class="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md w-fit">RECOVERY MODE</span>
+                </div>
+
+                <!-- Mode 4: Pulse / Panic Mode -->
+                <div class="bg-brand-dark p-6 rounded-2xl border border-brand-border hover:border-red-500/50 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-red-500/10 text-red-400 flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-bell-slash"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">وضع الاستغاثة (النبضة)</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
+                            مسار الاستغاثة السريعة. يضم نافذة إلغاء حاكمة (10 ثوانٍ)، وتوثيقاً حسياً آلياً متسلسلاً (صور وفيديوهات وأصوات)، وقنوات إخطار مستقلة وموثقة لجهات الطوارئ.
+                        </p>
+                    </div>
+                    <span class="text-[11px] font-mono text-red-400 bg-red-500/10 px-2.5 py-1 rounded-md w-fit">PULSE / PANIC MODE</span>
+                </div>
+            </div>
+        </div>
+    </section>
+<footer class="bg-brand-dark border-t border-brand-border py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-500 text-xs sm:text-sm">
+            <p class="text-amber-400/90 font-semibold mb-3">
+                <i class="fa-solid fa-hourglass-half ml-1"></i> المنظومة لازالت تحت التطوير المستمر وسنعلن عن موعد الاطلاق التجريبي قريبا.
+            </p>
+            <p class="mb-2">جميع الحقوق محفوظة © 2026 لـ <strong>BOB Security</strong>.</p>
+            <p class="text-slate-600">منظومة الحماية والأمان المتقدم للهواتف المحمولة والبيانات.</p>
+        </div>
+    </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const button = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  if (button && menu) {
+    button.addEventListener('click', function () {
+      const isOpen = !menu.classList.contains('hidden');
+      menu.classList.toggle('hidden', isOpen);
+      button.setAttribute('aria-expanded', String(!isOpen));
+      button.innerHTML = isOpen ? '<i class="fa-solid fa-bars"></i>' : '<i class="fa-solid fa-xmark"></i>';
+    });
+  }
+});
+</script>
+</body>
+</html>
