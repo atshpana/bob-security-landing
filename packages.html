@@ -147,6 +147,41 @@ body > div:first-child[class*="bg-amber-500"] {
 }
 </style>
 
+
+<style id="bob-global-transparent-panels-v2">
+/* Final sitewide override: translucent surfaces everywhere so the Anubis mark remains visible. */
+body main section,
+body main article,
+body main [class*="bg-"] {
+  background-color: rgba(5, 17, 37, .28) !important;
+  background-image: none !important;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+body main .absolute.inset-0,
+body main [class*="from-brand-dark"],
+body main [class*="via-brand-card"],
+body main [class*="to-brand-dark"] {
+  background-color: rgba(5, 17, 37, .10) !important;
+  background-image: none !important;
+}
+body main [class*="rounded-xl"][class*="text-"],
+body main [class*="rounded-full"][class*="text-"],
+body main [class*="rounded-md"][class*="text-"] {
+  background-color: rgba(7, 35, 63, .42) !important;
+  background-image: none !important;
+}
+body main h1, body main h2, body main h3, body main h4 {
+  background-color: rgba(5, 17, 37, .16) !important;
+  background-image: none !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,.95) !important;
+  -webkit-text-fill-color: #fff !important;
+}
+body main p, body main li, body main label, body main strong, body main span {
+  text-shadow: 0 1px 3px rgba(0,0,0,.9);
+}
+</style>
+
 </head><body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
 
     <!-- Development Notice Banner -->
@@ -165,7 +200,7 @@ body > div:first-child[class*="bg-amber-500"] {
 <a href="digital-evidence.html" class="hover:text-blue-400 transition-colors whitespace-nowrap">الأدلة الرقمية</a>
 <a href="protection-modes.html" class="hover:text-blue-400 transition-colors whitespace-nowrap">أوضاع الحماية</a>
 <a href="command-messages.html" class="hover:text-blue-400 transition-colors whitespace-nowrap">رسائل الكوماندز</a>
-<a href="plans.html" class="hover:text-blue-400 transition-colors whitespace-nowrap">الأنظمة ومسارات الاستخدام</a>
+<a href="plans.html" class="hover:text-blue-400 transition-colors whitespace-nowrap">الأنظمة والأنظمة ومسارات الاستخدام</a>
 <a href="packages.html" class="hover:text-blue-400 transition-colors whitespace-nowrap">الباقات</a>
 </nav>
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs sm:text-sm px-4 py-2.5 rounded-xl transition-all whitespace-nowrap"><i class="fa-solid fa-user-plus ml-2"></i>تسجيل</a>
@@ -179,7 +214,7 @@ body > div:first-child[class*="bg-amber-500"] {
 <a href="digital-evidence.html" class="hover:text-blue-400">الأدلة الرقمية</a>
 <a href="protection-modes.html" class="hover:text-blue-400">أوضاع الحماية</a>
 <a href="command-messages.html" class="hover:text-blue-400">رسائل الكوماندز</a>
-<a href="plans.html" class="hover:text-blue-400">الأنظمة ومسارات الاستخدام</a>
+<a href="plans.html" class="hover:text-blue-400">الأنظمة والأنظمة ومسارات الاستخدام</a>
 <a href="packages.html" class="hover:text-blue-400">الباقات</a>
 </nav></header><main><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 text-xs text-slate-500"><a class="text-blue-400 hover:text-blue-300" href="index.html">الرئيسية</a><span class="mx-2">←</span>الباقات</div><section id="pricing" class="py-20 bg-brand-card/30 border-t border-brand-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
