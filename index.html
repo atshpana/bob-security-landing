@@ -182,6 +182,43 @@ body > div:first-child[class*="bg-amber-500"] {
 }
 </style>
 
+
+<style id="bob-global-transparent-panels-v2">
+/* Final sitewide override: translucent surfaces everywhere so the Anubis mark remains visible. */
+body main section,
+body main article,
+body main [class*="bg-"] {
+  background-color: rgba(5, 17, 37, .28) !important;
+  background-image: none !important;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+/* Hero overlays must not paint an opaque layer over the shared background. */
+body main .absolute.inset-0,
+body main [class*="from-brand-dark"],
+body main [class*="via-brand-card"],
+body main [class*="to-brand-dark"] {
+  background-color: rgba(5, 17, 37, .10) !important;
+  background-image: none !important;
+}
+/* Small icon tiles and labels stay readable while remaining translucent. */
+body main [class*="rounded-xl"][class*="text-"],
+body main [class*="rounded-full"][class*="text-"],
+body main [class*="rounded-md"][class*="text-"] {
+  background-color: rgba(7, 35, 63, .42) !important;
+  background-image: none !important;
+}
+body main h1, body main h2, body main h3, body main h4 {
+  background-color: rgba(5, 17, 37, .16) !important;
+  background-image: none !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,.95) !important;
+  -webkit-text-fill-color: #fff !important;
+}
+body main p, body main li, body main label, body main strong, body main span {
+  text-shadow: 0 1px 3px rgba(0,0,0,.9);
+}
+</style>
+
 </head><body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
 
     <!-- Development Notice Banner -->
@@ -211,7 +248,7 @@ body > div:first-child[class*="bg-amber-500"] {
                 <a href="digital-evidence.html" class="hover:text-blue-400 transition-colors">الأدلة الرقمية</a>
                 <a href="protection-modes.html" class="hover:text-blue-400 transition-colors">أوضاع الحماية</a>
                 <a href="command-messages.html" class="hover:text-blue-400 transition-colors">رسائل الكوماندز</a>
-                <a href="plans.html" class="hover:text-blue-400 transition-colors">الأنظمة ومسارات الاستخدام</a>
+                <a href="plans.html" class="hover:text-blue-400 transition-colors">الأنظمة والأنظمة ومسارات الاستخدام</a>
                 <a href="packages.html" class="hover:text-blue-400 transition-colors">الباقات</a>
             </nav>
 
@@ -233,7 +270,7 @@ body > div:first-child[class*="bg-amber-500"] {
             <a href="digital-evidence.html" class="hover:text-blue-400">الأدلة الرقمية</a>
             <a href="protection-modes.html" class="hover:text-blue-400">أوضاع الحماية</a>
             <a href="command-messages.html" class="hover:text-blue-400">رسائل الكوماندز</a>
-            <a href="plans.html" class="hover:text-blue-400">الأنظمة ومسارات الاستخدام</a>
+            <a href="plans.html" class="hover:text-blue-400">الأنظمة والأنظمة ومسارات الاستخدام</a>
             <a href="packages.html" class="hover:text-blue-400">الباقات</a>
         </nav>
     </header><main><section class="relative pt-4 pb-6 sm:pt-28 sm:pb-36 overflow-hidden">
@@ -309,7 +346,7 @@ body > div:first-child[class*="bg-amber-500"] {
 <a href="protection-modes.html" class="bento-card card-red group flex min-h-[190px] flex-col rounded-2xl border border-brand-border bg-brand-card p-6 transition hover:border-blue-400/50"><div class="flex items-center gap-3 mb-4"><span class="flex h-11 w-11 items-center justify-center rounded-xl bg-red-400/10 text-red-300 text-lg"><i class="fa-solid fa-lock"></i></span><h3 class="text-lg font-black text-white">أوضاع الحماية</h3></div><p class="text-sm text-slate-400 leading-7 flex-1">تعرّف على أوضاع الحماية وشرحها في صفحة مستقلة.</p><span class="mt-5 text-sm font-bold text-red-300">اعرف المزيد ←</span></a>
 <a href="physical-protection.html" class="bento-card card-cyan group flex min-h-[190px] flex-col rounded-2xl border border-brand-border bg-brand-card p-6 transition hover:border-blue-400/50"><div class="flex items-center gap-3 mb-4"><span class="flex h-11 w-11 items-center justify-center rounded-xl bg-cyan-400/10 text-cyan-300 text-lg"><i class="fa-solid fa-shield-halved"></i></span><h3 class="text-lg font-black text-white">الحماية المادية للهاتف</h3></div><p class="text-sm text-slate-400 leading-7 flex-1">تعرّف على حماية منافذ التوصيل، ومستشعرات الحركة، وخيارات مسح بيانات الهاتف.</p><span class="mt-5 text-sm font-bold text-cyan-300">اعرف المزيد ←</span></a>
 <a href="command-messages.html" class="bento-card card-blue group flex min-h-[190px] flex-col rounded-2xl border border-brand-border bg-brand-card p-6 transition hover:border-blue-400/50"><div class="flex items-center gap-3 mb-4"><span class="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-400/10 text-blue-300 text-lg"><i class="fa-solid fa-message"></i></span><h3 class="text-lg font-black text-white">رسائل الكوماندز</h3></div><p class="text-sm text-slate-400 leading-7 flex-1">مسار بديل لطلب بعض وظائف الحماية عبر الرسائل النصية عند تعذّر الإنترنت، وفق دعم الجهاز وصلاحيات النظام.</p><span class="mt-5 text-sm font-bold text-blue-300">اعرف المزيد ←</span></a>
-<a href="plans.html" class="bento-card card-blue group flex min-h-[190px] flex-col rounded-2xl border border-brand-border bg-brand-card p-6 transition hover:border-blue-400/50"><div class="flex items-center gap-3 mb-4"><span class="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-400/10 text-blue-300 text-lg"><i class="fa-solid fa-users"></i></span><h3 class="text-lg font-black text-white">الأنظمة ومسارات الاستخدام</h3></div><p class="text-sm text-slate-400 leading-7 flex-1">الأنظمة ومسارات الاستخدام الموجهة للأفراد والأسرة والمؤسسات.</p><span class="mt-5 text-sm font-bold text-blue-300">اعرف المزيد ←</span></a>
+<a href="plans.html" class="bento-card card-blue group flex min-h-[190px] flex-col rounded-2xl border border-brand-border bg-brand-card p-6 transition hover:border-blue-400/50"><div class="flex items-center gap-3 mb-4"><span class="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-400/10 text-blue-300 text-lg"><i class="fa-solid fa-users"></i></span><h3 class="text-lg font-black text-white">الأنظمة والأنظمة ومسارات الاستخدام</h3></div><p class="text-sm text-slate-400 leading-7 flex-1">الأنظمة والأنظمة ومسارات الاستخدام الموجهة للأفراد والأسرة والمؤسسات.</p><span class="mt-5 text-sm font-bold text-blue-300">اعرف المزيد ←</span></a>
 <a href="packages.html" class="bento-card card-cyan group flex min-h-[190px] flex-col rounded-2xl border border-brand-border bg-brand-card p-6 transition hover:border-blue-400/50"><div class="flex items-center gap-3 mb-4"><span class="flex h-11 w-11 items-center justify-center rounded-xl bg-cyan-400/10 text-cyan-300 text-lg"><i class="fa-solid fa-box-open"></i></span><h3 class="text-lg font-black text-white">الباقات</h3></div><p class="text-sm text-slate-400 leading-7 flex-1">راجع تفاصيل الباقات والمدد والاشتراكات الموضحة.</p><span class="mt-5 text-sm font-bold text-cyan-300">اعرف المزيد ←</span></a>
 <a href="privacy-encryption.html" class="bento-card card-green group flex min-h-[190px] flex-col rounded-2xl border border-brand-border bg-brand-card p-6 transition hover:border-blue-400/50"><div class="flex items-center gap-3 mb-4"><span class="flex h-11 w-11 items-center justify-center rounded-xl bg-green-400/10 text-green-300 text-lg"><i class="fa-solid fa-user-shield"></i></span><h3 class="text-lg font-black text-white">الخصوصية والتشفير</h3></div><p class="text-sm text-slate-400 leading-7 flex-1">شرح مبسط للتشفير وحماية البيانات وحدود الحماية.</p><span class="mt-5 text-sm font-bold text-green-300">اعرف المزيد ←</span></a>
 </div></div></section></main><footer class="bg-brand-dark border-t border-brand-border py-12">
