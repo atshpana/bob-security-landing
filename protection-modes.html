@@ -1,4 +1,36 @@
-<body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أوضاع الحماية | BOB Security</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#070A13',
+                            card: '#0E1626',
+                            border: '#1E293B',
+                            primary: '#2563EB',
+                            accent: '#10B981'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head><body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
 
     <!-- Development Notice Banner -->
     <div class="bg-amber-500/20 border-b border-amber-500/30 py-2.5 px-4 text-center text-amber-300 text-xs sm:text-sm font-bold sticky top-0 z-[60] backdrop-blur-lg shadow-lg">
@@ -64,7 +96,6 @@
                         <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
                             خط الأساس الدائم للحماية في المنظومة. يراقب حالة التطبيق، سلامة الحساب والاتصال، صلاحيات التطبيق، حالة البطارية، وسلامة نسخة التطبيق (Play Integrity)، مع توجيه المستخدم لـ eSIM وتطبيق الإعدادات المدعومة.
                         </p>
-                        <p class="text-slate-300 text-xs leading-7 mt-3 border-r-2 border-blue-400 pr-3"><strong class="text-blue-300">شرح مبسط:</strong> هذا هو الوضع اليومي؛ راجع منه اتصال الهاتف وصلاحيات التطبيق والتنبيهات التي تحتاج انتباهك. ظهور حالة أو تنبيه لا يعني وحده أن كل إجراءات الحماية تعمل تلقائيًا.</p>
                     </div>
                     <span class="text-[11px] font-mono text-blue-400 bg-blue-500/10 px-2.5 py-1 rounded-md w-fit">SECURITY MODE</span>
                 </div>
@@ -79,7 +110,6 @@
                         <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
                             تصعيد أمني بعد حدث يرفع مستوى الاستجابة. يطلب أحدث موقع مسموح، يزيد معدل التحقق من الاتصال ضمن حدود الطاقة، ويشغل المصيدة البصرية والتوثيق الحسي عند توفر محفز رسمي دون مراقبة مستمرة.
                         </p>
-                        <p class="text-slate-300 text-xs leading-7 mt-3 border-r-2 border-amber-400 pr-3"><strong class="text-amber-300">شرح مبسط:</strong> عند ظهور علامة خطر، ينتقل التركيز إلى مراجعة آخر معلومات متاحة ورفع مستوى التنبيه. التحديثات المتكررة أو التوثيق لا تعمل إلا إذا كانت مدعومة ومفعّلة على الجهاز.</p>
                     </div>
                     <span class="text-[11px] font-mono text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-md w-fit">ALERT MODE</span>
                 </div>
@@ -94,7 +124,6 @@
                         <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
                             غرفة العمليات بعد الفقد أو السرقة. يختار الأوامر حسب مستوى الجهاز (شخصي أو مؤسسي)، ويشمل تحديد الموقع، الإنذار الصوتي، حزمة التوثيق الحسي المعلمة، وأوامر Android Enterprise الرسمية (Lost Mode والمسح).
                         </p>
-                        <p class="text-slate-300 text-xs leading-7 mt-3 border-r-2 border-emerald-400 pr-3"><strong class="text-emerald-300">شرح مبسط:</strong> إذا فُقد الهاتف، ابدأ بمراجعة آخر اتصال ومعلومات الجهاز، ثم اختر الإجراء المتاح لحسابك ونوع الجهاز. لا تعتبر الأمر ناجحًا إلا بعد ظهور نتيجة مؤكدة.</p>
                     </div>
                     <span class="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md w-fit">RECOVERY MODE</span>
                 </div>
@@ -109,23 +138,9 @@
                         <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
                             مسار الاستغاثة السريعة. يضم نافذة إلغاء حاكمة (10 ثوانٍ)، وتوثيقاً حسياً آلياً متسلسلاً (صور وفيديوهات وأصوات)، وقنوات إخطار مستقلة وموثقة لجهات الطوارئ.
                         </p>
-                        <p class="text-slate-300 text-xs leading-7 mt-3 border-r-2 border-red-400 pr-3"><strong class="text-red-300">شرح مبسط:</strong> «النبضة» هي مسار استغاثة يبدأه المستخدم عمدًا. يجب أن يوضح التطبيق حالة العدّ التنازلي، وما إذا أُلغي الطلب أو أُرسل، وما إذا تأكد وصول التنبيه. لا نفترض تشغيل الكاميرا أو الميكروفون أو وصول إخطار للطوارئ دون اختبار وصلاحية وتأكيد فعلي.</p>
                     </div>
                     <span class="text-[11px] font-mono text-red-400 bg-red-500/10 px-2.5 py-1 rounded-md w-fit">PULSE / PANIC MODE</span>
                 </div>
-            </div>
-
-            <!-- Added explanation: preserve the original modes, colors, and order -->
-            <div class="mt-8 rounded-2xl border border-brand-border bg-brand-dark/80 p-5 sm:p-7">
-                <h3 class="text-lg sm:text-xl font-black text-white mb-3"><i class="fa-solid fa-circle-info text-amber-400 ml-2"></i>كيف تختار الوضع؟ وما المقصود بالنبضة؟</h3>
-                <p class="text-slate-300 text-sm leading-8 mb-4">الأوضاع الأربعة تظل بالترتيب والتصميم الأصليين: <strong class="text-blue-300">الأمان</strong> للمتابعة اليومية، <strong class="text-amber-300">التأهب</strong> لمراجعة حدث يستدعي الانتباه، <strong class="text-emerald-300">الاسترداد</strong> عند فقد الجهاز، و<strong class="text-red-300">الاستغاثة (النبضة)</strong> عند الحاجة إلى طلب مساعدة عاجل.</p>
-                <ol class="list-decimal pr-6 space-y-2 text-slate-300 text-sm leading-7">
-                    <li>يبدأ المستخدم طلب النبضة بنفسه، وتظهر له نافذة العدّ التنازلي والإلغاء بوضوح.</li>
-                    <li>قبل انتهاء المهلة، يمكن إلغاء الطلب إذا كان ذلك هو الاختيار الصحيح.</li>
-                    <li>بعد انتهاء المهلة، يعرض التطبيق حالة الطلب: قيد الإرسال، أُرسل، تعذر الإرسال، أو تأكد الوصول إذا كانت القناة توفر تأكيدًا.</li>
-                    <li>لا تُعرض الصور أو التسجيلات أو الموقع على أنها جُمعت بالفعل إلا إذا كانت الوظيفة مفعّلة ومسموحًا بها، وظهر سجل يثبت النتيجة.</li>
-                </ol>
-                <div class="mt-5 rounded-xl border border-amber-500/30 bg-amber-500/10 p-4 text-amber-100 text-xs sm:text-sm leading-7"><strong>توضيح مهم:</strong> النصوص الأصلية تصف وظائف المنظومة المستهدفة. هذا الشرح لا يدّعي أن كل وظيفة مفعّلة أو مختبرة الآن؛ يجب التحقق من كل وظيفة على جهاز فعلي قبل الإعلان عن جاهزيتها.</div>
             </div>
         </div>
     </section></main><footer class="bg-brand-dark border-t border-brand-border py-12">
