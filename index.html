@@ -414,20 +414,27 @@ body main .bento-card[href$="packages.html"],body main .cards>.card[href="packag
   body main{min-width:0!important;width:100%!important}
   body main .bento-card{min-width:0!important;max-width:100%!important;overflow-wrap:anywhere!important}
   body main .grid{grid-template-columns:minmax(0,1fr)!important}
-  body header nav{min-width:0!important}
+  body header{position:relative!important;top:auto!important}
+  body header>div{height:auto!important;min-height:76px!important;flex-wrap:wrap!important;gap:12px!important;padding-top:12px!important;padding-bottom:12px!important}
+  body header>div>div:first-child{flex:1 1 auto!important}
+  body header>div>div:last-child{flex:0 0 auto!important}
+  body header nav{min-width:0!important;position:static!important;display:flex!important;flex-wrap:wrap!important;justify-content:center!important;gap:8px 14px!important;padding:12px 14px!important}
+  body header nav a{white-space:normal!important;line-height:1.6!important}
+  body main>section:first-child{padding-top:24px!important}
+  body>a[aria-label="Open English version"]{position:static!important;display:inline-flex!important;margin:12px 18px!important;z-index:1!important}
 }
 @media(prefers-reduced-motion:reduce){body main .bento-card{transition:none!important}}
 </style>
 </head><body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
 
     <!-- Development Notice Banner -->
-    <div class="bg-amber-500 border-b border-amber-400 py-2.5 px-4 text-center text-slate-950 text-xs sm:text-sm font-bold sticky top-0 z-[60] shadow-lg">
+    <div class="bg-amber-500 border-b border-amber-400 py-2.5 px-4 text-center text-slate-950 text-xs sm:text-sm font-bold relative z-10 shadow-lg">
         <i class="fa-solid fa-triangle-exclamation ml-1.5 text-amber-400"></i>
         <span>تنبيه: المنظومة لا تزال تحت التطوير المستمر لتقديم أفضل تجربة حماية آمنة متكاملة لك، وسنعلن عن موعد الإطلاق التجريبي قريبًا.</span>
     </div>
 
     <!-- Header / Navbar -->
-    <header class="sticky top-[37px] sm:top-[41px] z-50 backdrop-blur-xl bg-transparent border-b border-brand-border">
+    <header class="relative z-20 backdrop-blur-xl bg-transparent border-b border-brand-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <!-- Brand Logo in Navbar -->
             <div class="flex items-center space-x-3 space-x-reverse">
@@ -567,8 +574,7 @@ body main .bento-card[href$="packages.html"],body main .cards>.card[href="packag
 
 
 <!-- BOB bilingual navigation -->
-<a href="en/index.html" lang="en" dir="ltr" aria-label="Open English version" style="position:fixed;bottom:18px;left:18px;z-index:99999;display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border:1px solid rgba(96,165,250,.7);border-radius:999px;background:rgba(5,12,27,.96);color:#eaf2ff;text-decoration:none;font:700 14px/1.4 Arial,sans-serif;box-shadow:0 8px 26px rgba(0,0,0,.35);backdrop-filter:blur(12px)">English <span aria-hidden="true">↗</span></a>
+<a href="en/index.html" lang="en" dir="ltr" aria-label="Open English version" style="position:static;display:inline-flex;margin:12px 18px;align-items:center;gap:8px;padding:9px 15px;border:1px solid rgba(96,165,250,.7);border-radius:999px;background:rgba(5,12,27,.96);color:#eaf2ff;text-decoration:none;font:700 14px/1.4 Arial,sans-serif;box-shadow:0 8px 26px rgba(0,0,0,.35);backdrop-filter:blur(12px)">English <span aria-hidden="true">↗</span></a>
 
-<!-- BOB bilingual navigation -->
-<a href="en/index.html" lang="en" dir="ltr" aria-label="Open English version" style="position:fixed;bottom:18px;left:18px;z-index:99999;display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border:1px solid rgba(96,165,250,.7);border-radius:999px;background:rgba(5,12,27,.96);color:#eaf2ff;text-decoration:none;font:700 14px/1.4 Arial,sans-serif;box-shadow:0 8px 26px rgba(0,0,0,.35);backdrop-filter:blur(12px)">English <span aria-hidden="true">↗</span></a>
+
 </body></html>
