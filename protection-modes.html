@@ -35,11 +35,11 @@
   body { position: relative; isolation: isolate; }
   body::before {
     content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
-    background-image: linear-gradient(180deg, rgba(7,10,19,.82), rgba(7,10,19,.91)), url("anubis-watermark.svg");
+    background-image: linear-gradient(180deg, rgba(7,10,19,.42), rgba(7,10,19,.58)), url("anubis-watermark.svg");
     background-position: center, center 46%;
     background-size: cover, min(92vw, 900px) auto;
     background-repeat: no-repeat, repeat-y;
-    opacity: .42;
+    opacity: .78;
   }
   body > * { position: relative; z-index: 1; }
   body > header { position: sticky; }
