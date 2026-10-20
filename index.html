@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOB Security | مشروع حماية الهواتف قيد التطوير</title>
-    <meta name="description" content="تعرّف على رؤية BOB Security لحماية الهواتف والبيانات. المشروع قيد التطوير، ويمكنك تسجيل اهتمامك لمعرفة أخبار الإطلاق التجريبي.">
+    <title>الرئيسية | BOB Security</title>
+    <meta name="description" content="تعرف على مشروع BOB Security ورؤيته لحماية الهواتف والبيانات، واستكشف أقسام المنتج في صفحات مستقلة.">
     <meta name="theme-color" content="#070A13">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -34,14 +34,8 @@
     </script>
 </head>
 <body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
-
-    <!-- Development Notice Banner -->
-    <div class="bg-amber-500/20 border-b border-amber-500/30 py-2.5 px-4 text-center text-amber-300 text-xs sm:text-sm font-bold sticky top-0 z-[60] backdrop-blur-lg shadow-lg">
-        <i class="fa-solid fa-triangle-exclamation ml-1.5 text-amber-400"></i>
-        <span>إشعار مهم: BOB Security ما زال قيد التطوير. المزايا المعروضة تصف القدرات المستهدفة ولا تعني أنها متاحة أو مختبرة حاليًا.</span>
-    </div>
-
-    <!-- Header / Navbar -->
+<div class="bg-amber-500/15 border-b border-amber-500/30 py-2.5 px-4 text-center text-amber-200 text-xs sm:text-sm font-bold"><i class="fa-solid fa-circle-info ml-1"></i> BOB Security مشروع قيد التطوير؛ المحتوى يوضح أهدافًا مقترحة ولا يؤكد توافر جميع الوظائف.</div>
+<!-- Header / Navbar -->
     <header class="sticky top-[37px] sm:top-[41px] z-50 backdrop-blur-xl bg-brand-dark/90 border-b border-brand-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <!-- Brand Logo in Navbar -->
@@ -54,14 +48,14 @@
             
             <!-- Navigation Links -->
             <nav class="hidden md:flex items-center space-x-8 space-x-reverse text-sm font-semibold text-slate-300">
-                <a href="#about" class="hover:text-blue-400 transition-colors">عن المنظومة</a>
-                <a href="#how-it-works" class="hover:text-blue-400 transition-colors">إنشاء الحساب والتثبيت</a>
-                <a href="#features-encyclopedia" class="hover:text-blue-400 transition-colors">المزايا والخدمات</a>
-                <a href="#report-bundle" class="hover:text-blue-400 transition-colors">تقرير الأدلة الرقمية</a>
-                <a href="#modes" class="hover:text-blue-400 transition-colors">أوضاع الحماية</a>
-                <a href="#systems" class="hover:text-blue-400 transition-colors">الأنظمة المتاحة</a>
-                <a href="#pricing" class="hover:text-blue-400 transition-colors">الباقات والأسعار</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="hover:text-blue-400 transition-colors">استمارة التسجيل</a>
+                <a href="about.html" class="hover:text-blue-400 transition-colors">عن المنظومة</a>
+                <a href="getting-started.html" class="hover:text-blue-400 transition-colors">إنشاء الحساب والتثبيت</a>
+                <a href="features.html" class="hover:text-blue-400 transition-colors">المزايا والخدمات</a>
+                <a href="digital-evidence.html" class="hover:text-blue-400 transition-colors">تقرير الأدلة الرقمية</a>
+                <a href="protection-modes.html" class="hover:text-blue-400 transition-colors">أوضاع الحماية</a>
+                <a href="plans.html" class="hover:text-blue-400 transition-colors">الأنظمة المتاحة</a>
+                <a href="packages.html" class="hover:text-blue-400 transition-colors">الباقات والأسعار</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="hover:text-blue-400 transition-colors">إبداء الاهتمام</a>
             </nav>
 
             <!-- CTA Action -->
@@ -70,918 +64,80 @@
                     <i class="fa-solid fa-file-pen ml-2"></i> <span>سجّل اهتمامك</span>
                 </a>
             </div>
+            
+        <button id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl border border-brand-border text-slate-200" aria-label="فتح قائمة التنقل">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-brand-border bg-brand-dark px-4 py-4">
+            <nav class="grid grid-cols-2 gap-3 text-sm font-semibold text-slate-300">
+                <a href="index.html" class="rounded-lg p-2 hover:bg-brand-card">الرئيسية</a>
+                <a href="about.html" class="rounded-lg p-2 hover:bg-brand-card">عن المنظومة</a>
+                <a href="getting-started.html" class="rounded-lg p-2 hover:bg-brand-card">رحلة الاستخدام</a>
+                <a href="features.html" class="rounded-lg p-2 hover:bg-brand-card">المزايا المستهدفة</a>
+                <a href="digital-evidence.html" class="rounded-lg p-2 hover:bg-brand-card">الأدلة الرقمية</a>
+                <a href="protection-modes.html" class="rounded-lg p-2 hover:bg-brand-card">أوضاع الحماية</a>
+                <a href="plans.html" class="rounded-lg p-2 hover:bg-brand-card">مسارات المنتج</a>
+                <a href="packages.html" class="rounded-lg p-2 hover:bg-brand-card">الباقات المقترحة</a>
+            </nav>
+        </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative pt-20 pb-28 sm:pt-28 sm:pb-36 overflow-hidden">
-        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/15 via-brand-dark to-brand-dark pointer-events-none"></div>
-        
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <div class="inline-flex items-center space-x-2 space-x-reverse bg-blue-500/10 border border-blue-500/20 px-4 py-1.5 rounded-full text-blue-400 text-xs sm:text-sm font-semibold mb-6">
-                <i class="fa-solid fa-shield-check"></i>
-                <span>مشروع تقني قيد التطوير — تحديثات الإطلاق أولًا بأول</span>
-            </div>
-            
-            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white max-w-3xl mx-auto leading-snug sm:leading-tight mb-6">
-                نعمل على بناء طبقات حماية أفضل للهاتف والبيانات <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">بوضوح وشفافية</span>
-            </h1>
-            
-            <p class="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-                BOB Security مشروع لحماية الهواتف ونقاط النهاية. نطوّر حاليًا التصور التقني ونختبر المكونات تدريجيًا؛ وسنوضح ما أصبح متاحًا فعليًا بعد التحقق منه.
-            </p>
+    
 
-            <div class="flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-4 sm:space-x-reverse">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-bold text-base px-8 py-4 rounded-xl shadow-xl shadow-blue-600/30 transition-all flex items-center justify-center">
-                    <i class="fa-solid fa-file-pen ml-2 text-xl"></i> سجّل اهتمامك بالإطلاق التجريبي
-                </a>
-                <a href="#systems" class="w-full sm:w-auto bg-brand-card hover:bg-slate-800 text-slate-300 border border-brand-border font-bold text-base px-8 py-4 rounded-xl transition-all flex items-center justify-center">
-                    استعرض الأنظمة المتاحة
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Introductory & Core Platform Section -->
-    <section id="about" class="py-16 bg-brand-card/20 border-t border-brand-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Platform Introduction -->
-            <div class="bg-brand-card p-8 sm:p-10 rounded-3xl border border-brand-border mb-12 relative overflow-hidden">
-                <div class="absolute -right-10 -top-10 w-60 h-60 bg-blue-500/5 rounded-full blur-3xl pointer-events-none"></div>
-                <div class="max-w-3xl">
-                    <div class="inline-flex items-center space-x-2 space-x-reverse text-blue-400 text-xs font-mono bg-blue-500/10 px-3 py-1 rounded-md mb-4">
-                        <i class="fa-solid fa-circle-info"></i>
-                        <span>نظرة تعريفية مبسطة</span>
-                    </div>
-                    <h2 class="text-2xl sm:text-3xl font-black text-white mb-4">🛡️ ما مشروع BOB Security؟</h2>
-                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-                        <strong>BOB Security</strong> مشروع قيد التطوير يهدف إلى بناء منظومة لحماية الهواتف والبيانات، مع تصور للربط بلوحة تحكم. لا تُعد الخدمات أو الوظائف المذكورة في هذه الصفحة متاحة للاستخدام العام إلا إذا أُعلن عن إطلاقها واختبارها رسميًا.
-                    </p>
-
-                    <!-- ENLARGED & PROMINENT THEFT EMERGENCY BOX -->
-                    <div class="py-6 px-7 my-8 border-2 border-amber-500/60 bg-gradient-to-r from-amber-950/40 via-brand-dark to-amber-950/30 rounded-2xl shadow-xl shadow-amber-500/10 relative overflow-hidden">
-                        <div class="absolute -left-6 -bottom-6 text-amber-500/10 text-8xl pointer-events-none">
-                            <i class="fa-solid fa-triangle-exclamation"></i>
-                        </div>
-                        <h3 class="text-lg sm:text-2xl font-black text-amber-400 mb-3 flex items-center">
-                            <i class="fa-solid fa-triangle-exclamation ml-3 text-amber-400 text-xl sm:text-2xl animate-pulse"></i> 
-                            <span>ما الذي نعمل على توفيره عند فقدان الهاتف؟</span>
-                        </h3>
-                        <p class="text-slate-100 text-sm sm:text-lg font-bold leading-relaxed">
-                            الهدف هو إتاحة مسار واضح للمساعدة عند فقدان الهاتف، لكن لوحة التحكم والربط عن بُعد لا يُعلَن عن جاهزيتهما قبل اكتمال التطوير والاختبارات. عند الإطلاق سننشر خطوات الاستخدام والوظائف المدعومة فعليًا.
-                        </p>
-                    </div>
-
-                    <!-- Embedded Simplified Privacy Notice -->
-                    <div class="pt-2">
-                        <h3 class="text-base font-bold text-blue-400 mb-2 flex items-center">
-                            <i class="fa-solid fa-user-lock ml-2 text-emerald-400"></i> الخصوصية والسيادة المطلقة لبياناتك
-                        </h3>
-                        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
-                            الخصوصية وتقليل جمع البيانات والتشفير من متطلبات التصميم المستهدفة للمشروع. لا نقدّم في هذه المرحلة ادعاءً بأن التشفير الشامل أو أي ضمان أمني قد نُفّذ أو خضع لتدقيق مستقل؛ وسيُنشر وصف الضوابط الفعلية بعد تنفيذها واختبارها.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 1: Account Creation, Registration & Installation Lifecycle -->
-    <section id="how-it-works" class="py-16 bg-brand-dark border-t border-brand-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-14">
-                <div class="inline-flex items-center space-x-2 space-x-reverse bg-emerald-500/10 border border-emerald-500/20 px-4 py-1.5 rounded-full text-emerald-400 text-xs sm:text-sm font-semibold mb-4">
-                    <i class="fa-solid fa-download"></i>
-                    <span>REGISTRATION & INSTALLATION LIFECYCLE</span>
-                </div>
-                <h2 class="text-2xl sm:text-4xl font-black text-white mb-3">رحلة الاستخدام المستهدفة بعد الإطلاق</h2>
-                <p class="text-slate-400 text-sm sm:text-base">يوضح هذا القسم تصورًا مبدئيًا لرحلة الاستخدام بعد الإطلاق. قد تتغير الخطوات بحسب نتائج التطوير والاختبارات والتوافق مع أنظمة التشغيل.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                <!-- Step 1: Account Creation & Registration -->
-                <div class="bg-brand-card p-6 rounded-2xl border border-brand-border relative">
-                    <span class="text-3xl font-black text-blue-500/30 absolute top-4 left-4">01</span>
-                    <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg mb-4">
-                        <i class="fa-solid fa-user-plus"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-white mb-2">1. إنشاء الحساب والتسجيل</h3>
-                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        تنشئ حسابك الموحد والآمن عبر المنصة الرسمية أو التطبيق أو رمز QR للموزع المعتمد، مع توثيق المصادقة القوية واختيار مسار الحساب (أفراد، عائلة، أو مؤسسات) لضمان السيادة الكاملة والربط باللوحة السحابية.
-                    </p>
-                </div>
-
-                <!-- Step 2: Installation & Capability Preflight -->
-                <div class="bg-brand-card p-6 rounded-2xl border border-brand-border relative">
-                    <span class="text-3xl font-black text-emerald-500/30 absolute top-4 left-4">02</span>
-                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg mb-4">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-white mb-2">2. التثبيت وفحص القدرات</h3>
-                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        تثبت التطبيق على هاتفك، ليقوم "محرك فحص القدرات" فوراً وبشكل آلي بالتحقق من إصدار أندرويد والصلاحيات وإمكانات الجهاز، لتحديد الوظائف المتاحة بصدق وشفافية ودون أي وعود وهمية.
-                    </p>
-                </div>
-
-                <!-- Step 3: Activation & Daily Security -->
-                <div class="bg-brand-card p-6 rounded-2xl border border-brand-border relative">
-                    <span class="text-3xl font-black text-purple-500/30 absolute top-4 left-4">03</span>
-                    <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-lg mb-4">
-                        <i class="fa-solid fa-shield-heart"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-white mb-2">3. التفعيل والحماية اليومية</h3>
-                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        يعمل التطبيق في خلفية الهاتف بوضع الأمان الهادئ والموفر للطاقة ليوفر حماية مستمرة ومراقبة مشبوهات خفيفة دون التأثير على أداء الجهاز.
-                    </p>
-                </div>
-
-                <!-- Step 4: Response & Control -->
-                <div class="bg-brand-card p-6 rounded-2xl border border-brand-border relative">
-                    <span class="text-3xl font-black text-amber-500/30 absolute top-4 left-4">04</span>
-                    <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-lg mb-4">
-                        <i class="fa-solid fa-headset"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-white mb-2">4. الاستجابة والسيطرة</h3>
-                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        عند حدوث حدث أمني مشبوه كمثل إدخال النمط ثلاث مرات متتالية خطأ أو حدوث أي نشاط مريب، تتحول المنظومة فوراً إلى وضع التأهب، وعند استكمال إجراءات وضع التأهب تتحول إلى وضع الاسترداد الذي يمنحك التحكم الكامل على لوحتك السحابية واستخراج حزمة أدلتك الرقمية الموثقة.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Early Reservation Form Link Placed Directly Under Section 1 -->
-            <div class="text-center pt-4">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="inline-flex items-center text-blue-400 hover:text-blue-300 font-bold text-sm sm:text-base transition-colors bg-brand-card/80 px-6 py-3 rounded-2xl border border-blue-500/30 shadow-lg">
-                    <span>👉 يمكنك عمل استمارة الحجز المبكر للاشتراك في المنظومة من هنا</span>
-                    <i class="fa-solid fa-arrow-left mr-2.5"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION: FEATURES ENCYCLOPEDIA (NEWLY INTEGRATED FULL SPECIFICATIONS) -->
-    <section id="features-encyclopedia" class="py-20 bg-gradient-to-b from-brand-dark via-brand-card/30 to-brand-dark border-t border-brand-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <div class="inline-flex items-center space-x-2 space-x-reverse bg-blue-500/10 border border-blue-500/20 px-4 py-1.5 rounded-full text-blue-400 text-xs sm:text-sm font-semibold mb-4">
-                    <i class="fa-solid fa-list-check"></i>
-                    <span>COMPREHENSIVE TECHNICAL ENCYCLOPEDIA</span>
-                </div>
-                <h2 class="text-2xl sm:text-4xl font-black text-white mb-4 leading-tight">
-                    القدرات المستهدفة في مشروع BOB Security
-                </h2>
-                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-                    يعرض هذا القسم أهدافًا وميزات مقترحة قيد الدراسة والتطوير، وليس قائمة بوظائف متاحة حاليًا. ستُحدّث المعلومات بعد تنفيذ كل ميزة والتحقق منها.
-                </p>
-            </div>
-
-            <!-- Detailed Capability Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                <!-- Cap 1: Live GPS & Historical Route -->
-                <div class="bg-brand-card p-6 rounded-3xl border border-brand-border hover:border-blue-500/50 transition-all">
-                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-location-crosshairs"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">التتبع الجغرافي المباشر وسجل حركة الجهاز</h3>
-                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        تحديد الموقع اللحظي الدقيق على الخرائط التفاعلية، مع توثيق مسار الحركة التاريخي والتوقيتات والأماكن التي تواجد فيها الهاتف بدقة متناهية.
-                    </p>
-                </div>
-
-                <!-- Cap 2: Sequential Cam & 20s Video -->
-                <div class="bg-brand-card p-6 rounded-3xl border border-brand-border hover:border-emerald-500/50 transition-all">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-video"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">التوثيق البصري (كاميرا متسلسلة وفيديو 20ث)</h3>
-                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        التقاط صور متتابعة آلياً عبر الكاميرا الأمامية والخلفية، مع تسجيل مقطع فيديو أمني مدته **20 ثانية** لتوثيق محيط الهاتف مع عرض إشعار شفافية بصري للمستخدم.
-                    </p>
-                </div>
-
-                <!-- Cap 3: Ambient Audio Surveillance -->
-                <div class="bg-brand-card p-6 rounded-3xl border border-brand-border hover:border-purple-500/50 transition-all">
-                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-microphone-lines"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">التسجيل الصوتي المحيط المشفر</h3>
-                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        تسجيل الأصوات والحوارات المحيطة بالجهاز في فترات الطوارئ للتعرف على هوية السارق والمكان، مع التشفير التام ومنع الاطلاع الخارجي.
-                    </p>
-                </div>
-
-                <!-- Cap 4: Siren Alert Overcoming Silent -->
-                <div class="bg-brand-card p-6 rounded-3xl border border-brand-border hover:border-amber-500/50 transition-all">
-                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-volume-high"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">الإنذار الصوتي الترهيبي (تجاوز الصامت)</h3>
-                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        إطلاق صفارات إنذار مرتفعة الشدة حتى في حال تفعيل وضع الصامت (`Silent`) أو عدم الإزعاج (`DND`) لإرباك السارق وتحديد موقعه.
-                    </p>
-                </div>
-
-                <!-- Cap 5: Smart Lock & Anti-Shutdown -->
-                <div class="bg-brand-card p-6 rounded-3xl border border-brand-border hover:border-red-500/50 transition-all">
-                    <div class="w-12 h-12 rounded-xl bg-red-500/10 text-red-400 flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-power-off"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">القفل الذكي وحظر إيقاف التشغيل</h3>
-                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        منع السارق من إيقاف تشغيل الهاتف أو تفعيل وضع الطيران (`Airplane Mode`) وقفل الشاشة فورياً بكلمة مرور سريّة يتم تحكم بها عن بُعد.
-                    </p>
-                </div>
-
-                <!-- Cap 6: Remote Data Wipe -->
-                <div class="bg-brand-card p-6 rounded-3xl border border-brand-border hover:border-indigo-500/50 transition-all">
-                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-trash-can"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">تأمين ومسح البيانات الحساسة عن بُعد</h3>
-                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        مسح الحسابات والبيانات الحساسة أو إغلاق التطبيقات المحمية بضغطة واحدة من لوحة التحكم لمنع تسريب المعلومات الشخصية والمالية.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Full Master Features Comparison Table -->
-            <div class="bg-brand-card rounded-3xl border border-brand-border p-6 sm:p-8 overflow-x-auto">
-                <h3 class="text-xl font-bold text-white mb-6 flex items-center">
-                    <i class="fa-solid fa-table-cells ml-3 text-blue-400"></i> جدول المقارنة الشامل للميزات والوظائف بحسب الأنظمة
-                </h3>
-                <table class="w-full text-xs sm:text-sm text-right text-slate-300">
-                    <thead class="bg-brand-dark text-slate-100 font-bold border-b border-brand-border">
-                        <tr>
-                            <th class="p-4 rounded-r-xl">الوظيفة / الميزة الفنية</th>
-                            <th class="p-4 text-center">النظام المجاني (BOB Public)</th>
-                            <th class="p-4 text-center">نظام الأفراد (Guard Personal)</th>
-                            <th class="p-4 text-center">نظام الأسرة (Family Protection)</th>
-                            <th class="p-4 text-center rounded-l-xl">نظام المؤسسات (Guard Managed)</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-brand-border/60">
-                        <tr>
-                            <td class="p-4 font-semibold text-white">تحديد الموقع الجغرافي والتتبع</td>
-                            <td class="p-4 text-center text-slate-400">آخر موقع معروف</td>
-                            <td class="p-4 text-center text-emerald-400">مباشر + سجل حركة لحظي</td>
-                            <td class="p-4 text-center text-purple-400">مباشر لكافة أجهزة العائلة</td>
-                            <td class="p-4 text-center text-amber-400">تتبع + مناطق جغرافية (Geofencing)</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 font-semibold text-white">التوثيق الحسي البصري (كاميرات)</td>
-                            <td class="p-4 text-center text-slate-500">✕</td>
-                            <td class="p-4 text-center text-emerald-400">صور متسلسلة (أمامي وخلفي)</td>
-                            <td class="p-4 text-center text-purple-400">صور متسلسلة للأسرة</td>
-                            <td class="p-4 text-center text-amber-400">توثيق حسي مؤسسي كامل</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 font-semibold text-white">فيديو الأمان الموثق (20 ثانية)</td>
-                            <td class="p-4 text-center text-slate-500">✕</td>
-                            <td class="p-4 text-center text-emerald-400">تسجيل مشفر وموثق</td>
-                            <td class="p-4 text-center text-purple-400">مشارك مع الحساب الأبوي</td>
-                            <td class="p-4 text-center text-amber-400">مخزن سحابياً بسلسلة حيازة</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 font-semibold text-white">التسجيل الصوتي المحيط</td>
-                            <td class="p-4 text-center text-slate-500">✕</td>
-                            <td class="p-4 text-center text-emerald-400">مقاطع محددة أثناء الطوارئ</td>
-                            <td class="p-4 text-center text-purple-400">عند تفعيل وضع الاستغاثة</td>
-                            <td class="p-4 text-center text-amber-400">حسب سياسات المنشأة</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 font-semibold text-white">صفارة الإنذار وتجاوز الصامت</td>
-                            <td class="p-4 text-center text-slate-400">تنبيه عادي</td>
-                            <td class="p-4 text-center text-emerald-400">شدة مرتفعة (تجاوز DND)</td>
-                            <td class="p-4 text-center text-purple-400">لكافة أجهزة العائلة</td>
-                            <td class="p-4 text-center text-amber-400">إنذار إداري مع Lost Mode</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 font-semibold text-white">حظر إيقاف التشغيل وeSIM</td>
-                            <td class="p-4 text-center text-slate-500">✕</td>
-                            <td class="p-4 text-center text-emerald-400">قفل ذكي + حماية الشريحة</td>
-                            <td class="p-4 text-center text-purple-400">قفل ذكي لأجهزة الأبناء</td>
-                            <td class="p-4 text-center text-amber-400">إدارة كاملة عبر Android Enterprise</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 font-semibold text-white">حزمة الأدلة الرقمية (PDF & QR)</td>
-                            <td class="p-4 text-center text-slate-500">✕</td>
-                            <td class="p-4 text-center text-emerald-400">تقرير موثق ببصمة SHA-256</td>
-                            <td class="p-4 text-center text-purple-400">تقارير موثقة لأفراد الأسرة</td>
-                            <td class="p-4 text-center text-amber-400">سلسلة حيازة رسمية للشركات</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 font-semibold text-white">التشفير التام والخصوصية (E2EE)</td>
-                            <td class="p-4 text-center text-emerald-400"><i class="fa-solid fa-check"></i></td>
-                            <td class="p-4 text-center text-emerald-400"><i class="fa-solid fa-check"></i></td>
-                            <td class="p-4 text-center text-purple-400"><i class="fa-solid fa-check"></i></td>
-                            <td class="p-4 text-center text-amber-400"><i class="fa-solid fa-check"></i></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <!-- Digital Technical Report & Evidence Bundle Section -->
-    <section id="report-bundle" class="py-20 bg-gradient-to-b from-brand-dark via-brand-card/60 to-brand-dark border-t border-brand-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <!-- Section Header & Landing Page Hero -->
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <div class="inline-flex items-center space-x-2 space-x-reverse bg-blue-500/10 border border-blue-500/20 px-4 py-1.5 rounded-full text-blue-400 text-xs sm:text-sm font-semibold mb-4">
-                    <i class="fa-solid fa-box-archive"></i>
-                    <span>DIGITAL EVIDENCE BUNDLE</span>
-                </div>
-                <h2 class="text-2xl sm:text-4xl font-black text-white mb-4 leading-tight">
-                    التصور المستهدف للتقارير الفنية وحزمة الأدلة الرقمية
-                </h2>
-                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-                    يستهدف التصميم تنظيم بيانات الحوادث في تقارير قابلة للفحص. لا تمثل هذه الصفحة ضمانًا لقبول قانوني أو حجية قضائية؛ فذلك يتوقف على التنفيذ الفعلي والتحقق الفني والإجراءات القانونية المختصة.
-                </p>
-            </div>
-
-            <!-- Key Features Bullets Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-                <div class="bg-brand-dark p-6 rounded-2xl border border-brand-border hover:border-blue-500/50 transition-all">
-                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-fingerprint"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-white mb-2">أدلة رقمية ببصمات فريدة</h3>
-                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        كل ملف صوتي، صورة، أو فيديو يحمل بصمة رقمية مشفرة ومعرف فريد (Verification ID) لضمان عدم التلاعب.
-                    </p>
-                </div>
-
-                <div class="bg-brand-dark p-6 rounded-2xl border border-brand-border hover:border-emerald-500/50 transition-all">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-file-contract"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-white mb-2">تقرير رسمي متكامل (PDF)</h3>
-                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        يضم التقرير الرسمي، الخط الزمني الدقيق للحدث، خريطة المواقع، وسجلات الأوامر والنتائج.
-                    </p>
-                </div>
-
-                <div class="bg-brand-dark p-6 rounded-2xl border border-brand-border hover:border-purple-500/50 transition-all">
-                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-link"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-white mb-2">سلسلة حيازة وتعامل آمنة</h3>
-                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        حماية تامة للأصول الأصلية مقابل نسخ العرض (Chain of Custody)، مع ملف Evidence Manifest بتوقيع رقمي معتمد.
-                    </p>
-                </div>
-
-                <div class="bg-brand-dark p-6 rounded-2xl border border-brand-border hover:border-amber-500/50 transition-all">
-                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-qrcode"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-white mb-2">تحقق فوري عبر QR Code</h3>
-                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        إمكانية التحقق من صحة أي تقرير أو مرفق بشكل فوري لضمان الحجية الفنية وسلامة الأرشيف.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Technical & Operational Deep-Dive Container -->
-            <div class="bg-brand-card p-8 sm:p-10 rounded-3xl border border-blue-500/30 relative">
-                <div class="flex items-center space-x-3 space-x-reverse mb-8 border-b border-brand-border pb-6">
-                    <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg border border-blue-500/20">
-                        <i class="fa-solid fa-microchip"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-xl sm:text-2xl font-bold text-white">ثانياً: التفاصيل الفنية والتشغيلية الشاملة للمنظومة</h3>
-                        <p class="text-slate-400 text-xs sm:text-sm">المرجع الفني التفصيلي لحزمة الأدلة الرقمية لضمان التطابق التام مع المواصفات المرجعية.</p>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-xs sm:text-sm leading-relaxed">
-                    
-                    <!-- Item 1 & 2 -->
-                    <div class="space-y-6">
-                        <div class="bg-brand-dark p-6 rounded-2xl border border-brand-border">
-                            <h4 class="font-bold text-blue-400 mb-3 text-base flex items-center">
-                                <i class="fa-solid fa-scale-balanced ml-2"></i> 1. طبيعة ومفهوم التقرير الفني
-                            </h4>
-                            <ul class="space-y-2 text-slate-300">
-                                <li class="flex items-start"><i class="fa-solid fa-angle-left text-blue-500 ml-2 mt-1"></i><span>التقرير فني تقني قابل للتحقق والفحص، وليس حكماً قضائياً بحد ذاته.</span></li>
-                                <li class="flex items-start"><i class="fa-solid fa-angle-left text-blue-500 ml-2 mt-1"></i><span>يربط بدقة بين الموقع، الخط الزمني، الأوامر، النتائج، الوسائط البصرية والصوتية، البصمات، والسجلات التقنية التي توفرت فعلياً أثناء الحادث.</span></li>
-                            </ul>
-                        </div>
-
-                        <div class="bg-brand-dark p-6 rounded-2xl border border-brand-border">
-                            <h4 class="font-bold text-emerald-400 mb-3 text-base flex items-center">
-                                <i class="fa-solid fa-cubes ml-2"></i> 2. مكونات حزمة الأدلة الرقمية الموحدة
-                            </h4>
-                            <ul class="space-y-2.5 text-slate-300">
-                                <li class="flex items-start"><i class="fa-solid fa-check text-emerald-400 ml-2 mt-1"></i><span><strong>التقرير الرسمي PDF:</strong> يتضمن التقرير المكتمل والمنظم.</span></li>
-                                <li class="flex items-start"><i class="fa-solid fa-check text-emerald-400 ml-2 mt-1"></i><span><strong>الملفات المرئية والمسموعة:</strong> الصور الأمامية والخلفية (متسلسلة)، مقاطع الفيديو (20 ثانية)، والتسجيلات الصوتية المرتبطة بالحادث.</span></li>
-                                <li class="flex items-start"><i class="fa-solid fa-check text-emerald-400 ml-2 mt-1"></i><span><strong>ملف Evidence Manifest:</strong> ملف تنظيمي يحوي بيانات الحزمة ويحمل توقيعاً رقمياً معتمداً.</span></li>
-                                <li class="flex items-start"><i class="fa-solid fa-check text-emerald-400 ml-2 mt-1"></i><span><strong>البصمات الرقمية (Digital Fingerprints):</strong> بصمة فريدة لكل ملف فردي، بصمة التقرير PDF، وبصمة ملف الأرشيف النهائي (ZIP).</span></li>
-                                <li class="flex items-start"><i class="fa-solid fa-check text-emerald-400 ml-2 mt-1"></i><span><strong>معرف التحقق وQR Code:</strong> لسهولة التحقق من صحة أي مرفق منفرد أو الحزمة كاملة.</span></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Item 3 & 4 -->
-                    <div class="space-y-6">
-                        <div class="bg-brand-dark p-6 rounded-2xl border border-brand-border">
-                            <h4 class="font-bold text-purple-400 mb-3 text-base flex items-center">
-                                <i class="fa-solid fa-shield-halved ml-2"></i> 3. ضمانات النزاهة وسلسلة التعامل مع الأدلة
-                            </h4>
-                            <ul class="space-y-2.5 text-slate-300">
-                                <li class="flex items-start"><i class="fa-solid fa-lock text-purple-400 ml-2 mt-1"></i><span><strong>عدم الاعتماد على Metadata وحدها:</strong> بناء التحقق على محتوى الملفات وبصماتها الرياضية المشفرة.</span></li>
-                                <li class="flex items-start"><i class="fa-solid fa-lock text-purple-400 ml-2 mt-1"></i><span><strong>قاعدة عدم فقد الأصل:</strong> فصل تام بين الأصول الرقمية الخام ونسخ المعاينة أو التصدير (Original vs. Presentation Copy).</span></li>
-                                <li class="flex items-start"><i class="fa-solid fa-lock text-purple-400 ml-2 mt-1"></i><span><strong>الحماية من استبدال المرفقات:</strong> منع أي محاولة لتعديل السجلات أو تبديل الملفات بفضل المعرفات الفرعية والتوقيع الرقمي.</span></li>
-                            </ul>
-                        </div>
-
-                        <div class="bg-brand-dark p-6 rounded-2xl border border-brand-border">
-                            <h4 class="font-bold text-amber-400 mb-3 text-base flex items-center">
-                                <i class="fa-solid fa-diagram-project ml-2"></i> 4. واجهات الأدلة ودورات العمل المرتبطة
-                            </h4>
-                            <ul class="space-y-2.5 text-slate-300">
-                                <li class="flex items-start"><i class="fa-solid fa-circle-play text-amber-400 ml-2 mt-1"></i><span><strong>الدورات التشغيلية المعتمدة:</strong> يدعم النظام دورات متكاملة تشمل: المعاينة (Preview)، الإصدار (Issue)، التصدير (Export)، إعادة الإصدار (Reissue)، التنزيل (Download)، والتحقق (Verify).</span></li>
-                                <li class="flex items-start"><i class="fa-solid fa-circle-play text-amber-400 ml-2 mt-1"></i><span><strong>صلاحيات الاستعراض الفوري:</strong> يتيح للمالك المصرح له استعراض خريطة آخر موقع، الخط الزمني، معرض الأدلة، التحقق من البصمات، السجل التقني، وحتى حالة التوقيع والختم الرقمي وفقاً للحالة الفعلية للبيانات.</span></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Added Privacy & End-to-End Encryption Clause -->
-                <div class="mt-8 pt-6 border-t border-brand-border bg-brand-dark/50 p-6 rounded-2xl border border-blue-500/20">
-                    <h4 class="text-base font-bold text-blue-400 mb-2 flex items-center">
-                        <i class="fa-solid fa-user-lock ml-2 text-emerald-400"></i> 🔒 متطلبات الخصوصية والتشفير المستهدفة
-                    </h4>
-                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
-                        يستهدف المشروع حماية البيانات وتقليل الوصول إليها وتطبيق التشفير المناسب. ستُعلن تفاصيل التنفيذ وحدود الوصول بعد بنائها واختبارها؛ ولا ندّعي في هذه المرحلة اكتمال هذه الضوابط أو مراجعتها بصورة مستقلة.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Four Protection Modes Section -->
-    <section id="modes" class="py-20 bg-brand-card/40 border-t border-b border-brand-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-14">
-                <h2 class="text-2xl sm:text-4xl font-black text-white mb-3">أوضاع الحماية التشغيلية</h2>
-                <p class="text-slate-400 text-sm sm:text-base">يتكيف النظام ذكيّاً مع حالتك الأمنية عبر أنماط تشغيل متقدمة مصممة لأعلى درجات الموثوقية.</p>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Mode 1: Security Mode -->
-                <div class="bg-brand-dark p-6 rounded-2xl border border-brand-border hover:border-blue-500/50 transition-all group flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-5">
-                            <i class="fa-solid fa-shield-virus"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white mb-2">وضع الأمان</h3>
-                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
-                            خط الأساس الدائم للحماية في المنظومة. يراقب حالة التطبيق، سلامة الحساب والاتصال، صلاحيات التطبيق، حالة البطارية، وسلامة نسخة التطبيق (Play Integrity)، مع توجيه المستخدم لـ eSIM وتطبيق الإعدادات المدعومة.
-                        </p>
-                    </div>
-                    <span class="text-[11px] font-mono text-blue-400 bg-blue-500/10 px-2.5 py-1 rounded-md w-fit">SECURITY MODE</span>
-                </div>
-
-                <!-- Mode 2: Alert Mode -->
-                <div class="bg-brand-dark p-6 rounded-2xl border border-brand-border hover:border-amber-500/50 transition-all group flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-5">
-                            <i class="fa-solid fa-triangle-exclamation"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white mb-2">وضع التأهب</h3>
-                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
-                            تصعيد أمني بعد حدث يرفع مستوى الاستجابة. يطلب أحدث موقع مسموح، يزيد معدل التحقق من الاتصال ضمن حدود الطاقة، ويشغل المصيدة البصرية والتوثيق الحسي عند توفر محفز رسمي دون مراقبة مستمرة.
-                        </p>
-                    </div>
-                    <span class="text-[11px] font-mono text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-md w-fit">ALERT MODE</span>
-                </div>
-
-                <!-- Mode 3: Recovery Mode -->
-                <div class="bg-brand-dark p-6 rounded-2xl border border-brand-border hover:border-emerald-500/50 transition-all group flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-5">
-                            <i class="fa-solid fa-rotate"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white mb-2">وضع الاسترداد</h3>
-                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
-                            غرفة العمليات بعد الفقد أو السرقة. يختار الأوامر حسب مستوى الجهاز (شخصي أو مؤسسي)، ويشمل تحديد الموقع، الإنذار الصوتي، حزمة التوثيق الحسي المعلمة، وأوامر Android Enterprise الرسمية (Lost Mode والمسح).
-                        </p>
-                    </div>
-                    <span class="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md w-fit">RECOVERY MODE</span>
-                </div>
-
-                <!-- Mode 4: Pulse / Panic Mode -->
-                <div class="bg-brand-dark p-6 rounded-2xl border border-brand-border hover:border-red-500/50 transition-all group flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 rounded-xl bg-red-500/10 text-red-400 flex items-center justify-center text-xl mb-5">
-                            <i class="fa-solid fa-bell-slash"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white mb-2">وضع الاستغاثة (النبضة)</h3>
-                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
-                            مسار الاستغاثة السريعة. يضم نافذة إلغاء حاكمة (10 ثوانٍ)، وتوثيقاً حسياً آلياً متسلسلاً (صور وفيديوهات وأصوات)، وقنوات إخطار مستقلة وموثقة لجهات الطوارئ.
-                        </p>
-                    </div>
-                    <span class="text-[11px] font-mono text-red-400 bg-red-500/10 px-2.5 py-1 rounded-md w-fit">PULSE / PANIC MODE</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Available Systems Section -->
-    <section id="systems" class="py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-2xl sm:text-4xl font-black text-white mb-3">مسارات الاستخدام المقترحة للأفراد والأسرة والمؤسسات</h2>
-                <p class="text-slate-400 text-sm sm:text-base">هذه مسارات مقترحة ضمن خطة المنتج. لم يبدأ الإطلاق العام بعد، وقد تتغير الوظائف والتوافر بعد الاختبارات.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- System 0: Free System -->
-                <div class="bg-brand-dark p-6 rounded-3xl border border-brand-border flex flex-col justify-between hover:border-blue-500/50 transition-all">
-                    <div>
-                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-5">
-                            <i class="fa-solid fa-gift"></i>
-                        </div>
-                        <span class="text-[11px] font-mono text-blue-400 bg-blue-500/10 px-2.5 py-1 rounded-md">FREE SYSTEM</span>
-                        <h3 class="text-xl font-bold text-white mt-3 mb-3">النظام المجاني</h3>
-                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
-                            المدخل الأساسي المجاني بالكامل للمستخدمين الجدد للتعرف على كفاءة المنظومة واكتشاف أدوات الأمان الأولية.
-                        </p>
-                        <ul class="space-y-2.5 text-xs sm:text-sm text-slate-300 mb-6">
-                            <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-blue-400"></i><span>حماية التهديدات والمخاطر اليومية</span></li>
-                            <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-blue-400"></i><span>اطلاع واستكشاف وحدات النظام</span></li>
-                            <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-blue-400"></i><span>بدون أي تكلفة مالية أو التزامات</span></li>
-                        </ul>
-                    </div>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="w-full bg-brand-card hover:bg-slate-800 text-white font-bold py-3 rounded-xl border border-brand-border text-center text-xs transition-all">سجّل اهتمامك</a>
-                </div>
-
-                <!-- System 1: Guard Personal -->
-                <div class="bg-brand-dark p-6 rounded-3xl border border-brand-border flex flex-col justify-between hover:border-emerald-500/50 transition-all">
-                    <div>
-                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-5">
-                            <i class="fa-solid fa-user-shield"></i>
-                        </div>
-                        <span class="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md">GUARD PERSONAL</span>
-                        <h3 class="text-xl font-bold text-white mt-3 mb-3">نظام الأفراد</h3>
-                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
-                            مخصص لحماية الهواتف الشخصية والبيانات الخاصة. يعتمد على المسار الشخصي الأساسي الذي يراقب سلامة التطبيق، إدارة الجلسات، التنبيهات، والتحقق من سلامة البيئة والتثبيت.
-                        </p>
-                        <ul class="space-y-2.5 text-xs sm:text-sm text-slate-300 mb-6">
-                            <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-emerald-400"></i><span>حماية بيانات BOB الشخصية والاتصال</span></li>
-                            <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-emerald-400"></i><span>تفعيل وضع الاسترداد الشخصي الشامل</span></li>
-                            <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-emerald-400"></i><span>التحقق الدوري من سلامة البيئة والتثبيت</span></li>
-                        </ul>
-                    </div>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="w-full bg-brand-card hover:bg-slate-800 text-white font-bold py-3 rounded-xl border border-brand-border text-center text-xs transition-all">سجّل اهتمامك</a>
-                </div>
-
-                <!-- System 2: Family Protection -->
-                <div class="bg-brand-dark p-6 rounded-3xl border border-brand-border flex flex-col justify-between hover:border-purple-500/50 transition-all">
-                    <div>
-                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-5">
-                            <i class="fa-solid fa-people-roof"></i>
-                        </div>
-                        <span class="text-[11px] font-mono text-purple-400 bg-purple-500/10 px-2.5 py-1 rounded-md">FAMILY PROTECTION</span>
-                        <h3 class="text-xl font-bold text-white mt-3 mb-3">نظام الأسرة</h3>
-                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
-                            إطار متكامل يربط أجهزة أفراد العائلة تحت إشراف وتنسيق أمني مركزي لمتابعة الحالة الأمنية وإدارة التنبيهات والنبضات الطارئة للأسرة.
-                        </p>
-                        <ul class="space-y-2.5 text-xs sm:text-sm text-slate-300 mb-6">
-                            <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-purple-400"></i><span>متابعة جماعية آمنة لأجهزة العائلة</span></li>
-                            <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-purple-400"></i><span>إدارة استغاثات النبضة المرتبطة بالقنوات المعتمدة</span></li>
-                            <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-purple-400"></i><span>أمان عائلي متكامل مع الحفاظ على الخصوصية</span></li>
-                        </ul>
-                    </div>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="w-full bg-brand-card hover:bg-slate-800 text-white font-bold py-3 rounded-xl border border-brand-border text-center text-xs transition-all">سجّل اهتمامك</a>
-                </div>
-
-                <!-- System 3: Guard Managed -->
-                <div class="bg-brand-dark p-6 rounded-3xl border border-brand-border flex flex-col justify-between hover:border-amber-500/50 transition-all">
-                    <div>
-                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-5">
-                            <i class="fa-solid fa-building-shield"></i>
-                        </div>
-                        <span class="text-[11px] font-mono text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-md">GUARD MANAGED</span>
-                        <h3 class="text-xl font-bold text-white mt-3 mb-3">نظام المؤسسات والشركات</h3>
-                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
-                            مخصص لحماية هواتف الكيانات والشركات، طبقاً لسياسات الإدارة الرسمية والتحكمات المركزية (Android Enterprise).
-                        </p>
-                        <ul class="space-y-2.5 text-xs sm:text-sm text-slate-300 mb-6">
-                            <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-amber-400"></i><span>تطبيق القيود والأجهزة المُدارة وصلاحيات USB</span></li>
-                            <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-amber-400"></i><span>أوامر الاسترداد المؤسسي (القفل الإداري، Lost Mode، المسح)</span></li>
-                            <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-amber-400"></i><span>إدارة شرائح eSIM وسلسلة الحيازة للأدلة</span></li>
-                        </ul>
-                    </div>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="w-full bg-brand-card hover:bg-slate-800 text-white font-bold py-3 rounded-xl border border-brand-border text-center text-xs transition-all">سجّل اهتمام المؤسسة</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Detailed Pricing & Subscriptions Section -->
-    <section id="pricing" class="py-20 bg-brand-card/30 border-t border-brand-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <div class="inline-flex items-center space-x-2 space-x-reverse bg-emerald-500/10 border border-emerald-500/20 px-4 py-1.5 rounded-full text-emerald-400 text-xs sm:text-sm font-semibold mb-4">
-                    <i class="fa-solid fa-shield-halved"></i>
-                    <span>تصور أولي للباقات — غير متاح للبيع حاليًا</span>
-                </div>
-                <p class="text-slate-400 text-sm sm:text-base">الباقات أدناه تصور أولي لتنظيم الخدمات مستقبلًا وليست عروضًا تجارية معتمدة أو اشتراكات متاحة. لن يُطلب دفع أي مبلغ عبر هذه الصفحة في مرحلة التطوير.</p>
-<p class="text-amber-300 text-xs sm:text-sm leading-relaxed mt-5 bg-amber-500/10 border border-amber-500/20 rounded-xl p-4"><i class="fa-solid fa-circle-info ml-1"></i> تنبيه: القدرات الواردة هنا أهداف تصميمية قيد التطوير، وليست تأكيدًا على توافرها أو اجتيازها للاختبارات. التسجيل الحالي لإبداء الاهتمام فقط، ولا ينشئ حسابًا أو اشتراكًا مدفوعًا.</p>
-            </div>
-
-            <!-- Tier 1: Individual Tier (4 Packages) -->
-            <div class="mb-20">
-                <div class="flex items-center space-x-3 space-x-reverse mb-8">
-                    <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg">
-                        <i class="fa-solid fa-user-shield"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-xl sm:text-2xl font-bold text-white">1️⃣ باقات الأفراد (Individual Tier)</h3>
-                        <p class="text-slate-400 text-xs sm:text-sm">تستهدف الأفراد الراغبين في حماية هواتفهم الشخصية وتأمين بياناتهم الحساسة ضد السرقة، الانتهاك، أو الفقدان.</p>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <!-- Individual Monthly (Blue Theme) -->
-                    <div class="bg-gradient-to-b from-blue-950/20 to-brand-dark p-6 rounded-3xl border border-blue-500/30 hover:border-blue-500 transition-all shadow-lg flex flex-col justify-between">
-                        <div>
-                            <span class="text-xs font-mono text-blue-400 bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-md block w-fit mb-3">الخيار الشهري</span>
-                            <h4 class="text-lg font-bold text-white mb-1">تغطية شهرية</h4>
-                            <p class="text-slate-400 text-xs mb-4">حماية مرنة وتغطية شهرية قصيرة الأجل.</p>
-                            <ul class="space-y-2 text-xs text-slate-300 mb-6">
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-blue-400"></i><span>جميع أوضاع الحماية الأربعة</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-blue-400"></i><span>تنبيهات حسية وتتبع مباشر</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-blue-400"></i><span>دعم تقني قياسي</span></li>
-                            </ul>
-                        </div>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 rounded-xl text-center text-xs transition-all shadow-md shadow-blue-600/20">سجّل اهتمامك</a>
-                    </div>
-
-                    <!-- Individual Quarterly (Purple Theme - Most Popular) -->
-                    <div class="bg-gradient-to-b from-purple-950/40 via-brand-card to-brand-dark p-6 rounded-3xl border-2 border-purple-500/80 shadow-xl shadow-purple-500/10 relative flex flex-col justify-between transform lg:-translate-y-2 transition-all">
-                        <span class="absolute -top-3.5 right-6 bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-[10px] font-black px-3 py-1 rounded-full shadow-md uppercase tracking-wide">
-                            <i class="fa-solid fa-fire ml-1"></i> الأكثر شيوعاً
-                        </span>
-                        <div>
-                            <span class="text-xs font-mono text-purple-300 bg-purple-500/20 border border-purple-500/30 px-3 py-1 rounded-md block w-fit mb-3">الخيار الربع سنوي</span>
-                            <h4 class="text-lg font-bold text-white mb-1">تغطية 3 أشهر</h4>
-                            <p class="text-slate-400 text-xs mb-4">تأمين حماية متواصلة لمدة 90 يوماً.</p>
-                            <ul class="space-y-2 text-xs text-slate-300 mb-6">
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-purple-400"></i><span>الوصول الكامل لأوضاع الحماية</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-purple-400"></i><span>حزمة التوثيق الحسي المتسلسلة</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-purple-400"></i><span>تحديثات أمنية دورية</span></li>
-                            </ul>
-                        </div>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold py-3 rounded-xl text-center text-xs transition-all shadow-lg shadow-purple-600/30">سجّل اهتمامك</a>
-                    </div>
-
-                    <!-- Individual Semi-Annual (Cyan Theme) -->
-                    <div class="bg-gradient-to-b from-cyan-950/20 to-brand-dark p-6 rounded-3xl border border-cyan-500/30 hover:border-cyan-400 transition-all shadow-lg flex flex-col justify-between">
-                        <div>
-                            <span class="text-xs font-mono text-cyan-400 bg-cyan-500/10 border border-cyan-500/20 px-3 py-1 rounded-md block w-fit mb-3">الخيار النصف سنوي</span>
-                            <h4 class="text-lg font-bold text-white mb-1">تغطية 6 أشهر</h4>
-                            <p class="text-slate-400 text-xs mb-4">حماية متوسطة الأجل مع توفير اقتصادي.</p>
-                            <ul class="space-y-2 text-xs text-slate-300 mb-6">
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-cyan-400"></i><span>تغطية متكاملة لـ 180 يوماً</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-cyan-400"></i><span>مساحة حفظ سحابية للأدلة</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-cyan-400"></i><span>أولوية استجابة التنبيهات</span></li>
-                            </ul>
-                        </div>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="w-full bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-3 rounded-xl text-center text-xs transition-all shadow-md shadow-cyan-600/20">سجّل اهتمامك</a>
-                    </div>
-
-                    <!-- Individual Annual (Emerald Theme) -->
-                    <div class="bg-gradient-to-b from-emerald-950/30 to-brand-dark p-6 rounded-3xl border border-emerald-500/50 relative flex flex-col justify-between shadow-lg hover:border-emerald-400 transition-all">
-                        <span class="absolute -top-3 right-6 bg-emerald-500 text-slate-950 text-[10px] font-extrabold px-3 py-0.5 rounded-full uppercase shadow">الأكثر طلباً</span>
-                        <div>
-                            <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-md block w-fit mb-3">الخيار السنوي المتقدم</span>
-                            <h4 class="text-lg font-bold text-white mb-1">تغطية 12 شهراً</h4>
-                            <p class="text-slate-400 text-xs mb-4">حماية مستدامة طوال العام بأعلى أولوية.</p>
-                            <ul class="space-y-2 text-xs text-slate-300 mb-6">
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-emerald-400"></i><span>تخزين سحابي آمن ومشفر</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-emerald-400"></i><span>أولوية فائقة لمعالجة البيانات</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-emerald-400"></i><span>خط دعم مباشر ومخصص</span></li>
-                            </ul>
-                        </div>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 rounded-xl text-center text-xs transition-all shadow-md shadow-emerald-500/20">سجّل اهتمامك</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tier 2: Family Tier -->
-            <div class="mb-20 pt-6 border-t border-brand-border/60">
-                <div class="flex items-center space-x-3 space-x-reverse mb-8">
-                    <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-lg border border-purple-500/20">
-                        <i class="fa-solid fa-people-roof"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-xl sm:text-2xl font-bold text-white">2️⃣ باقات الأسرة (Family Tier)</h3>
-                        <p class="text-slate-400 text-xs sm:text-sm">حماية جماعية وتغطية أمنية متكاملة لربط عدة أجهزة للعائلة تحت إشراف وتنسيق أمني موحد مع مراعاة الخصوصية.</p>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                    <!-- Family Monthly -->
-                    <div class="bg-gradient-to-b from-purple-950/30 to-brand-dark p-6 rounded-3xl border border-purple-500/30 hover:border-purple-400 transition-all shadow-lg flex flex-col justify-between">
-                        <div>
-                            <span class="text-xs font-mono text-purple-300 bg-purple-500/10 border border-purple-500/20 px-3 py-1 rounded-md block w-fit mb-3">شهري للأسرة</span>
-                            <h4 class="text-lg font-bold text-white mb-1">تغطية شهرية</h4>
-                            <p class="text-slate-400 text-xs mb-4">مرونة الحماية الشهرية لأجهزة العائلة.</p>
-                            <ul class="space-y-2 text-xs text-slate-300 mb-6">
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-purple-400"></i><span>تغطية حتى 5 أجهزة عائلية</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-purple-400"></i><span>تنبيهات استغاثة فورية للوالدين</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-purple-400"></i><span>تتبع الموقع الجغرافي الطارئ</span></li>
-                            </ul>
-                        </div>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="w-full bg-purple-600 hover:bg-purple-500 text-white font-bold py-3 rounded-xl text-center text-xs transition-all shadow-md shadow-purple-600/20">طلب اشتراك شهري للأسرة</a>
-                    </div>
-
-                    <!-- Family Quarterly -->
-                    <div class="bg-gradient-to-b from-indigo-950/40 via-brand-card to-brand-dark p-6 rounded-3xl border border-indigo-500/40 hover:border-indigo-400 transition-all shadow-lg flex flex-col justify-between">
-                        <div>
-                            <span class="text-xs font-mono text-indigo-300 bg-indigo-500/10 border border-indigo-500/20 px-3 py-1 rounded-md block w-fit mb-3">ربع سنوي للأسرة</span>
-                            <h4 class="text-lg font-bold text-white mb-1">تغطية 3 أشهر</h4>
-                            <p class="text-slate-400 text-xs mb-4">استقرار أمني عائلي لمدة 90 يوماً.</p>
-                            <ul class="space-y-2 text-xs text-slate-300 mb-6">
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-indigo-400"></i><span>إدارة التنبيهات والأوضاع المتقدمة</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-indigo-400"></i><span>تفعيل وضع الاستغاثة المباشر</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-indigo-400"></i><span>تخزين آمن لأدلة أجهزة العائلة</span></li>
-                            </ul>
-                        </div>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3 rounded-xl text-center text-xs transition-all shadow-md shadow-indigo-600/20">طلب اشتراك ربع سنوي</a>
-                    </div>
-
-                    <!-- Family Semi-Annual -->
-                    <div class="bg-gradient-to-b from-violet-950/40 via-brand-card to-brand-dark p-6 rounded-3xl border border-violet-500/40 hover:border-violet-400 transition-all shadow-lg flex flex-col justify-between">
-                        <div>
-                            <span class="text-xs font-mono text-violet-300 bg-violet-500/10 border border-violet-500/20 px-3 py-1 rounded-md block w-fit mb-3">نصف سنوي للأسرة</span>
-                            <h4 class="text-lg font-bold text-white mb-1">تغطية 6 أشهر</h4>
-                            <p class="text-slate-400 text-xs mb-4">توفير وحماية شاملة لمدة 180 يوماً.</p>
-                            <ul class="space-y-2 text-xs text-slate-300 mb-6">
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-violet-400"></i><span>أولوية في قنوات استقبال البلاغات</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-violet-400"></i><span>حزمة الأدلة الرقمية لكل أفراد الأسرة</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-violet-400"></i><span>ربط مباشر ومحمي بسحابة العائلة</span></li>
-                            </ul>
-                        </div>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="w-full bg-violet-600 hover:bg-violet-500 text-white font-bold py-3 rounded-xl text-center text-xs transition-all shadow-md shadow-violet-600/20">طلب اشتراك نصف سنوي</a>
-                    </div>
-
-                    <!-- Family Annual -->
-                    <div class="bg-gradient-to-b from-rose-950/40 via-brand-card to-brand-dark p-6 rounded-3xl border-2 border-rose-500/70 relative flex flex-col justify-between shadow-xl shadow-rose-500/10">
-                        <span class="absolute -top-3.5 right-6 bg-gradient-to-r from-rose-500 to-pink-500 text-slate-950 text-[10px] font-black px-3 py-1 rounded-full uppercase shadow-md tracking-wider">
-                            <i class="fa-solid fa-heart ml-1"></i> الخيار السنوي الشامل
-                        </span>
-                        <div>
-                            <span class="text-xs font-mono text-rose-300 bg-rose-500/20 border border-rose-500/30 px-3 py-1 rounded-md block w-fit mb-3">سنوي للأسرة</span>
-                            <h4 class="text-lg font-bold text-white mb-1">تغطية 12 شهراً</h4>
-                            <p class="text-slate-400 text-xs mb-4">أمان وتغطية متكاملة على مدار العام.</p>
-                            <ul class="space-y-2 text-xs text-slate-300 mb-6">
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-rose-400"></i><span>سحابة توثيق عائلية فائقة السرعة</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-rose-400"></i><span>دعم فني واستجابة طوارئ مخصصة للأسرة</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-rose-400"></i><span>أعلى توفير اقتصادي لحماية العائلة</span></li>
-                            </ul>
-                        </div>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="w-full bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-400 hover:to-pink-400 text-slate-950 font-black py-3 rounded-xl text-center text-xs transition-all shadow-lg shadow-rose-500/25">طلب اشتراك سنوي للأسرة</a>
-                    </div>
-                </div>
-
-                <!-- Family Features Explanation Box -->
-                <div class="bg-brand-card p-8 rounded-3xl border border-purple-500/30">
-                    <h4 class="text-lg font-bold text-purple-300 mb-4 flex items-center">
-                        <i class="fa-solid fa-people-roof ml-2 text-purple-400"></i> مميزات وحلول الأمان الخاصة بنظام الأسرة
-                    </h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm text-slate-300 leading-relaxed">
-                        <div class="bg-brand-dark p-5 rounded-2xl border border-brand-border">
-                            <h5 class="font-bold text-purple-400 mb-2 text-sm">📌 الربط المركز والإشراف الأسري المباشر:</h5>
-                            <p class="text-slate-400">
-                                يتيح لرب الأسرة إضافة أجهزة الأبناء والعائلة في شبكة أمان واحدة متصلة، مع استقبال إشعارات فورية في حال تعرض أي جهاز لسرقة أو نشاط أمني مشبوه.
-                            </p>
-                        </div>
-                        <div class="bg-brand-dark p-5 rounded-2xl border border-brand-border">
-                            <h5 class="font-bold text-rose-400 mb-2 text-sm">📌 استغاثة النبضة الطارئة للأسرة (Pulse Emergency):</h5>
-                            <p class="text-slate-400">
-                                تمكين الأبناء والأفراد من إرسال نبضات استغاثة فورية وسرية في حالات الخطر، تحتوي على موقع الجهاز بدقة، وتسجيلات حسية توثيقية ترسل مباشرة لحساب رب الأسرة لتأمين الاستجابة السريعة.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tier 3: Enterprise Tier -->
-            <div>
-                <div class="flex items-center space-x-3 space-x-reverse mb-8">
-                    <div class="w-10 h-10 rounded-xl bg-slate-700/30 text-indigo-400 flex items-center justify-center text-lg border border-indigo-500/20">
-                        <i class="fa-solid fa-building-shield"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-xl sm:text-2xl font-bold text-white">3️⃣ باقات الشركات والمؤسسات (Enterprise Tier)</h3>
-                        <p class="text-slate-400 text-xs sm:text-sm">مصممة لتأمين هواتف وأجهزة الأعمال وإدارتها مركزياً مع خيارات أمان وإشراف إداري متقدم.</p>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                    <!-- Enterprise Monthly -->
-                    <div class="bg-gradient-to-b from-slate-900/80 via-brand-card to-brand-dark p-6 rounded-3xl border border-slate-700 hover:border-indigo-500/60 transition-all shadow-lg flex flex-col justify-between">
-                        <div>
-                            <span class="text-xs font-mono text-indigo-300 bg-indigo-500/10 border border-indigo-500/20 px-3 py-1 rounded-md block w-fit mb-3">شهرية للمؤسسات</span>
-                            <h4 class="text-lg font-bold text-white mb-1">تغطية شهرية</h4>
-                            <p class="text-slate-400 text-xs mb-4">مرونة كاملة في إدارة عدد الأجهزة شهرياً.</p>
-                            <ul class="space-y-2 text-xs text-slate-300 mb-6">
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-indigo-400"></i><span>إدارة مركزية عبر Android Enterprise</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-indigo-400"></i><span>قفل ومسح البيانات عن بُعد</span></li>
-                            </ul>
-                        </div>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="w-full bg-slate-800 hover:bg-indigo-600 text-slate-200 hover:text-white font-bold py-3 rounded-xl border border-slate-600 text-center text-xs transition-all shadow-md">طلب اشتراك شهري</a>
-                    </div>
-
-                    <!-- Enterprise Quarterly -->
-                    <div class="bg-gradient-to-b from-teal-950/30 via-brand-card to-brand-dark p-6 rounded-3xl border border-teal-500/30 hover:border-teal-400/70 transition-all shadow-lg flex flex-col justify-between">
-                        <div>
-                            <span class="text-xs font-mono text-teal-300 bg-teal-500/10 border border-teal-500/20 px-3 py-1 rounded-md block w-fit mb-3">ربع سنوية للمؤسسات</span>
-                            <h4 class="text-lg font-bold text-white mb-1">تغطية 3 أشهر</h4>
-                            <p class="text-slate-400 text-xs mb-4">تغطية ربع سنوية لإدارة فرق العمل.</p>
-                            <ul class="space-y-2 text-xs text-slate-300 mb-6">
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-teal-400"></i><span>تحكم كامل بالصلاحيات والشرائح</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-teal-400"></i><span>تقارير أمان دورية</span></li>
-                            </ul>
-                        </div>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="w-full bg-teal-900/50 hover:bg-teal-600 text-teal-200 hover:text-white border border-teal-500/40 font-bold py-3 rounded-xl text-center text-xs transition-all shadow-md">طلب اشتراك ربع سنوي</a>
-                    </div>
-
-                    <!-- Enterprise Semi-Annual -->
-                    <div class="bg-gradient-to-b from-indigo-950/30 via-brand-card to-brand-dark p-6 rounded-3xl border border-indigo-500/30 hover:border-indigo-400/70 transition-all shadow-lg flex flex-col justify-between">
-                        <div>
-                            <span class="text-xs font-mono text-indigo-300 bg-indigo-500/10 border border-indigo-500/20 px-3 py-1 rounded-md block w-fit mb-3">نصف سنوية للمؤسسات</span>
-                            <h4 class="text-lg font-bold text-white mb-1">تغطية 6 أشهر</h4>
-                            <p class="text-slate-400 text-xs mb-4">حل متميز لاستقرار الأمان المؤسسي.</p>
-                            <ul class="space-y-2 text-xs text-slate-300 mb-6">
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-indigo-400"></i><span>إشراف مركزي وتحكم بالأجهزة الميدانية</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-indigo-400"></i><span>إدارة قيود USB وeSIM المتقدمة</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-indigo-400"></i><span>سلسلة حيازة موثقة للأدلة الرقمية</span></li>
-                            </ul>
-                        </div>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="w-full bg-indigo-900/50 hover:bg-indigo-600 text-indigo-200 hover:text-white border border-indigo-500/40 font-bold py-3 rounded-xl text-center text-xs transition-all shadow-md">طلب اشتراك نصف سنوي</a>
-                    </div>
-
-                    <!-- Enterprise Annual -->
-                    <div class="bg-gradient-to-b from-amber-950/40 via-brand-card to-brand-dark p-6 rounded-3xl border-2 border-amber-500/70 flex flex-col justify-between relative shadow-xl shadow-amber-500/10">
-                        <span class="absolute -top-3.5 right-6 bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 text-[10px] font-black px-3 py-1 rounded-full uppercase shadow-md tracking-wider">
-                            <i class="fa-solid fa-crown ml-1"></i> الشاملة للمؤسسات
-                        </span>
-                        <div>
-                            <span class="text-xs font-mono text-amber-300 bg-amber-500/20 border border-amber-500/30 px-3 py-1 rounded-md block w-fit mb-3">سنوية للمؤسسات</span>
-                            <h4 class="text-lg font-bold text-white mb-1">تغطية 12 شهراً</h4>
-                            <p class="text-slate-400 text-xs mb-4">أعلى مستويات الأمان والتحكم المستدام.</p>
-                            <ul class="space-y-2 text-xs text-slate-300 mb-6">
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-amber-400"></i><span>لوحة تحكم إدارية خاصة ومفتوحة</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-amber-400"></i><span>ربط سحابي خاص بالشركات لحفظ الأدلة</span></li>
-                                <li class="flex items-center space-x-2 space-x-reverse"><i class="fa-solid fa-check text-amber-400"></i><span>دعم فني مخصص وحساب إداري مباشر</span></li>
-                            </ul>
-                        </div>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="w-full bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-slate-950 font-black py-3 rounded-xl text-center text-xs transition-all shadow-lg shadow-amber-500/25">طلب اشتراك سنوي</a>
-                    </div>
-                </div>
-
-                <!-- Detailed Explanation for Enterprise Semi-Annual & Annual Packages -->
-                <div class="bg-brand-card p-8 rounded-3xl border border-indigo-500/20 mb-8">
-                    <h4 class="text-lg font-bold text-indigo-300 mb-4 flex items-center">
-                        <i class="fa-solid fa-circle-info ml-2"></i> الشرح التفصيلي للباقات النصف سنوية والسنوية للشركات والمؤسسات
-                    </h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm text-slate-300 leading-relaxed">
-                        <div class="bg-brand-dark p-5 rounded-2xl border border-brand-border">
-                            <h5 class="font-bold text-indigo-400 mb-2 text-sm">📌 الباقة النصف سنوية للمؤسسات (6 أشهر):</h5>
-                            <p class="text-slate-400">
-                                تمنح الشركات حلاً شاملاً لتأمين أجهزة الموظفين الميدانية وتطبيق سياسات Android Enterprise الرسمية مع حظر نقل البيانات غير المصرح به عبر USB أو الشبكات، وتوفير سجلات معالجة معتمدة طوال 180 يوماً.
-                            </p>
-                        </div>
-                        <div class="bg-brand-dark p-5 rounded-2xl border border-brand-border">
-                            <h5 class="font-bold text-amber-400 mb-2 text-sm">📌 الباقة السنوية للمؤسسات (12 شهراً):</h5>
-                            <p class="text-slate-400">
-                                توفر أعلى درجات الاستقرار الأمني عبر خوادم مخصصة لحفظ أدلة التوثيق الرقمي والوسائط المشفرة، مع إمكانية القفل الإداري الشامل (Lost Mode) والمسح الفوري للبيانات، بالإضافة لمدير حساب مخصص وتدريب فني لفريق تقنية المعلومات بالشركة.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Flexible Contracts Notice -->
-                <div class="bg-gradient-to-r from-indigo-950/40 via-brand-card to-indigo-950/40 p-6 rounded-2xl border border-indigo-500/30 text-center">
-                    <p class="text-indigo-300 font-bold text-xs sm:text-sm flex items-center justify-center">
-                        <i class="fa-solid fa-handshake ml-2 text-base text-indigo-400"></i>
-                        <span>تنويه هام: تتوفر عقود مرنة مخصصة ومصممة خصيصاً طبقاً لمتطلبات وحجم كل شركة أو مؤسسة وعدد الأجهزة المطلوبة.</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-brand-dark border-t border-brand-border py-12">
+<section class="relative overflow-hidden pt-20 pb-20 sm:pt-28 sm:pb-28">
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-brand-dark to-brand-dark pointer-events-none"></div>
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+    <div class="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 px-4 py-1.5 rounded-full text-blue-300 text-xs sm:text-sm font-semibold mb-6"><i class="fa-solid fa-shield-halved"></i><span>مشروع تقني قيد التطوير</span></div>
+    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">BOB Security <span class="block mt-3 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">رؤية لحماية الهواتف والبيانات</span></h1>
+    <p class="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto leading-8 mb-8">نعمل على تطوير منظومة تهدف إلى مساعدة المستخدمين على حماية أجهزتهم وبياناتهم والتعامل بوضوح مع حالات فقدان الهاتف. تُعرض في هذا الموقع رؤية المنتج وقدراته المستهدفة، بينما يجري تطوير الوظائف واختبارها قبل الإعلان عن إتاحتها.</p>
+    <div class="flex flex-col sm:flex-row justify-center gap-3">
+      <a href="about.html" class="inline-flex justify-center items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-blue-600/20"><i class="fa-solid fa-circle-info"></i> تعرّف على المنظومة</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center gap-2 bg-brand-card hover:bg-slate-800 text-slate-100 border border-brand-border font-bold px-7 py-3.5 rounded-xl"><i class="fa-solid fa-envelope"></i> سجّل اهتمامك بالإطلاق</a>
+    </div>
+    <div class="mt-8 max-w-3xl mx-auto bg-amber-500/10 border border-amber-500/25 rounded-2xl p-4 text-sm leading-7 text-amber-100 text-right"><strong>تنويه:</strong> تسجيل الاهتمام لا يعني إنشاء حساب أو تفعيل خدمة أو اشتراك مدفوع. ستُعلن الوظائف المتاحة بعد استكمال التطوير والاختبارات.</div>
+  </div>
+</section>
+<section class="py-16 sm:py-20 border-t border-brand-border bg-brand-card/20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <h2 class="text-2xl sm:text-4xl font-black text-white mb-4">استكشف أقسام BOB Security</h2>
+      <p class="text-slate-400 leading-7">قسمنا المعلومات إلى صفحات مستقلة؛ افتح القسم الذي تريد معرفة تفاصيله دون الحاجة إلى تصفح صفحة طويلة واحدة.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <a href="about.html" class="group bg-brand-card border border-brand-border hover:border-blue-500/60 rounded-2xl p-6 transition-all hover:-translate-y-1">
+        <div class="flex items-center justify-between mb-5"><span class="w-11 h-11 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg"><i class="fa-solid fa-circle-info"></i></span><i class="fa-solid fa-arrow-left text-slate-500 group-hover:text-blue-400 transition-colors"></i></div>
+        <h3 class="text-lg font-bold text-white mb-2">عن المنظومة</h3><p class="text-sm text-slate-400 leading-7">تعرف على فكرة BOB Security والهدف الذي نعمل على تحقيقه.</p>
+      </a><a href="getting-started.html" class="group bg-brand-card border border-brand-border hover:border-blue-500/60 rounded-2xl p-6 transition-all hover:-translate-y-1">
+        <div class="flex items-center justify-between mb-5"><span class="w-11 h-11 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg"><i class="fa-solid fa-route"></i></span><i class="fa-solid fa-arrow-left text-slate-500 group-hover:text-blue-400 transition-colors"></i></div>
+        <h3 class="text-lg font-bold text-white mb-2">رحلة الاستخدام</h3><p class="text-sm text-slate-400 leading-7">التصور المبدئي لإنشاء الحساب والتثبيت والاستجابة للحوادث.</p>
+      </a><a href="features.html" class="group bg-brand-card border border-brand-border hover:border-blue-500/60 rounded-2xl p-6 transition-all hover:-translate-y-1">
+        <div class="flex items-center justify-between mb-5"><span class="w-11 h-11 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg"><i class="fa-solid fa-shield-halved"></i></span><i class="fa-solid fa-arrow-left text-slate-500 group-hover:text-blue-400 transition-colors"></i></div>
+        <h3 class="text-lg font-bold text-white mb-2">المزايا والقدرات المستهدفة</h3><p class="text-sm text-slate-400 leading-7">استكشف القدرات التي يستهدف المشروع تطويرها والتحقق منها.</p>
+      </a><a href="digital-evidence.html" class="group bg-brand-card border border-brand-border hover:border-blue-500/60 rounded-2xl p-6 transition-all hover:-translate-y-1">
+        <div class="flex items-center justify-between mb-5"><span class="w-11 h-11 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg"><i class="fa-solid fa-file-shield"></i></span><i class="fa-solid fa-arrow-left text-slate-500 group-hover:text-blue-400 transition-colors"></i></div>
+        <h3 class="text-lg font-bold text-white mb-2">التقارير والأدلة الرقمية</h3><p class="text-sm text-slate-400 leading-7">التصور المستهدف لتنظيم تقارير الحوادث والتحقق من سلامة الملفات.</p>
+      </a><a href="protection-modes.html" class="group bg-brand-card border border-brand-border hover:border-blue-500/60 rounded-2xl p-6 transition-all hover:-translate-y-1">
+        <div class="flex items-center justify-between mb-5"><span class="w-11 h-11 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg"><i class="fa-solid fa-sliders"></i></span><i class="fa-solid fa-arrow-left text-slate-500 group-hover:text-blue-400 transition-colors"></i></div>
+        <h3 class="text-lg font-bold text-white mb-2">أوضاع الحماية</h3><p class="text-sm text-slate-400 leading-7">تعرف على أوضاع التشغيل المقترحة وكيفية تنظيم الاستجابة.</p>
+      </a><a href="plans.html" class="group bg-brand-card border border-brand-border hover:border-blue-500/60 rounded-2xl p-6 transition-all hover:-translate-y-1">
+        <div class="flex items-center justify-between mb-5"><span class="w-11 h-11 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg"><i class="fa-solid fa-layer-group"></i></span><i class="fa-solid fa-arrow-left text-slate-500 group-hover:text-blue-400 transition-colors"></i></div>
+        <h3 class="text-lg font-bold text-white mb-2">مسارات المنتج</h3><p class="text-sm text-slate-400 leading-7">المسارات المقترحة للأفراد والأسرة والمؤسسات.</p>
+      </a><a href="packages.html" class="group bg-brand-card border border-brand-border hover:border-blue-500/60 rounded-2xl p-6 transition-all hover:-translate-y-1">
+        <div class="flex items-center justify-between mb-5"><span class="w-11 h-11 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg"><i class="fa-solid fa-tags"></i></span><i class="fa-solid fa-arrow-left text-slate-500 group-hover:text-blue-400 transition-colors"></i></div>
+        <h3 class="text-lg font-bold text-white mb-2">الباقات المقترحة</h3><p class="text-sm text-slate-400 leading-7">تصور مبدئي للباقات المستقبلية، وليس عرضًا للبيع حاليًا.</p>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="py-12 border-t border-brand-border">
+  <div class="max-w-5xl mx-auto px-4 text-center">
+    <h2 class="text-xl sm:text-2xl font-black text-white mb-3">تابع تطور المشروع</h2>
+    <p class="text-sm text-slate-400 leading-7 mb-6">إذا رغبت في معرفة أخبار الإطلاق التجريبي، يمكنك تسجيل اهتمامك عبر الاستمارة. سنوضح مراحل الإتاحة عندما تصبح الوظائف جاهزة للتحقق والتجربة.</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3 rounded-xl"><i class="fa-solid fa-paper-plane"></i> إبداء الاهتمام</a>
+  </div>
+</section>
+<footer class="bg-brand-dark border-t border-brand-border py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-500 text-xs sm:text-sm">
             <p class="text-amber-400/90 font-semibold mb-3">
                 <i class="fa-solid fa-hourglass-half ml-1"></i> المنظومة لازالت تحت التطوير المستمر وسنعلن عن موعد الاطلاق التجريبي قريبا.
@@ -991,5 +147,19 @@
         </div>
     </footer>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const button = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  if (button && menu) {
+    button.addEventListener('click', function () {
+      const isOpen = !menu.classList.contains('hidden');
+      menu.classList.toggle('hidden', isOpen);
+      button.setAttribute('aria-expanded', String(!isOpen));
+      button.innerHTML = isOpen ? '<i class="fa-solid fa-bars"></i>' : '<i class="fa-solid fa-xmark"></i>';
+    });
+  }
+});
+</script>
 </body>
 </html>
