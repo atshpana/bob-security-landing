@@ -402,6 +402,15 @@ body main .bento-card[href$="packages.html"],body main .cards>.card[href="packag
 @media(prefers-reduced-motion:reduce){body main .bento-card,body main .cards>.card{transition:none!important}}
 </style>
 
+
+<style id="bob-wordmark-neon-v2">
+/* Compact, aligned BOB / Security wordmark. */
+.bob-wordmark{display:inline-flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:0!important;line-height:1!important;min-width:0!important;white-space:nowrap!important}
+.bob-wordmark-main{display:block!important;color:#fff!important;-webkit-text-fill-color:#fff!important;font-size:1.22rem!important;font-weight:900!important;letter-spacing:.075em!important;line-height:1.03!important}
+.bob-wordmark-sub{display:block!important;align-self:stretch!important;text-align:justify!important;text-align-last:justify!important;color:#d86bff!important;-webkit-text-fill-color:#d86bff!important;font-size:.66rem!important;font-weight:800!important;letter-spacing:.025em!important;line-height:1.18!important;text-shadow:0 0 5px rgba(216,107,255,.85),0 0 12px rgba(216,107,255,.55)!important}
+.bob-brand{display:inline-flex!important;align-items:center!important;gap:10px!important}
+@media(max-width:480px){.bob-wordmark-main{font-size:1.08rem!important}.bob-wordmark-sub{font-size:.61rem!important}}
+</style>
 </head><body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
 
     <!-- Development Notice Banner -->
@@ -417,7 +426,7 @@ body main .bento-card[href$="packages.html"],body main .cards>.card[href="packag
             <div class="flex items-center space-x-3 space-x-reverse">
                 <a href="index.html" class="flex items-center space-x-3 space-x-reverse">
                     <img src="bob-security-logo.png" alt="شعار BOB Security - أنوبيس السيبراني" class="w-10 h-10 rounded-xl object-contain border border-cyan-300/70 shadow-[0_0_14px_rgba(0,220,255,.45)]" style="background:rgba(3,8,20,.35)">
-                    <span class="text-xl font-black tracking-wider text-white">BOB <span class="text-white">Security</span></span>
+                    <span class="bob-wordmark"><span class="bob-wordmark-main">BOB</span><span class="bob-wordmark-sub">Security</span></span>
                 </a>
             </div>
             
