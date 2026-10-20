@@ -290,6 +290,38 @@ html body footer strong, html body footer span {
 }
 </style>
 
+
+<style id="bob-mobile-nav-true-transparent-v5">
+/* Fix the remaining dark slab behind the responsive navigation on every page. */
+html body header,
+html body header nav,
+html body header > div,
+html body header nav a {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+html body header {
+  background: rgba(3, 12, 26, .08) !important;
+  border-bottom-color: rgba(70, 190, 245, .18) !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+html body header nav {
+  box-shadow: none !important;
+  border: 0 !important;
+}
+html body header nav a {
+  text-shadow: 0 1px 4px rgba(0,0,0,.95) !important;
+}
+@media (max-width: 1023px) {
+  html body header nav {
+    background: transparent !important;
+    padding-top: .35rem !important;
+    padding-bottom: .8rem !important;
+  }
+}
+</style>
+
 </head><body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
 
     <!-- Development Notice Banner -->
@@ -299,7 +331,7 @@ html body footer strong, html body footer span {
     </div>
 
     <!-- Header / Navbar -->
-    <header class="sticky top-[37px] sm:top-[41px] z-50 backdrop-blur-xl bg-brand-dark/90 border-b border-brand-border">
+    <header class="sticky top-[37px] sm:top-[41px] z-50 backdrop-blur-xl bg-transparent border-b border-brand-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <!-- Brand Logo in Navbar -->
             <div class="flex items-center space-x-3 space-x-reverse">
