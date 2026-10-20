@@ -370,6 +370,36 @@ header nav a:hover, nav a:hover, header nav a:focus-visible, nav a:focus-visible
 /* Dark blood-red / deep burgundy for the closing AI statement. */
 footer p:has(.fa-brain), footer p:has(.fa-brain) * { color:#7B1020 !important; -webkit-text-fill-color:#7B1020 !important; }
 </style>
+
+<style id="bob-neon-category-cards-v1">
+/* BOB Security category cards: distinct neon identities, readable dark surfaces, and press glow. */
+:root{--bob-yellow:#ffe45c;--bob-green:#39ff88;--bob-purple:#d86bff;--bob-red:#ff263f;--bob-silver:#e5edf7;--bob-turquoise:#35ffe1;--bob-blue:#36a7ff;--bob-orange:#ff9b38;--bob-gold:#ffc84a;--bob-copper:#d88959}
+body main .bento-card,body main .cards>.card{position:relative;isolation:isolate;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease,filter .22s ease!important;border:1px solid rgba(125,180,220,.42)!important;background:linear-gradient(145deg,rgba(5,17,37,.94),rgba(4,10,24,.91))!important;color:#f7fbff!important;box-shadow:0 7px 24px rgba(0,0,0,.26)!important}
+body main .bento-card:active,body main .cards>.card:active{transform:translateY(-2px) scale(.985)!important;filter:brightness(1.16)!important;box-shadow:0 0 0 2px var(--bob-glow),0 0 18px var(--bob-glow),0 0 38px color-mix(in srgb,var(--bob-glow) 45%,transparent)!important;border-color:var(--bob-glow)!important}
+body main .bento-card:hover,body main .cards>.card:hover,body main .bento-card:focus-visible,body main .cards>.card:focus-visible{transform:translateY(-4px)!important;border-color:var(--bob-glow)!important;box-shadow:0 0 0 1px var(--bob-glow),0 0 14px color-mix(in srgb,var(--bob-glow) 65%,transparent),0 0 30px color-mix(in srgb,var(--bob-glow) 32%,transparent)!important;outline:none}
+body main .bento-card[href$="about.html"],body main .cards>.card[href="about.html"]{--bob-glow:var(--bob-yellow);border-color:rgba(255,228,92,.72)!important}
+body main .bento-card[href$="dashboard-levels.html"],body main .cards>.card[href="dashboard-levels.html"]{--bob-glow:var(--bob-green);border-color:rgba(57,255,136,.72)!important}
+body main .bento-card[href$="features.html"],body main .cards>.card[href="features.html"]{--bob-glow:var(--bob-purple);border-color:rgba(216,107,255,.72)!important}
+body main .bento-card[href$="protection-modes.html"],body main .cards>.card[href="protection-modes.html"]{--bob-glow:var(--bob-red);border-color:rgba(255,38,63,.86)!important;box-shadow:0 0 10px rgba(255,38,63,.16),0 7px 24px rgba(0,0,0,.28)!important}
+body main .bento-card[href$="command-messages.html"],body main .cards>.card[href="command-messages.html"]{--bob-glow:var(--bob-turquoise);border-color:rgba(53,255,225,.76)!important}
+body main .bento-card[href$="digital-evidence.html"],body main .cards>.card[href="digital-evidence.html"]{--bob-glow:var(--bob-blue);border-color:rgba(54,167,255,.78)!important}
+body main .bento-card[href$="privacy-encryption.html"],body main .cards>.card[href="privacy-encryption.html"]{--bob-glow:var(--bob-orange);border-color:rgba(255,155,56,.78)!important}
+body main .bento-card[href$="getting-started.html"],body main .cards>.card[href="getting-started.html"]{--bob-glow:var(--bob-gold);border-color:rgba(255,200,74,.78)!important}
+body main .bento-card[href$="plans.html"],body main .cards>.card[href="plans.html"],body main .bento-card[href$="packages.html"],body main .cards>.card[href="packages.html"]{--bob-glow:var(--bob-copper);border-color:rgba(216,137,89,.78)!important}
+/* Requested order for the available topic cards. */
+body main .bento-card[href$="about.html"],body main .cards>.card[href="about.html"]{order:1}
+body main .bento-card[href$="dashboard-levels.html"],body main .cards>.card[href="dashboard-levels.html"]{order:2}
+body main .bento-card[href$="features.html"],body main .cards>.card[href="features.html"]{order:3}
+body main .bento-card[href$="protection-modes.html"],body main .cards>.card[href="protection-modes.html"]{order:4}
+body main .bento-card[href$="command-messages.html"],body main .cards>.card[href="command-messages.html"]{order:6}
+body main .bento-card[href$="digital-evidence.html"],body main .cards>.card[href="digital-evidence.html"]{order:7}
+body main .bento-card[href$="privacy-encryption.html"],body main .cards>.card[href="privacy-encryption.html"]{order:8}
+body main .bento-card[href$="getting-started.html"],body main .cards>.card[href="getting-started.html"]{order:9}
+body main .bento-card[href$="plans.html"],body main .cards>.card[href="plans.html"]{order:10}
+body main .bento-card[href$="packages.html"],body main .cards>.card[href="packages.html"]{order:10}
+@media(prefers-reduced-motion:reduce){body main .bento-card,body main .cards>.card{transition:none!important}}
+</style>
+
 </head><body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
 
     <!-- Development Notice Banner -->
