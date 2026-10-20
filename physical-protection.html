@@ -7,6 +7,28 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 <script>tailwind.config={theme:{extend:{fontFamily:{cairo:['Cairo','sans-serif']},colors:{brand:{dark:'#070A13',card:'#0E1626',border:'#1E293B',primary:'#2563EB',accent:'#10B981'}}}}}</script>
+
+<style id="bob-anubis-watermark">
+  body { position: relative; isolation: isolate; }
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+    background-image:
+      linear-gradient(180deg, rgba(7,10,19,.82), rgba(7,10,19,.91)),
+      url("anubis-watermark.svg");
+    background-position: center, center 46%;
+    background-size: cover, min(92vw, 900px) auto;
+    background-repeat: no-repeat, repeat-y;
+    opacity: .42;
+  }
+  main, footer, header { position: relative; }
+  @media (max-width: 640px) {
+    body::before { background-size: cover, 115vw auto; opacity: .30; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    body::before { background-attachment: scroll; }
+  }
+</style>
+
 </head>
 <body class="bg-brand-dark text-slate-100 font-cairo antialiased">
 <div class="bg-amber-500/20 border-b border-amber-500/30 py-3 px-4 text-center text-amber-300 text-sm font-bold">تنبيه: المنظومة والخدمات تحت التطوير المستمر.</div>
