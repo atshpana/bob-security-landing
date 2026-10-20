@@ -425,6 +425,84 @@ body main .bento-card[href$="packages.html"],body main .cards>.card[href="packag
 }
 @media(prefers-reduced-motion:reduce){body main .bento-card{transition:none!important}}
 </style>
+
+<style id="bob-mobile-layout-repair-2026-10-21">
+/* Final mobile layout repair: keep the header in document flow and prevent overlap. */
+html { scroll-padding-top: 12px; }
+body > header, html body header {
+  position: relative !important;
+  top: auto !important;
+  inset-block-start: auto !important;
+  z-index: 5 !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+@media (max-width: 767px) {
+  html body header > div:first-child {
+    height: auto !important;
+    min-height: 72px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+  html body header > div:first-child > div:first-child {
+    min-width: 0 !important;
+    flex: 1 1 180px !important;
+  }
+  html body header > div:first-child > div:last-child {
+    flex: 0 0 auto !important;
+  }
+  html body header > nav:last-child {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    align-items: stretch !important;
+    justify-items: stretch !important;
+    gap: 6px 10px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 8px 14px 14px !important;
+    margin: 0 !important;
+    position: static !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  html body header > nav:last-child a {
+    display: block !important;
+    min-width: 0 !important;
+    padding: 7px 5px !important;
+    text-align: center !important;
+    line-height: 1.55 !important;
+    overflow-wrap: anywhere !important;
+    border: 1px solid rgba(125, 180, 220, .15) !important;
+    border-radius: 8px !important;
+  }
+  html body main {
+    position: relative !important;
+    z-index: 1 !important;
+    clear: both !important;
+    margin-top: 0 !important;
+    padding-top: 20px !important;
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+  html body main > section:first-child { margin-top: 0 !important; }
+  html body > a[aria-label="Open English version"] {
+    position: static !important;
+    display: inline-flex !important;
+    margin: 14px 18px !important;
+    max-width: calc(100% - 36px) !important;
+    z-index: auto !important;
+  }
+}
+@media (min-width: 768px) {
+  html body header { position: relative !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html body header *, html body main .bento-card { scroll-behavior: auto !important; transition: none !important; }
+}
+</style>
 </head><body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
 
     <!-- Development Notice Banner -->
@@ -454,7 +532,7 @@ body main .bento-card[href$="packages.html"],body main .cards>.card[href="packag
                 <a href="digital-evidence.html" class="hover:text-blue-400 transition-colors">الأدلة الرقمية</a>
                 <a href="protection-modes.html" class="hover:text-blue-400 transition-colors">أوضاع الحماية</a>
                 <a href="command-messages.html" class="hover:text-blue-400 transition-colors">رسائل الكوماندز</a>
-                <a href="plans.html" class="hover:text-blue-400 transition-colors">الأنظمة والأنظمة ومسارات الاستخدام</a>
+                <a href="plans.html" class="hover:text-blue-400 transition-colors">الأنظمة ومسارات الاستخدام</a>
                 <a href="packages.html" class="hover:text-blue-400 transition-colors" style="color:#E7C76A !important;-webkit-text-fill-color:#E7C76A !important;">الباقات</a>
             </nav>
 
