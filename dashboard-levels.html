@@ -89,6 +89,39 @@ body > div:first-child[class*="bg-amber-500"] i { color: #fff1b2 !important; }
 }
 </style>
 
+
+<style id="bob-all-panels-transparent">
+/* Sitewide: let the Anubis/cyber background show through headings and information cards. */
+main section, main section > div, main article, main .bento-card,
+main [class*="rounded-2xl"], main [class*="rounded-3xl"],
+main [class*="bg-brand-card"], main [class*="bg-slate-"],
+main [class*="bg-gray-"], main [class*="bg-blue-"],
+main [class*="bg-indigo-"], main [class*="bg-emerald-"],
+main [class*="bg-purple-"], main [class*="bg-cyan-"],
+main [class*="bg-amber-"] {
+  background-color: rgba(5, 17, 37, .28) !important;
+  background-image: none;
+  -webkit-backdrop-filter: blur(1.5px);
+  backdrop-filter: blur(1.5px);
+}
+main h1, main h2, main h3, main h4,
+main .page-title, main [data-page-title] {
+  background: rgba(5, 17, 37, .20) !important;
+  border-color: rgba(80, 190, 255, .24) !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,.12);
+}
+main p, main li, main label, main strong, main span {
+  text-shadow: 0 1px 3px rgba(0,0,0,.88);
+}
+body > div:first-child.bg-amber-500,
+body > div:first-child[class*="bg-amber-500"] {
+  background: linear-gradient(100deg, rgba(75,48,5,.94), rgba(224,164,31,.96), rgba(75,48,5,.94)) !important;
+  color: #fff8df !important;
+  border-bottom: 1px solid rgba(255,214,110,.78) !important;
+  box-shadow: 0 3px 16px rgba(0,0,0,.38), inset 0 -1px rgba(255,255,255,.16) !important;
+}
+</style>
+
 </head><body class="bg-brand-dark text-slate-100 font-cairo antialiased"><div class="bg-amber-500 border-b border-amber-400 py-3 px-4 text-center text-slate-950 text-xs sm:text-sm font-bold sticky top-0 z-[60] shadow-lg"><i class="fa-solid fa-triangle-exclamation ml-1.5 text-amber-400"></i><span>تنبيه: المنظومة لا تزال تحت التطوير المستمر لتقديم أفضل تجربة حماية آمنة متكاملة لك، وسنعلن عن موعد الإطلاق التجريبي قريبًا.</span></div><header class="bg-brand-dark/95 border-b border-brand-border">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-wrap items-center justify-between gap-4">
 <a href="index.html" class="flex items-center gap-3 shrink-0"><img src="logo.png.jpeg" alt="BOB Security Logo" class="w-10 h-10 rounded-xl object-contain bg-brand-card p-1 border border-brand-border" onerror="this.onerror=null; this.src='https://drive.google.com/thumbnail?id=1DUtBE_KMavf10SLuU-UR9oKFeMB_LDBX&sz=w200';"><span class="text-xl font-black tracking-wider text-white">BOB <span class="text-blue-500">Security</span></span></a>
@@ -101,7 +134,7 @@ body > div:first-child[class*="bg-amber-500"] i { color: #fff1b2 !important; }
 <a href="digital-evidence.html" class="hover:text-blue-400 transition-colors whitespace-nowrap">الأدلة الرقمية</a>
 <a href="protection-modes.html" class="hover:text-blue-400 transition-colors whitespace-nowrap">أوضاع الحماية</a>
 <a href="command-messages.html" class="hover:text-blue-400 transition-colors whitespace-nowrap">رسائل الكوماندز</a>
-<a href="plans.html" class="hover:text-blue-400 transition-colors whitespace-nowrap">مسارات الاستخدام</a>
+<a href="plans.html" class="hover:text-blue-400 transition-colors whitespace-nowrap">الأنظمة ومسارات الاستخدام</a>
 <a href="packages.html" class="hover:text-blue-400 transition-colors whitespace-nowrap">الباقات</a>
 </nav>
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs sm:text-sm px-4 py-2.5 rounded-xl transition-all whitespace-nowrap"><i class="fa-solid fa-user-plus ml-2"></i>تسجيل</a>
@@ -115,7 +148,7 @@ body > div:first-child[class*="bg-amber-500"] i { color: #fff1b2 !important; }
 <a href="digital-evidence.html" class="hover:text-blue-400">الأدلة الرقمية</a>
 <a href="protection-modes.html" class="hover:text-blue-400">أوضاع الحماية</a>
 <a href="command-messages.html" class="hover:text-blue-400">رسائل الكوماندز</a>
-<a href="plans.html" class="hover:text-blue-400">مسارات الاستخدام</a>
+<a href="plans.html" class="hover:text-blue-400">الأنظمة ومسارات الاستخدام</a>
 <a href="packages.html" class="hover:text-blue-400">الباقات</a>
 </nav></header><main><div class="max-w-6xl mx-auto px-4 pt-6 text-sm text-slate-500"><a class="text-blue-300" href="index.html">الرئيسية</a> ← مستويات لوحة التحكم</div><section class="py-10"><div class="max-w-5xl mx-auto px-4"><div class="rounded-3xl border border-blue-400/25 bg-brand-card p-6 sm:p-8"><div class="text-center mb-8"><div class="text-blue-300 text-4xl mb-4"><i class="fa-solid fa-tower-broadcast"></i></div><h1 class="text-2xl sm:text-4xl font-black text-white mb-4">غرفة عمليات BOB Security</h1><p class="text-slate-300 leading-9 text-lg">لو موبايلك ضاع أو اتسرق، افتح أقرب متصفح ليك متصل بالإنترنت وادخل على لوحة التحكم لإرسال الأوامر واستقبال البيانات من هاتفك. غرفة عملياتك الرقمية، بلوحة تحكم تفاعلية بتجمع أدوات متابعة هاتفك والتحكم فيه عن بُعد في مكان واحد.</p></div><div class="grid md:grid-cols-3 gap-4"><article class="rounded-2xl border border-emerald-400/20 bg-slate-900/60 p-5"><div class="text-emerald-300 text-2xl mb-3"><i class="fa-solid fa-location-dot"></i></div><h2 class="font-black text-white text-lg mb-2">الموقع الحي</h2><p class="text-slate-300 leading-7">جزء مخصص لعرض موقع الهاتف على الخريطة ومتابعة موقعه الحي.</p></article><article class="rounded-2xl border border-amber-400/20 bg-slate-900/60 p-5"><div class="text-amber-300 text-2xl mb-3"><i class="fa-solid fa-folder-open"></i></div><h2 class="font-black text-white text-lg mb-2">الملفات المستقبَلة</h2><p class="text-slate-300 leading-7">جزء لعرض الملفات التي يستقبلها النظام من الهاتف.</p></article><article class="rounded-2xl border border-purple-400/20 bg-slate-900/60 p-5"><div class="text-purple-300 text-2xl mb-3"><i class="fa-solid fa-gamepad"></i></div><h2 class="font-black text-white text-lg mb-2">مركز الأوامر التفاعلي</h2><p class="text-slate-300 leading-7">أزرار لإرسال أوامر الحماية إلى الهاتف المفقود، ومنها تفعيل الإنذار الصوتي العالي والضوضائي لمساعدتك على تمييز هاتفك وسط الزحام، والميزة متاحة في الباقة المجانية.</p></article></div><p class="text-center text-blue-200 font-bold mt-7 leading-8">BOB Security — غرفة عملياتك الرقمية، كل شيء أمامك والتحكم بين إيديك.</p></div></div></section><section class="py-12"><div class="max-w-5xl mx-auto px-4"><div class="text-center mb-10"><h1 class="text-3xl sm:text-5xl font-black text-white mb-5">مستويات لوحة التحكم في BOB Security</h1><p class="text-slate-300 leading-9">تختلف أدوات لوحة التحكم بحسب نوع الحساب والأجهزة المرتبطة والصلاحيات الممنوحة. هذا شرح عام، والوظائف المتاحة فعليًا تتحدد وفق ما تم تنفيذه وتفعيله واختباره.</p></div><div class="grid md:grid-cols-3 gap-5"><article class="rounded-2xl border border-blue-400/20 bg-brand-card p-6"><div class="text-blue-300 text-3xl mb-4"><i class="fa-solid fa-user"></i></div><h2 class="text-xl font-black text-white mb-3">لوحة الأفراد</h2><p class="text-slate-300 leading-8">لمتابعة الجهاز الشخصي ومراجعة التنبيهات والمعلومات والأوامر المتاحة للحساب، وفق الإعدادات والصلاحيات.</p></article><article class="rounded-2xl border border-emerald-400/20 bg-brand-card p-6"><div class="text-emerald-300 text-3xl mb-4"><i class="fa-solid fa-people-roof"></i></div><h2 class="text-xl font-black text-white mb-3">لوحة الأسرة</h2><p class="text-slate-300 leading-8">قد تتيح إدارة الأجهزة المرتبطة واستقبال التنبيهات أو الاستغاثات، بحسب إعدادات الربط والموافقات والصلاحيات.</p></article><article class="rounded-2xl border border-purple-400/20 bg-brand-card p-6"><div class="text-purple-300 text-3xl mb-4"><i class="fa-solid fa-building-shield"></i></div><h2 class="text-xl font-black text-white mb-3">لوحة المؤسسات</h2><p class="text-slate-300 leading-8">لإدارة الأجهزة التابعة للمؤسسة والسياسات والأوامر المؤسسية المصرح بها، مع تحديد صلاحيات المسؤولين.</p></article></div></div></section><div class="text-center mt-10"><a href="index.html" class="inline-block rounded-xl bg-blue-600 hover:bg-blue-500 px-6 py-3 font-bold text-white">العودة إلى الصفحة الرئيسية</a></div></main><footer class="border-t border-brand-border mt-12 py-8 text-center text-slate-500 text-sm"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-500 text-xs sm:text-sm">
 <p class="text-cyan-300 font-semibold mb-3"><i class="fa-solid fa-brain ml-1"></i> المنظومة مصممة ومدعومة بالذكاء الاصطناعي للوصول إلى أحدث المعايير التقنية والهندسية والحصول على أفضل معايير الجودة والأمان.</p>
