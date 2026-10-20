@@ -37,7 +37,7 @@
 <div class="bg-amber-500/15 border-b border-amber-500/30 py-2.5 px-4 text-center text-amber-200 text-xs sm:text-sm font-bold"><i class="fa-solid fa-circle-info ml-1"></i> BOB Security منظومة حماية تتطور باستمرار؛ نعمل على تحسين الأداء وتطوير التجربة بصورة متواصلة.</div>
 <!-- Header / Navbar -->
     <header class="sticky top-[37px] sm:top-[41px] z-50 backdrop-blur-xl bg-brand-dark/90 border-b border-brand-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between relative">
             <!-- Brand Logo in Navbar -->
             <div class="flex items-center space-x-3 space-x-reverse">
                 <a href="#" class="flex items-center space-x-3 space-x-reverse">
@@ -55,11 +55,11 @@
                 <a href="protection-modes.html" class="hover:text-blue-400 transition-colors">أوضاع الحماية</a>
                 <a href="plans.html" class="hover:text-blue-400 transition-colors">الأنظمة المتاحة</a>
                 <a href="packages.html" class="hover:text-blue-400 transition-colors">الباقات والأسعار</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" class="hover:text-blue-400 transition-colors">إبداء الاهتمام</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLaqjm_00dSL3bNwcr317xfQi7QlBTBelan1JA5NJnYYogkQ/viewform?hl=ar-EG" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors">إبداء الاهتمام</a>
             </nav>
 
             <!-- CTA Action -->
-            <div>
+            <div class="hidden md:block">
                 <a href="getting-started.html" class="bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs sm:text-sm px-5 py-2.5 rounded-xl shadow-lg shadow-blue-600/25 transition-all flex items-center">
                     <i class="fa-solid fa-file-pen ml-2"></i> <span>طريقة الاستخدام والتفعيل</span>
                 </a>
@@ -68,7 +68,7 @@
         <button id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl border border-brand-border text-slate-200" aria-label="فتح قائمة التنقل">
             <i class="fa-solid fa-bars"></i>
         </button>
-        <div id="mobile-menu" class="hidden md:hidden border-t border-brand-border bg-brand-dark px-4 py-4">
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full inset-x-0 z-50 border-t border-brand-border bg-brand-dark px-4 py-4 shadow-2xl">
             <nav class="grid grid-cols-2 gap-3 text-sm font-semibold text-slate-300">
                 <a href="index.html" class="rounded-lg p-2 hover:bg-brand-card">الرئيسية</a>
                 <a href="about.html" class="rounded-lg p-2 hover:bg-brand-card">عن المنظومة</a>
@@ -110,7 +110,7 @@
         <h3 class="text-lg font-bold text-white mb-2">عن المنظومة</h3><p class="text-sm text-slate-400 leading-7">تعرف على فكرة BOB Security والهدف الذي نعمل على تحقيقه.</p>
       </a><a href="getting-started.html" class="group bg-brand-card border border-brand-border hover:border-blue-500/60 rounded-2xl p-6 transition-all hover:-translate-y-1">
         <div class="flex items-center justify-between mb-5"><span class="w-11 h-11 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg"><i class="fa-solid fa-route"></i></span><i class="fa-solid fa-arrow-left text-slate-500 group-hover:text-blue-400 transition-colors"></i></div>
-        <h3 class="text-lg font-bold text-white mb-2">رحلة الاستخدام</h3><p class="text-sm text-slate-400 leading-7">التصور المبدئي لطريقة الاستخدام والتفعيل والاستجابة للحوادث.</p>
+        <h3 class="text-lg font-bold text-white mb-2">رحلة الاستخدام</h3><p class="text-sm text-slate-400 leading-7">خطوات الاستخدام والتفعيل والاستجابة للحوادث بصورة واضحة.</p>
       </a><a href="features.html" class="group bg-brand-card border border-brand-border hover:border-blue-500/60 rounded-2xl p-6 transition-all hover:-translate-y-1">
         <div class="flex items-center justify-between mb-5"><span class="w-11 h-11 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg"><i class="fa-solid fa-shield-halved"></i></span><i class="fa-solid fa-arrow-left text-slate-500 group-hover:text-blue-400 transition-colors"></i></div>
         <h3 class="text-lg font-bold text-white mb-2">المزايا والإمكانات</h3><p class="text-sm text-slate-400 leading-7">تعرّف على إمكانات الحماية وكيف تساعدك في المواقف اليومية.</p>
