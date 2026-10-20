@@ -514,8 +514,8 @@ body > header, html body header {
   width:100%!important;margin:0!important;text-align:center!important;white-space:nowrap!important;
 }
 .bob-hero-security{
-  display:flex!important;align-items:center!important;justify-content:center!important;
-  width:100%!important;max-width:100%!important;box-sizing:border-box!important;text-align:center!important;
+  display:block!important;width:100%!important;max-width:100%!important;box-sizing:border-box!important;
+  text-align:center!important;transform:scaleX(1.42)!important;transform-origin:center center!important;
   color:#d86bff!important;-webkit-text-fill-color:#d86bff!important;
   font-family:Arial,sans-serif!important;font-size:clamp(.9rem,3.8vw,1.65rem)!important;
   font-weight:500!important;letter-spacing:.015em!important;line-height:1.15!important;
@@ -524,7 +524,7 @@ body > header, html body header {
 @media(max-width:640px){
  .bob-hero-brand-row>.bob-hero-wordmark{max-width:68%!important}
  .bob-hero-brand-row>.bob-hero-wordmark>[aria-label="BOB"]{font-size:clamp(4.1rem,19vw,5.25rem)!important;letter-spacing:-.04em!important}
- .bob-hero-security{font-size:clamp(.82rem,4vw,1.15rem)!important;letter-spacing:0!important}
+ .bob-hero-security{font-size:clamp(.82rem,4vw,1.15rem)!important;letter-spacing:0!important;transform:scaleX(1.42)!important}
 }
 </style>
 
@@ -543,23 +543,12 @@ body > header, html body header {
             <div class="flex items-center space-x-3 space-x-reverse">
                 <a href="index.html" class="flex items-center space-x-3 space-x-reverse">
                     <img src="bob-security-logo.png" alt="شعار BOB Security - أنوبيس السيبراني" class="w-10 h-10 rounded-xl object-contain border border-cyan-300/70 shadow-[0_0_14px_rgba(0,220,255,.45)]" style="background:rgba(3,8,20,.35)">
-                    <span class="bob-wordmark"><span class="bob-wordmark-main">BOB</span></span>
+                    <span class="bob-wordmark"><span class="bob-wordmark-main">BOB</span><span class="bob-wordmark-sub">Security</span></span>
                 </a>
             </div>
             
             <!-- Navigation Links -->
-            <nav class="hidden md:flex items-center space-x-4 space-x-reverse text-xs font-semibold text-slate-300">
-                <a href="about.html" class="hover:text-blue-400 transition-colors">عن المنظومة</a>
-                <a href="getting-started.html" class="hover:text-blue-400 transition-colors">طريقة الاستخدام</a>
-                <a href="dashboard-levels.html" class="hover:text-blue-400 transition-colors">لوحة التحكم</a>
-                <a href="privacy-encryption.html" class="hover:text-blue-400 transition-colors">الخصوصية والتشفير</a>
-                <a href="features.html" class="hover:text-blue-400 transition-colors">المزايا</a>
-                <a href="digital-evidence.html" class="hover:text-blue-400 transition-colors">الأدلة الرقمية</a>
-                <a href="protection-modes.html" class="hover:text-blue-400 transition-colors">أوضاع الحماية</a>
-                <a href="command-messages.html" class="hover:text-blue-400 transition-colors">رسائل الكوماندز</a>
-                <a href="plans.html" class="hover:text-blue-400 transition-colors">الأنظمة ومسارات الاستخدام</a>
-                <a href="packages.html" class="hover:text-blue-400 transition-colors" style="color:#E7C76A !important;-webkit-text-fill-color:#E7C76A !important;">الباقات</a>
-            </nav>
+            <!-- Navigation index removed as requested; registration button retained. -->
 
             <!-- CTA Action -->
             <div>
