@@ -41,8 +41,21 @@
     </style>
 
 <style id="bob-hero-shields">
-.bob-hero-brand-row{display:grid!important;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;width:calc(100vw - 2rem);max-width:1200px;position:relative;left:50%;transform:translateX(-50%);gap:0!important}.bob-hero-brand-row>[aria-label="BOB"]{grid-column:2;justify-self:center}.bob-hero-brand-row>.bob-shield-wrap:first-child{grid-column:1;grid-row:1;justify-self:center}.bob-hero-brand-row>.bob-shield-wrap:last-child{grid-column:3;grid-row:1;justify-self:center}.bob-shield-wrap{display:flex;align-items:center;justify-content:center;flex:0 0 auto;filter:drop-shadow(0 0 16px rgba(0,153,255,.75)) drop-shadow(0 0 30px rgba(0,90,255,.42))}.bob-hero-shield{display:block;overflow:visible}
-@media(max-width:420px){.bob-hero-brand-row{width:calc(100vw - 1rem)}.bob-hero-brand-row [aria-label="BOB"]{font-size:5.25rem;letter-spacing:-.04em}.bob-hero-shield{width:2.6rem;height:3.2rem}}
+.bob-hero-brand-row{display:flex!important;align-items:center;justify-content:center;position:relative;left:50%;transform:translateX(-50%);width:calc(100vw - 2rem);max-width:1200px;min-height:clamp(6rem,15vw,10rem);margin-inline:auto;gap:0!important}
+.bob-hero-brand-row>[aria-label="BOB"]{position:relative;z-index:2;flex:0 0 auto;margin:0 auto}
+.bob-hero-brand-row>.bob-shield-wrap{position:absolute;top:50%;transform:translateY(-50%);z-index:1}
+.bob-hero-brand-row>.bob-shield-wrap:first-child{left:16.6667%}
+.bob-hero-brand-row>.bob-shield-wrap:last-child{right:16.6667%}
+.bob-shield-wrap{display:flex;align-items:center;justify-content:center;flex:0 0 auto;filter:drop-shadow(0 0 12px rgba(0,153,255,.72)) drop-shadow(0 0 26px rgba(0,90,255,.38))}
+.bob-hero-shield{display:block;overflow:visible}
+@media(max-width:640px){
+ .bob-hero-brand-row{width:calc(100vw - 1rem);min-height:5.8rem}
+ .bob-hero-brand-row>.bob-shield-wrap:first-child{left:7%}
+ .bob-hero-brand-row>.bob-shield-wrap:last-child{right:7%}
+ .bob-hero-brand-row [aria-label="BOB"]{font-size:clamp(4.4rem,20vw,5.25rem);letter-spacing:-.04em}
+ .bob-hero-shield{width:2.35rem;height:3rem}
+ .bob-shield-wrap{filter:drop-shadow(0 0 10px rgba(0,153,255,.8)) drop-shadow(0 0 20px rgba(0,90,255,.42))}
+}
 </style>
 </head><body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
 
