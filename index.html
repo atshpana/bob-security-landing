@@ -562,6 +562,23 @@ body > div:first-child[class*="bg-amber-500"] {
 }
 
 
+
+<style id="bob-emergency-content-visibility-fix-2026-10-21">
+/* Emergency repair: keep real page content above the decorative Anubis background. */
+html, body { min-height:100%; }
+body { position:relative!important; isolation:isolate!important; }
+body::before { z-index:-1!important; pointer-events:none!important; }
+body > * { position:relative!important; z-index:1!important; visibility:visible!important; }
+body > div:first-child, body > header, body > main, body > footer,
+body main, body main section, body main h1, body main h2, body main h3,
+body main p, body main a, body main img, body main article {
+  visibility:visible!important;
+  opacity:1!important;
+}
+body > header, body > main, body > footer { display:block; }
+body main { min-height:40vh; }
+</style>
+
 </head><body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
 
     <!-- Development Notice Banner -->
