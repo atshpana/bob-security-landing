@@ -560,6 +560,15 @@ body > div:first-child[class*="bg-amber-500"] {
   margin-top: 0 !important;
   transform: none !important;
 }
+
+<style id="bob-force-notice-to-top-2026-10-21">
+/* Targeted mobile fix: pull the first notice and the page flow up over the unexplained top gap. */
+@media (max-width: 767px) {
+  html body > div:first-child.bg-amber-500,
+  html body > div:first-child[class*="bg-amber-500"] {
+    margin-block-start: -44px !important;
+  }
+}
 </style>
 
 </head><body class="bg-brand-dark text-slate-100 font-cairo antialiased selection:bg-blue-600 selection:text-white">
