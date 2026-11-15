@@ -1,0 +1,730 @@
+[
+  {
+    "id": "M-01",
+    "group": "تطبيق الهاتف",
+    "name": "بدء التشغيل الآمن",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "M-02",
+    "group": "تطبيق الهاتف",
+    "name": "تسجيل الدخول",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "M-03",
+    "group": "تطبيق الهاتف",
+    "name": "الإعداد / التسجيل",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "M-04",
+    "group": "تطبيق الهاتف",
+    "name": "فحص قدرات الجهاز وسلامته",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "M-05",
+    "group": "تطبيق الهاتف",
+    "name": "حالة SIM/eSIM والإرشاد",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "M-06",
+    "group": "تطبيق الهاتف",
+    "name": "بدء التجربة / ربط الدفع",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "M-07",
+    "group": "تطبيق الهاتف",
+    "name": "إقرار المستخدم وتأكيد العملية",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "M-08",
+    "group": "تطبيق الهاتف",
+    "name": "الأمان الأساسي والصلاحيات",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "M-09",
+    "group": "تطبيق الهاتف",
+    "name": "التحقق برمز لمرة واحدة",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "M-10",
+    "group": "تطبيق الهاتف",
+    "name": "لوحة الهاتف الرئيسية",
+    "implementation": "INTERACTIVE_DEMO",
+    "production": "GATED"
+  },
+  {
+    "id": "M-11",
+    "group": "تطبيق الهاتف",
+    "name": "الحماية الطبيعية",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "M-12",
+    "group": "تطبيق الهاتف",
+    "name": "وضع التأهب",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "M-13",
+    "group": "تطبيق الهاتف",
+    "name": "وضع الاسترداد",
+    "implementation": "INTERACTIVE_DEMO",
+    "production": "GATED"
+  },
+  {
+    "id": "M-14",
+    "group": "تطبيق الهاتف",
+    "name": "الحماية السلبية",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "M-15",
+    "group": "تطبيق الهاتف",
+    "name": "فحص الأمان قيد التشغيل",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "M-16",
+    "group": "تطبيق الهاتف",
+    "name": "نتيجة فحص الأمان",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "M-17",
+    "group": "تطبيق الهاتف",
+    "name": "اتصال السحابة / الأوامر",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "M-18",
+    "group": "تطبيق الهاتف",
+    "name": "حالة التجربة / الاشتراك",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "M-19",
+    "group": "تطبيق الهاتف",
+    "name": "قفل الوصول إلى التطبيق",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "M-20",
+    "group": "تطبيق الهاتف",
+    "name": "استمرارية العمل في الخلفية",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "M-21",
+    "group": "تطبيق الهاتف",
+    "name": "الخصوصية والموافقة",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "M-22",
+    "group": "تطبيق الهاتف",
+    "name": "لوحة الأسرة: العضوية والدعوات والمقاعد والاستحقاق والفوترة والانسحاب",
+    "implementation": "INTERACTIVE_DEMO",
+    "production": "GATED"
+  },
+  {
+    "id": "M-23",
+    "group": "تطبيق الهاتف",
+    "name": "لوحة الإدارة المؤسسية المحمولة",
+    "implementation": "INTERACTIVE_DEMO",
+    "production": "GATED"
+  },
+  {
+    "id": "W-01",
+    "group": "الويب العام",
+    "name": "الصفحة العامة / الرئيسية",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "W-02",
+    "group": "الويب العام",
+    "name": "تسجيل الدخول عبر الويب",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "W-03",
+    "group": "الويب العام",
+    "name": "إنشاء الحساب عبر الويب",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "W-04",
+    "group": "الويب العام",
+    "name": "استعادة الحساب",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "W-05",
+    "group": "الويب العام",
+    "name": "الباقات والأسعار والمزايا",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "W-06",
+    "group": "الويب العام",
+    "name": "الدعم العام",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "W-07",
+    "group": "الويب العام",
+    "name": "الأخبار والمحتوى التعليمي والحملات",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "W-08",
+    "group": "الويب العام",
+    "name": "الخصوصية والشروط وطلب حذف الحساب",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "D-01",
+    "group": "لوحة المستخدم",
+    "name": "نظرة عامة على الجهاز",
+    "implementation": "INTERACTIVE_DEMO",
+    "production": "GATED"
+  },
+  {
+    "id": "D-02",
+    "group": "لوحة المستخدم",
+    "name": "الموقع والخريطة",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "D-03",
+    "group": "لوحة المستخدم",
+    "name": "مركز الأوامر",
+    "implementation": "INTERACTIVE_DEMO",
+    "production": "GATED"
+  },
+  {
+    "id": "D-04",
+    "group": "لوحة المستخدم",
+    "name": "أوضاع الحماية",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "D-05",
+    "group": "لوحة المستخدم",
+    "name": "عمليات الاسترداد",
+    "implementation": "INTERACTIVE_DEMO",
+    "production": "GATED"
+  },
+  {
+    "id": "D-06",
+    "group": "لوحة المستخدم",
+    "name": "البيانات والتقارير السريعة",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "D-07",
+    "group": "لوحة المستخدم",
+    "name": "تفاصيل الأمر",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "D-08",
+    "group": "لوحة المستخدم",
+    "name": "التحقق الثنائي / التفويض",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "D-09",
+    "group": "لوحة المستخدم",
+    "name": "دورة حياة الأمر",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "D-10",
+    "group": "لوحة المستخدم",
+    "name": "القياسات والحالة اللحظية",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "D-11",
+    "group": "لوحة المستخدم",
+    "name": "تفاصيل الجهاز والأمان",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "D-12",
+    "group": "لوحة المستخدم",
+    "name": "الإشعارات",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "D-13",
+    "group": "لوحة المستخدم",
+    "name": "الاتصال والاسترداد الشبكي",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "A-01",
+    "group": "الحساب والفوترة",
+    "name": "الحساب",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "A-02",
+    "group": "الحساب والفوترة",
+    "name": "الإعدادات الأمنية",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "A-03",
+    "group": "الحساب والفوترة",
+    "name": "الأجهزة",
+    "implementation": "INTERACTIVE_DEMO",
+    "production": "GATED"
+  },
+  {
+    "id": "A-04",
+    "group": "الحساب والفوترة",
+    "name": "تفاصيل الجهاز",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "A-05",
+    "group": "الحساب والفوترة",
+    "name": "فصل الجهاز",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "A-06",
+    "group": "الحساب والفوترة",
+    "name": "الباقات",
+    "implementation": "INTERACTIVE_DEMO",
+    "production": "GATED"
+  },
+  {
+    "id": "A-07",
+    "group": "الحساب والفوترة",
+    "name": "الدفع ومصدر الفوترة",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "A-08",
+    "group": "الحساب والفوترة",
+    "name": "المعاملات",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "A-09",
+    "group": "الحساب والفوترة",
+    "name": "الفواتير",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "A-10",
+    "group": "الحساب والفوترة",
+    "name": "إدارة الاشتراك",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "E-01",
+    "group": "الأدلة والتقارير",
+    "name": "الخريطة الحية / آخر موقع",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "E-02",
+    "group": "الأدلة والتقارير",
+    "name": "الخط الزمني للأحداث",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "E-03",
+    "group": "الأدلة والتقارير",
+    "name": "معرض الأدلة / بيانات BOB",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "E-04",
+    "group": "الأدلة والتقارير",
+    "name": "التحقق من البصمة الرقمية وسلامة الدليل",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "E-05",
+    "group": "الأدلة والتقارير",
+    "name": "سجل الأحداث التقني",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "E-06",
+    "group": "الأدلة والتقارير",
+    "name": "معاينة التقرير التقني",
+    "implementation": "INTERACTIVE_DEMO",
+    "production": "GATED"
+  },
+  {
+    "id": "E-07",
+    "group": "الأدلة والتقارير",
+    "name": "إصدار / تصدير التقرير",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "E-08",
+    "group": "الأدلة والتقارير",
+    "name": "حالة التوقيع / الختم الإلكتروني",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "E-09",
+    "group": "الأدلة والتقارير",
+    "name": "سلسلة الحيازة / التعامل",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "AD-01",
+    "group": "الإدارة المركزية",
+    "name": "دخول الإدارة",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "AD-02",
+    "group": "الإدارة المركزية",
+    "name": "لوحة الإدارة الرئيسية",
+    "implementation": "INTERACTIVE_DEMO",
+    "production": "GATED"
+  },
+  {
+    "id": "AD-03",
+    "group": "الإدارة المركزية",
+    "name": "إدارة المستخدمين",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "AD-04",
+    "group": "الإدارة المركزية",
+    "name": "إدارة الأجهزة",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "AD-05",
+    "group": "الإدارة المركزية",
+    "name": "الاشتراكات والفوترة",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "AD-06",
+    "group": "الإدارة المركزية",
+    "name": "الموزعون والأكواد",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "AD-07",
+    "group": "الإدارة المركزية",
+    "name": "العمولات والصرف",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "AD-08",
+    "group": "الإدارة المركزية",
+    "name": "المحتوى ونظام النشر",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "AD-09",
+    "group": "الإدارة المركزية",
+    "name": "الموظفون",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "AD-10",
+    "group": "الإدارة المركزية",
+    "name": "الأدوار والصلاحيات",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "AD-11",
+    "group": "الإدارة المركزية",
+    "name": "التقارير",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "AD-12",
+    "group": "الإدارة المركزية",
+    "name": "المدفوعات والاعتمادات المالية",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "AD-13",
+    "group": "الإدارة المركزية",
+    "name": "سجلات التدقيق",
+    "implementation": "INTERACTIVE_DEMO",
+    "production": "GATED"
+  },
+  {
+    "id": "AD-14",
+    "group": "الإدارة المركزية",
+    "name": "صحة النظام والذكاء الاصطناعي",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "EN-01",
+    "group": "المؤسسة",
+    "name": "لوحة المؤسسة",
+    "implementation": "INTERACTIVE_DEMO",
+    "production": "GATED"
+  },
+  {
+    "id": "EN-02",
+    "group": "المؤسسة",
+    "name": "الأجهزة والسياسات والتهيئة",
+    "implementation": "INTERACTIVE_DEMO",
+    "production": "GATED"
+  },
+  {
+    "id": "EN-03",
+    "group": "المؤسسة",
+    "name": "التراخيص والتقارير والأدوار",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "P-01",
+    "group": "الشركاء والتوزيع",
+    "name": "لوحة الشريك",
+    "implementation": "INTERACTIVE_DEMO",
+    "production": "GATED"
+  },
+  {
+    "id": "P-02",
+    "group": "الشركاء والتوزيع",
+    "name": "مصادر الإسناد",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "P-03",
+    "group": "الشركاء والتوزيع",
+    "name": "التقاط المصدر",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "P-04",
+    "group": "الشركاء والتوزيع",
+    "name": "القسائم / الأكواد",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "P-05",
+    "group": "الشركاء والتوزيع",
+    "name": "العمولات",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "P-06",
+    "group": "الشركاء والتوزيع",
+    "name": "كشوف العمولات",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "P-07",
+    "group": "الشركاء والتوزيع",
+    "name": "الدفع / الصرف",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "P-08",
+    "group": "الشركاء والتوزيع",
+    "name": "الملف",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "P-09",
+    "group": "الشركاء والتوزيع",
+    "name": "الحملات",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "P-10",
+    "group": "الشركاء والتوزيع",
+    "name": "الشركاء",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "P-11",
+    "group": "الشركاء والتوزيع",
+    "name": "التحقيق",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "P-12",
+    "group": "الشركاء والتوزيع",
+    "name": "قواعد العمولات",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "P-13",
+    "group": "الشركاء والتوزيع",
+    "name": "اعتماد الدفع",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "P-14",
+    "group": "الشركاء والتوزيع",
+    "name": "التدقيق",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "S-01",
+    "group": "الدعم",
+    "name": "مركز الدعم",
+    "implementation": "INTERACTIVE_DEMO",
+    "production": "GATED"
+  },
+  {
+    "id": "S-02",
+    "group": "الدعم",
+    "name": "قاعدة المعرفة",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "S-03",
+    "group": "الدعم",
+    "name": "بوابة الدعم الذكي والتصنيف الآلي",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "S-04",
+    "group": "الدعم",
+    "name": "المحادثة / التذكرة البشرية",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "S-05",
+    "group": "الدعم",
+    "name": "صندوق الدعم والإشعارات",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "S-06",
+    "group": "الدعم",
+    "name": "تفاصيل التذكرة",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "S-07",
+    "group": "الدعم",
+    "name": "التصعيد والتحويل إلى موظف بشري",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "S-08",
+    "group": "الدعم",
+    "name": "واجهة موظف الدعم",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "S-09",
+    "group": "الدعم",
+    "name": "مراجعة إساءة الاستخدام / الحالة الحساسة",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  },
+  {
+    "id": "S-10",
+    "group": "الدعم",
+    "name": "سجل الدعم والحلول",
+    "implementation": "CONTRACT_ONLY",
+    "production": "GATED"
+  }
+]

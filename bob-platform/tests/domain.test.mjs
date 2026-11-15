@@ -1,0 +1,13 @@
+import test from "node:test";import assert from "node:assert/strict";
+import {preflight,redactRole,acceptEvidence} from "../src/domain.mjs";
+const now=Date.parse("2026-11-15T08:30:00Z");
+const owned={id:"d",ownerId:"demo-owner",kind:"personal",connection:"online",capabilities:{status:{state:"SUPPORTED",checkedAt:new Date(now).toISOString()}}};
+test("owner fresh supported status preflight is demo-only",()=>assert.equal(preflight({role:"owner",device:owned,action:"STATUS_REFRESH",now}).code,"PREFLIGHT_PASS_DEMO_ONLY"));
+test("family admin cannot issue on adult devices",()=>assert.equal(preflight({role:"family",device:owned,action:"STATUS_REFRESH",now}).code,"TARGET_NOT_AUTHORIZED"));
+test("unknown command is rejected",()=>assert.equal(preflight({role:"owner",device:owned,action:"WIPE",now}).code,"COMMAND_NOT_ALLOWLISTED"));
+test("stale capability denies action",()=>assert.equal(preflight({role:"owner",device:owned,action:"STATUS_REFRESH",now:now+65000}).code,"CAPABILITY_STALE"));
+test("offline device denies action",()=>assert.equal(preflight({role:"owner",device:{...owned,connection:"offline"},action:"STATUS_REFRESH",now}).code,"DEVICE_NOT_CONNECTED"));
+test("unsigned evidence never confirms command",()=>assert.equal(acceptEvidence({state:"RESULT_UNCONFIRMED"},{}).state,"RESULT_UNCONFIRMED"));
+test("proper verified evidence permits confirmed state",()=>assert.equal(acceptEvidence({state:"RESULT_UNCONFIRMED"},{verified:true,source:"test",recordedAt:"2026-11-15"}).state,"EVIDENCE_CONFIRMED"));
+test("family role cannot view adult device telemetry",()=>{const x=redactRole("family",{devices:[owned],incidents:[],commands:[],tickets:[],family:{members:[]},enterprise:{},adminUsers:[],audit:[],content:[],partner:{}});assert.equal(x.devices.length,0);assert.equal(x.commands.length,0);});
+test("admin role not privileged for remote device commands",()=>assert.equal(preflight({role:"admin",device:owned,action:"STATUS_REFRESH",now}).code,"TARGET_NOT_AUTHORIZED"));
