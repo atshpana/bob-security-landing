@@ -30,6 +30,8 @@ jobs:
       - name: Run isolated API tests
         run: python -m pytest -q
   web:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -51,6 +53,22 @@ jobs:
           name: bob-react-web-build
           path: bob-platform/web/dist
           retention-days: 7
+      - name: Assemble public React preview on same feature branch
+        if: github.event_name == 'push'
+        run: |
+          mkdir -p ../web-preview
+          rsync -a --delete dist/ ../web-preview/
+      - name: Save preview files without touching main
+        if: github.event_name == 'push'
+        working-directory: .
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add bob-platform/web-preview
+          if ! git diff --cached --quiet; then
+            git commit -m "build(bob): refresh interactive React preview [skip ci]"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
   flutter:
     runs-on: ubuntu-latest
     defaults:
