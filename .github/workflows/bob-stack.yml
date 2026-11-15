@@ -67,7 +67,7 @@ jobs:
       - name: Assert minimum Android SDK and harmless manifest
         run: |
           grep -q 'minSdk = 30' android/app/build.gradle.kts
-          if grep -E 'RECEIVE_SMS|READ_SMS|android.permission.CAMERA|android.permission.RECORD_AUDIO' android/app/src/main/AndroidManifest.xml; then
+          if grep -E '<uses-permission[^>]+android.permission.(RECEIVE_SMS|READ_SMS|CAMERA|RECORD_AUDIO)' android/app/src/main/AndroidManifest.xml; then
             echo 'Unexpected Android sensitive permission'
             exit 1
           fi
