@@ -1,0 +1,11 @@
+{
+  "name": "BOB Security — Interactive Mobile Preview",
+  "short_name": "BOB Demo",
+  "start_url": "./mobile.html",
+  "display": "standalone",
+  "background_color": "#081325",
+  "theme_color": "#081325",
+  "lang": "ar",
+  "dir": "rtl",
+  "description": "BOB Security static preview. No real devices or accounts."
+}
