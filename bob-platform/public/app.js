@@ -102,7 +102,7 @@ function commands(){
  const commandOptions=Object.entries(COMMAND_ACTIONS).map(([k,v])=>'<option value="'+k+'"'+(selectedAction===k?" selected":"")+'>'+esc(v)+'</option>').join("");
  const list=(data.commands||[]).map(c=>row(COMMAND_ACTIONS[c.action]||c.action,"الجهاز: "+c.deviceId+" • لا تنفيذ فعلي",c.state+" • "+fmt(c.createdAt))).join("")||empty("لا توجد أوامر تجريبية بعد");
  return wrap("مركز الأوامر","تبدأ العملية بفحص قدرة حديث، وتتوقف عند محاكاة الطلب دون إرسال أمر لجهاز فعلي.",
- '<div class="grid cols2"><div class="panel"><h2>طلب أمر على جهاز مخول</h2><div class="field"><label for="cmd-device">الجهاز الهدف</label><select id="cmd-device">'+options+'</select></div><div class="field section"><label for="cmd-action">نوع الأمر</label><select id="cmd-action">'+commandOptions+'</select></div><div class="actions section">'+btn("فحص الصلاحية والقدرة","preflight","primary")+btn("تسجيل أمر تجريبي","command")+'</div><div class="section">'+(preflight?hint("نتيجة الفحص: "+preflight.code+" • "+(preflight.note||"لا يُسمح بالتنفيذ قبل استيفاء الشروط."),!preflight.allowed):hint("حدّد الجهاز والأمر ثم اطلب الفحص. التحقق لا يعني أن أي حساس بدأ."))+'</div></div>'+
+ '<div class="grid cols2"><div class="panel"><h2>طلب أمر على جهاز مخول</h2><div class="field"><label for="cmd-device">الجهاز الهدف</label><select id="cmd-device">'+options+'</select></div><div class="field section"><label for="cmd-action">نوع الأمر</label><select id="cmd-action">'+commandOptions+'</select></div><div class="actions section">'+btn("تحديث فحص تجريبي","capability-refresh")+btn("فحص الصلاحية والقدرة","preflight","primary")+btn("تسجيل أمر تجريبي","command")+'</div><div class="section">'+(preflight?hint("نتيجة الفحص: "+preflight.code+" • "+(preflight.note||"لا يُسمح بالتنفيذ قبل استيفاء الشروط."),!preflight.allowed):hint("حدّد الجهاز والأمر ثم اطلب الفحص. التحقق لا يعني أن أي حساس بدأ."))+'</div></div>'+
  '<div class="panel"><h2>دورة حياة الأمر</h2>'+kv("1. فحص التفويض","مطلوب")+kv("2. فحص القدرة","مطلوب وحديث")+kv("3. مراجعة الهدف","مطلوبة")+kv("4. تنفيذ الهاتف","معطل في المعاينة")+kv("5. إثبات النتيجة","لا نجاح دون دليل")+kv("6. نتيجة غير مؤكدة","RESULT_UNCONFIRMED")+'</div></div>'+
  section("سجل الأوامر",'<div class="list">'+list+'</div>')+
  section("حدود الأوامر الحساسة",hint("أوامر المسح والقفل الإداري والكاميرا والصوت غير متاحة في المعاينة. المسح الجماعي المؤسسي يحتاج موافقة ثانية مستقلة، والأوامر غير قابلة للتنفيذ عبر واجهة الأسرة.",true)));
@@ -193,6 +193,11 @@ function render(){
 async function runAction(action){
  try{
   if(action==="toggle-menu"||action==="close-menu"){menuOpen=action==="toggle-menu"?!menuOpen:false;render();return;}
+  if(action==="capability-refresh"){
+   const d=document.getElementById("cmd-device");if(d)selectedDeviceId=d.value;
+   const r=await request("/api/devices/preflight-refresh",{method:"POST",body:JSON.stringify({deviceId:selectedDeviceId})});
+   preflight=null;await bootstrap();toast(r.notice);return;
+  }
   if(action==="preflight"||action==="command"){
    const d=document.getElementById("cmd-device"),a=document.getElementById("cmd-action");
    if(d)selectedDeviceId=d.value;if(a)selectedAction=a.value;
