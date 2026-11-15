@@ -66,7 +66,7 @@ class _BobHomeState extends State<BobHome>{
    child:Column(mainAxisSize:MainAxisSize.min,children:[
     Container(width:112,height:112,decoration:BoxDecoration(
       gradient:const LinearGradient(colors:[turq,petrol]),borderRadius:BorderRadius.circular(27)),
-      child:const Center(child:Text('BOB',style:TextStyle(fontSize:34,fontWeight:FontWeight.w900)))),
+      child:Image.asset('assets/bob_logo.jpeg',fit:BoxFit.contain)),
     const SizedBox(height:20),
     const Text('BOB Security',style:TextStyle(fontSize:26,fontWeight:FontWeight.w900)),
     const SizedBox(height:8),

@@ -1,0 +1,87 @@
+name: BOB 4.0 Web + FastAPI + Flutter checks
+on:
+  push:
+    branches:
+      - 'feature/bob-platform-pre-db-*'
+    paths:
+      - 'bob-platform/**'
+      - '.github/workflows/bob-stack.yml'
+  pull_request:
+    paths:
+      - 'bob-platform/**'
+      - '.github/workflows/bob-stack.yml'
+permissions:
+  contents: read
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: bob-platform/backend
+    env:
+      BOB_DEMO_ONLY: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install FastAPI and tests
+        run: pip install -r requirements.txt pytest httpx
+      - name: Run isolated API tests
+        run: python -m pytest -q
+  web:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: bob-platform/web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install React tooling
+        run: npm install --no-audit --no-fund
+      - name: Build React website
+        run: npm run build
+      - name: Verify web and canonical contracts
+        run: npm test
+      - name: Attach React built static preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: bob-react-web-build
+          path: bob-platform/web/dist
+          retention-days: 7
+  flutter:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: bob-platform/mobile
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      - name: Create missing Android host files
+        run: flutter create --platforms=android --org com.bob --project-name bob_security .
+      - name: Assert minimum Android SDK and harmless manifest
+        run: |
+          grep -q 'minSdk = 30' android/app/build.gradle.kts
+          if grep -E 'RECEIVE_SMS|READ_SMS|android.permission.CAMERA|android.permission.RECORD_AUDIO' android/app/src/main/AndroidManifest.xml; then
+            echo 'Unexpected Android sensitive permission'
+            exit 1
+          fi
+      - name: Fetch Flutter packages
+        run: flutter pub get
+      - name: Analyze Flutter code
+        run: flutter analyze --no-fatal-infos
+      - name: Run Flutter widget tests
+        run: flutter test
+      - name: Build unsigned-for-production debug APK
+        run: flutter build apk --debug
+      - name: Attach demo APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: bob-flutter-android-demo-apk
+          path: bob-platform/mobile/build/app/outputs/flutter-apk/app-debug.apk
+          retention-days: 7
