@@ -23,7 +23,7 @@ const state={
   partner:{attribution:"DEMO_ONLY",codes:[],commissions:[],payouts:[]}
 };
 const MIME={".html":"text/html; charset=utf-8",".css":"text/css; charset=utf-8",".js":"text/javascript; charset=utf-8",".json":"application/json; charset=utf-8",".svg":"image/svg+xml"};
-function write(res,status,data,type="application/json; charset=utf-8"){res.writeHead(status,{"Content-Type":type,"X-Content-Type-Options":"nosniff","Cache-Control":"no-store","Referrer-Policy":"no-referrer","Content-Security-Policy":"default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'"});res.end(typeof data==="string"?data:JSON.stringify(data));}
+function write(res,status,data,type="application/json; charset=utf-8"){res.writeHead(status,{"Content-Type":type,"X-Content-Type-Options":"nosniff","Cache-Control":"no-store","Referrer-Policy":"no-referrer","Content-Security-Policy":"default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'"});res.end(typeof data==="string"||Buffer.isBuffer(data)?data:JSON.stringify(data));}
 async function body(req){let text="";for await (const buf of req){text+=buf;if(text.length>16384)throw new Error("REQUEST_TOO_LARGE");}try{return JSON.parse(text||"{}");}catch{throw new Error("INVALID_JSON");}}
 function role(req){const r=req.headers["x-demo-role"]||"owner";return ROLES.includes(r)?r:null;}
 function fail(res,code,status=400){write(res,status,{ok:false,code});}
@@ -38,6 +38,12 @@ async function handler(req,res){
   if(req.method==="GET"&&pathname==="/api/bootstrap")return write(res,200,{role:r,...redactRole(r,state)});
   if(req.method!=="POST")return fail(res,"METHOD_NOT_ALLOWED",405);
   let b;try{b=await body(req);}catch(e){return fail(res,e.message,400);}
+  if(pathname==="/api/devices/preflight-refresh"){
+   const d=state.devices.find(x=>x.id===b.deviceId);
+   if(!d||!["owner","enterprise"].includes(r)||!((r==="owner"&&d.ownerId==="demo-owner"&&d.kind==="personal")||(r==="enterprise"&&d.kind==="managed"&&d.tenantId==="demo-tenant")))return fail(res,"TARGET_NOT_AUTHORIZED",403);
+   d.capabilities=capabilities();audit("DEMO_CAPABILITY_REFRESH",r,d.id);
+   return write(res,200,{ok:true,capabilities:d.capabilities,notice:"تحديث تجريبي فقط؛ لم يتم فحص جهاز حقيقي."});
+  }
   if(pathname==="/api/commands/preflight"){
    const d=state.devices.find(x=>x.id===b.deviceId);const p=preflight({role:r,device:d,action:b.action,subscription:r==="owner"?"personal":"managed"});return write(res,p.allowed?200:403,p);
   }
