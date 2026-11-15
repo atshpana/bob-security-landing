@@ -4,244 +4,314 @@
     "parent": "AD-14",
     "name": "مركز الحوادث",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "AD-14.AI",
     "parent": "AD-14",
     "name": "حالة الحارس السيبراني",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "AD-03.DSR",
     "parent": "AD-03",
     "name": "طلب حق صاحب البيانات",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "AD-10.DSR",
     "parent": "AD-10",
     "name": "مراجعة قرار الخصوصية",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "AD-13.DSR",
     "parent": "AD-13",
     "name": "تدقيق طلبات الحقوق",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "M-21.DELETE",
     "parent": "M-21",
     "name": "حذف حساب BOB",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "M-21.EMC",
     "parent": "M-21",
-    "name": "إدارة جهة اتصال الطوارئ",
+    "name": "F-013 / إدارة جهة اتصال الطوارئ",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "M-22.MEM",
     "parent": "M-22",
-    "name": "عضوية الأسرة والدعوات",
+    "name": "لوحة الأسرة: عضوية/دعوات وحالة قبول/مقاعد/استحقاق وحالة الباقة/فوترة/حقوق انسحاب",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "M-22.BIL",
     "parent": "M-22",
-    "name": "المقاعد والاستحقاق والفوترة",
+    "name": "لوحة الأسرة: عضوية/دعوات وحالة قبول/مقاعد/استحقاق وحالة الباقة/فوترة/حقوق انسحاب",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "M-23.DEV",
     "parent": "M-23",
     "name": "اختيار جهاز المؤسسة",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "M-23.CMD",
     "parent": "M-23",
     "name": "أمر مؤسسي حساس",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "W-08.DELETE",
     "parent": "W-08",
     "name": "حذف الحساب عبر الويب",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "P-12.POL",
     "parent": "P-12",
-    "name": "سياسة العمولة والصرف",
+    "name": "سياسة العمولة/الصرف",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "S-03.ROUTE",
     "parent": "S-03",
     "name": "التصنيف والتوجيه الآلي",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "S-03.CS",
     "parent": "S-03",
     "name": "خدمة العملاء AI",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "S-03.TECH",
     "parent": "S-03",
     "name": "الدعم الفني AI",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "S-07.HUMAN",
     "parent": "S-07",
     "name": "التصعيد البشري",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "M-23.EOC",
     "parent": "M-23",
     "name": "رمز أمر الطوارئ الأحادي",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "EN-02.EOC",
     "parent": "EN-02",
     "name": "رمز أمر الطوارئ الأحادي للويب",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "M-13.MPF",
     "parent": "M-13",
     "name": "صور أمامية",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "M-13.MPR",
     "parent": "M-13",
     "name": "صور خلفية",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "M-13.MVF",
     "parent": "M-13",
     "name": "فيديو أمامي",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "M-13.MVR",
     "parent": "M-13",
     "name": "فيديو خلفي",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "M-13.MA20",
     "parent": "M-13",
     "name": "تسجيل صوت",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "D-03.MPF",
     "parent": "D-03",
     "name": "أمر الصور الأمامية",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "D-03.MPR",
     "parent": "D-03",
     "name": "أمر الصور الخلفية",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "D-03.MVF",
     "parent": "D-03",
     "name": "أمر الفيديو الأمامي",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "D-03.MVR",
     "parent": "D-03",
     "name": "أمر الفيديو الخلفي",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "D-03.MA20",
     "parent": "D-03",
     "name": "أمر التسجيل الصوتي",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "E-07.ISS",
     "parent": "E-07",
     "name": "إصدار التقرير الأصلي",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "E-07.EXP",
     "parent": "E-07",
     "name": "تصدير تقرير موجود",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "E-07.REI",
     "parent": "E-07",
     "name": "إعادة إصدار التقرير",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "M-06.TRL",
     "parent": "M-06",
     "name": "بدء التجربة",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "M-06.PAY",
     "parent": "M-06",
     "name": "ربط الدفع",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   },
   {
     "id": "EN-02.BULK",
     "parent": "EN-02",
     "name": "تجهيز التفعيل الجماعي",
     "implementation": "CONTRACT_ONLY",
-    "production": "GATED"
+    "production": "GATED",
+    "reference": "BOB_4_0_OWNER_APPROVED_FROZEN §29.3",
+    "complete": false
   }
 ]

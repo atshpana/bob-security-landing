@@ -1,0 +1,63 @@
+{
+  "reference": {
+    "name": "BOB_4_0_OWNER_APPROVED_FROZEN",
+    "version": "4.0",
+    "status": "OWNER_APPROVED_FROZEN",
+    "source_sections": [
+      "§0.8",
+      "§2.4",
+      "§3",
+      "§4",
+      "§10",
+      "§21.44.1",
+      "§22.1",
+      "§22.11",
+      "§29.2.1",
+      "§29.3"
+    ]
+  },
+  "concept": "منتج أمني واحد لأجهزة Android، بحساب وخادم وعقود موحدة للويب وتطبيق الهاتف",
+  "release_sequence": [
+    "FOUNDATION_PRODUCTION_BASE",
+    "BOB_PUBLIC_UPDATE",
+    "GUARD_PERSONAL_UPDATE",
+    "GUARD_MANAGED_UPDATE"
+  ],
+  "product_levels": [
+    "BOB Public",
+    "Guard Personal",
+    "Guard Managed"
+  ],
+  "family": "Guard Personal membership/billing only; no adult device monitoring or remote commands",
+  "stack": {
+    "android_ui": "Flutter",
+    "android_platform": "Kotlin",
+    "web": "React",
+    "backend": "Python/FastAPI",
+    "database": "MySQL",
+    "ephemeral": "Redis"
+  },
+  "min_sdk": 30,
+  "target_sdk": {
+    "value": 36,
+    "verified_by_master_on": "2026-09-10",
+    "must_reverify_before_release": true
+  },
+  "interface_registry": {
+    "screens": 104,
+    "subflows": 35,
+    "capability_registry": 40,
+    "proposed_ui_not_governing": 124
+  },
+  "gates": {
+    "database": "NOT_CONNECTED",
+    "authentication": "NOT_CONFIGURED",
+    "play_billing": "NOT_CONNECTED",
+    "amapi": "PRODUCTION_DISABLED",
+    "sensor_capture": "NOT_ENABLED",
+    "ai_security_guard": "OFF_SHADOW_ONLY_AFTER_GATE",
+    "legal_egypt": "NOT_EVIDENCED",
+    "android_device_poc": "NOT_VERIFIED"
+  },
+  "execution": "CODE_BUILD / INTERACTIVE DEMO ONLY; no claims of working Android or production readiness"
+}
