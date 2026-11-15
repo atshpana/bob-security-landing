@@ -23,6 +23,7 @@ jobs:
       - name: Syntax checks
         run: |
           node --check public/app.js
+          node --check public/mock-api.js
           node --check src/domain.mjs
           node --check src/server.mjs
       - name: Unit and HTTP integration tests
