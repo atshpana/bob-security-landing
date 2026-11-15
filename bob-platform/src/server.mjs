@@ -91,6 +91,10 @@ async function handler(req,res){
  if(req.method!=="GET")return fail(res,"METHOD_NOT_ALLOWED",405);
  let path=pathname==="/"?"/index.html":pathname;
  if(path.includes("..")||!/^\/[a-zA-Z0-9_./-]+$/.test(path))return fail(res,"BAD_PATH",400);
+ if(path==="/bob-logo.jpeg"){
+  try{return write(res,200,await readFile(new URL("../../logo.png.jpeg",import.meta.url)),"image/jpeg");}
+  catch{return fail(res,"BRAND_ASSET_NOT_FOUND",404);}
+ }
  if(!["/index.html","/styles.css","/app.js"].includes(path))return fail(res,"NOT_FOUND",404);
  try{const buf=await readFile(resolve(root,"."+path));return write(res,200,buf,MIME[extname(path)]||"application/octet-stream");}
  catch{return fail(res,"NOT_FOUND",404);}

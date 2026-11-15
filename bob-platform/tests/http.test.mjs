@@ -13,6 +13,7 @@ async function call(path,role="owner",body){
 test("serves real static HTML and CSS",async()=>{
  const h=await call("/");assert.equal(h.status,200);assert.match(h.data,/BOB Security/);assert.match(h.type,/text\/html/);
  const c=await call("/styles.css");assert.equal(c.status,200);assert.match(c.data,/--turq/);assert.match(c.type,/text\/css/);
+ const logo=await call("/bob-logo.jpeg");assert.equal(logo.status,200);assert.match(logo.type,/image\/jpeg/);
  const j=await call("/app.js");assert.equal(j.status,200);assert.match(j.data,/function render/);
 });
 test("screen inventory matches 104 canonical parents",async()=>{
