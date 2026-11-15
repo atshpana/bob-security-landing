@@ -1,0 +1,32 @@
+name: BOB pre-database tests
+on:
+  push:
+    branches:
+      - 'feature/bob-platform-pre-db-*'
+    paths:
+      - 'bob-platform/**'
+      - '.github/workflows/bob-pre-db.yml'
+  pull_request:
+    paths:
+      - 'bob-platform/**'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: bob-platform
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Syntax checks
+        run: |
+          node --check public/app.js
+          node --check src/domain.mjs
+          node --check src/server.mjs
+      - name: Unit and HTTP integration tests
+        run: npm test
+      - name: Canonical screens and subflows
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';let s=JSON.parse(fs.readFileSync('data/screens.json'));let f=JSON.parse(fs.readFileSync('data/subflows.json'));if(s.length!==104||f.length!==35)process.exit(1);"
