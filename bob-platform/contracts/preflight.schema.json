@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BOB Device Command Preflight",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "actorId",
+    "deviceId",
+    "command",
+    "context",
+    "consentId",
+    "idempotencyKey"
+  ],
+  "properties": {
+    "actorId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "deviceId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "command": {
+      "type": "string",
+      "minLength": 1
+    },
+    "context": {
+      "type": "string",
+      "enum": [
+        "personal",
+        "enterprise"
+      ]
+    },
+    "enterpriseId": {
+      "type": "string"
+    },
+    "consentId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "idempotencyKey": {
+      "type": "string",
+      "minLength": 16
+    },
+    "reauthProof": {
+      "type": "string"
+    }
+  }
+}

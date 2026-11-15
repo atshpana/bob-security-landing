@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BOB Command Decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "decision",
+    "reasonCode",
+    "requestId",
+    "serverChecked",
+    "deviceRecheckRequired"
+  ],
+  "properties": {
+    "decision": {
+      "enum": [
+        "ALLOW",
+        "DENY",
+        "UNSUPPORTED",
+        "DEGRADED",
+        "NONCOMPLIANT",
+        "UNKNOWN"
+      ]
+    },
+    "reasonCode": {
+      "type": "string"
+    },
+    "requestId": {
+      "type": "string"
+    },
+    "serverChecked": {
+      "type": "boolean"
+    },
+    "deviceRecheckRequired": {
+      "type": "boolean"
+    },
+    "expiresAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

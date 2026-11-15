@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BOB Account Deletion Request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "accountId",
+    "reauthProof",
+    "confirmation",
+    "idempotencyKey"
+  ],
+  "properties": {
+    "accountId": {
+      "type": "string"
+    },
+    "reauthProof": {
+      "type": "string",
+      "minLength": 1
+    },
+    "confirmation": {
+      "const": true
+    },
+    "idempotencyKey": {
+      "type": "string",
+      "minLength": 16
+    }
+  }
+}

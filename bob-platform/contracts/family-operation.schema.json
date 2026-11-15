@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BOB Family Administrative Operation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "familyId",
+    "actorId",
+    "action",
+    "targetMemberId"
+  ],
+  "properties": {
+    "familyId": {
+      "type": "string"
+    },
+    "actorId": {
+      "type": "string"
+    },
+    "action": {
+      "enum": [
+        "INVITE_ADULT",
+        "REMOVE_MEMBERSHIP",
+        "ASSIGN_SEAT",
+        "REVOKE_SEAT",
+        "VIEW_BILLING"
+      ]
+    },
+    "targetMemberId": {
+      "type": "string"
+    },
+    "idempotencyKey": {
+      "type": "string"
+    }
+  }
+}
