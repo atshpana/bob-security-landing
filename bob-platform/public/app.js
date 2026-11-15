@@ -50,7 +50,7 @@ function renderNav(route){
 function renderShell(route,content){
  root.innerHTML='<div class="shell'+(menuOpen?' menu-open':'')+'">'+
  '<div class="overlay" data-action="close-menu"></div>'+
- '<aside class="sidebar" aria-label="القائمة الجانبية"><div class="brand"><img class="brand-image" src="/bob-logo.jpeg" alt="الشعار الرسمي لـ BOB Security"><div><b>BOB</b><small>SECURITY CONTROL</small></div></div>'+
+ '<aside class="sidebar" aria-label="القائمة الجانبية"><div class="brand"><img class="brand-image" src="./bob-logo.jpeg" alt="الشعار الرسمي لـ BOB Security"><div><b>BOB</b><small>SECURITY CONTROL</small></div></div>'+
  renderNav(route)+'<div class="sidebar-foot">نموذج تطوير معزول عن الموقع المنشور.<div>'+pill("قاعدة البيانات غير متصلة","warn")+'</div><div>تعطيل تنفيذ الأوامر الفعلية</div></div></aside>'+
  '<div class="main"><header class="topbar"><div class="top-meta"><button class="side-toggle" data-action="toggle-menu" aria-label="فتح القائمة">☰</button><span class="topbar-title">لوحة عمليات BOB</span>'+pill("DEMO / PRE-DB","warn")+'</div>'+
  '<div class="top-meta"><label class="sr-only" for="role">الانتقال بين الأدوار التجريبية</label><select class="input role-select" id="role" aria-label="الدور التجريبي">'+Object.entries(ROLE_LABELS).map(([k,v])=>'<option value="'+k+'"'+(role===k?' selected':'')+'>'+esc(v)+'</option>').join("")+'</select></div></header>'+
@@ -72,7 +72,7 @@ function overview(){
  let activity=role==="owner"?(data.incidents||[]).map(x=>row(x.subject,'حادث '+x.state,fmt(x.createdAt))).join("")||
  empty("لا توجد حوادث") :role==="admin"?(data.admin.audit||[]).slice(0,4).map(x=>row(x.action,x.role,fmt(x.at))).join("")||empty("لا توجد أحداث بعد"):empty("المعاينة لا تعرض بيانات إنتاجية.");
  return wrap("مركز الحماية والعمليات","لوحة موحدة تُظهر الحالة التي يمكن إثباتها، وليس وعودًا بتنفيذ غير متحقق.",
- '<div class="hero"><div class="hero-copy"><div class="eyebrow">ACTIVE DEFENSE • PRODUCT PREVIEW</div><h1>حماية واعية بكل صلاحية</h1><p>اعرف الحالة، تحقق من القدرة، نفذ فقط المسموح به، وتابع الدليل قبل اعتبار العملية ناجحة.</p><div class="actions">'+quick+'</div></div><div class="hero-shield"><img class="hero-approved-logo" src="/bob-logo.jpeg" alt="BOB Security"></div></div>'+
+ '<div class="hero"><div class="hero-copy"><div class="eyebrow">ACTIVE DEFENSE • PRODUCT PREVIEW</div><h1>حماية واعية بكل صلاحية</h1><p>اعرف الحالة، تحقق من القدرة، نفذ فقط المسموح به، وتابع الدليل قبل اعتبار العملية ناجحة.</p><div class="actions">'+quick+'</div></div><div class="hero-shield"><img class="hero-approved-logo" src="./bob-logo.jpeg" alt="BOB Security"></div></div>'+
  section("المؤشرات",cards(summary()))+
  '<div class="grid cols2 section"><div class="panel"><div class="panel-header"><h2>النشاط الأخير</h2>'+pill("تجريبي")+'</div><div class="list">'+activity+'</div></div>'+
  '<div class="panel"><div class="panel-header"><h2>بوابات الإنتاج</h2>'+pill("غير مفعلة","warn")+'</div>'+
